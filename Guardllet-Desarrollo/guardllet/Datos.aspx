@@ -15,14 +15,17 @@
 
 </head>
 <body>
+
 <header>
 
 </header>
+
 <div class="Contenedor-titulo">
     <div class="col-xs-12 col-sm-12 col-md-12">
         <h3 class="titulo">COMPLETA TUS DATOS</h3>
     </div>
 </div>
+
 <div class="container margen">
     <form id="form1" runat="server" class="form-horizontal">
             <div class="form-group">
@@ -72,6 +75,7 @@
             </div>
     </form>
 </div>
+
 </body>
 </html>
 

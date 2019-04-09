@@ -20,6 +20,8 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
 
             if (!IsPostBack)
             {
+
+                // Carga el DrowpList con las escuelas disponibles 
                 ListaEscuelas.Items.Insert(0, "Escuela");
                 Dictionary<int, Dictionary<string, string>> Paises = Datos.ObtenerEscuelas();
                 int numero_paises = Paises.Count();
@@ -30,13 +32,16 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
                     string nombre = Pais["Nombre"];
                     ListaEscuelas.Items.Insert(id, nombre);
                 }
+   
             }
         }
 
         protected void BtnConfirmar_Click(object sender, EventArgs e)
         {
+            // ID del usuario que esta en sesion
             int id = Convert.ToInt16(Session["usuario"].ToString());
 
+            // Obtiene la escuela que selecciono en usuario
             int escuela = Convert.ToInt16(ListaEscuelas.SelectedIndex.ToString());
 
             int registro_datos = AgregarDatos.Generales(TxtNombre.Text.Trim(), TxtApellidoP.Text.Trim(), TxtApellidoM.Text.Trim(), TxtCelular.Text.Trim());
