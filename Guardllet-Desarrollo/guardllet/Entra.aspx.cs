@@ -82,10 +82,6 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
                         HttpContext.Current.ApplicationInstance.CompleteRequest();
                     }
                 }
-                else
-                {
-
-                }  
             }
         }
     }
