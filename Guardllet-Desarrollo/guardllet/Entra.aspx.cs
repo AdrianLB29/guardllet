@@ -25,6 +25,8 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
 
         protected void BtnEntrar_Click(object sender, EventArgs e)
         {
+            //Inicia
+
             if(TxtCorreo.Text != "" & TxtContraseña.Text != "")
 
             {
