@@ -25,15 +25,6 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
 
         protected void BtnEntrar_Click(object sender, EventArgs e)
         {
-            
-
-
-
-
-
-            bool login = SesionUsuario.IniciarSesion(TxtCorreo.Text.Trim(),TxtContraseña.Text.Trim());
-            if (login)
-
             if(TxtCorreo.Text != "" & TxtContraseña.Text != "")
 
             {
