@@ -29,7 +29,7 @@
     <form id="form1" runat="server" class="form-horizontal">
         <div class="form-group">
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <asp:TextBox ID="TxtCorreo" runat="server" CssClass="form-control" placeholder="Correo" required></asp:TextBox>
+                <asp:TextBox ID="TxtCorreo" runat="server" CssClass="form-control" placeholder="Correo" required TextMode="Email"></asp:TextBox>
             </div>
         </div>
         <div class="form-group">
@@ -41,6 +41,9 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <asp:TextBox ID="TxtContraseñaC" runat="server" CssClass="form-control" placeholder="Confrimar" TextMode="Password" required></asp:TextBox>
             </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 Lb-Error">
+            <asp:Label ID="LbError" runat="server" Text=" " Visible="False"></asp:Label>
         </div>
         <div class="form-group">
             <div class="col-xs-12 col-sm-12 col-md-12">

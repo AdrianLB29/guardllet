@@ -38,6 +38,9 @@
                 <asp:TextBox ID="TxtContraseña" runat="server" CssClass="form-control" placeholder="Contraseña" TextMode="Password" required></asp:TextBox>
             </div>
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 Lb-Error">
+            <asp:Label ID="LbError" runat="server" Text=" " Visible="False"></asp:Label>
+        </div>
         <div class="form-group">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <asp:Button ID="BtnEntrar" runat="server" Text="Entrar" OnClick="BtnEntrar_Click" CssClass="btn-registrate"/>

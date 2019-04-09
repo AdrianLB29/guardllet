@@ -49,6 +49,15 @@ namespace Guardllet_Desarrollo.Frontend.Accounts {
         protected global::System.Web.UI.WebControls.TextBox TxtContraseñaC;
         
         /// <summary>
+        /// Control LbError.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LbError;
+        
+        /// <summary>
         /// Control BtnRegistrar.
         /// </summary>
         /// <remarks>

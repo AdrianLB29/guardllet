@@ -25,6 +25,13 @@ header {
 
 }
 
+.Lb-Error{
+
+    text-align: center;
+    color: red;
+
+}
+
 .btn-registrate {
 
     width: 80%;

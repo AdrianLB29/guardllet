@@ -26,10 +26,6 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
         protected void BtnEntrar_Click(object sender, EventArgs e)
         {
             //Inicia
-
-            if(TxtCorreo.Text != "" & TxtContraseña.Text != "")
-
-            {
                 bool login = SesionUsuario.IniciarSesion(TxtCorreo.Text.Trim(), TxtContraseña.Text.Trim());
                 if (login)
                 {
@@ -82,7 +78,11 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
                         HttpContext.Current.ApplicationInstance.CompleteRequest();
                     }
                 }
-            }
+                else 
+                {
+                    LbError.Visible = true;
+                    LbError.Text = "El Correo y/o Contraseña son incorrectos";
+                }
         }
     }
 }

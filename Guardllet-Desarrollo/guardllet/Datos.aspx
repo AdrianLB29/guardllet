@@ -45,12 +45,12 @@
             </div>
             <div class="form-group">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <asp:TextBox ID="TxtCelular" runat="server" placeholder="Celular *" CssClass="form-control" required></asp:TextBox>
+                    <asp:TextBox ID="TxtCelular" runat="server" placeholder="Celular *" CssClass="form-control" required TextMode="Phone"></asp:TextBox>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <asp:TextBox ID="TxtEdad" runat="server" placeholder="Edad *" CssClass="form-control" required></asp:TextBox>
+                    <asp:TextBox ID="TxtEdad" runat="server" placeholder="Edad *" CssClass="form-control" required TextMode="Number"></asp:TextBox>
                 </div>
             </div>
             <div class="form-group">
@@ -60,13 +60,16 @@
             </div>
             <div class="form-group">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <asp:TextBox ID="TxtBoleta" runat="server" placeholder="Boleta *" CssClass="form-control" required></asp:TextBox>
+                    <asp:TextBox ID="TxtBoleta" runat="server" placeholder="Boleta *" CssClass="form-control" required TextMode="Number"></asp:TextBox>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <asp:TextBox ID="TxtGrupo" runat="server" placeholder="Grupo *" CssClass="form-control" required></asp:TextBox>
                 </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 Lb-Error">
+                <asp:Label ID="LbError" runat="server" Text=" " Visible="False"></asp:Label>
             </div>
             <div class="form-group">
                 <div class="col-xs-12 col-sm-12 col-md-12">

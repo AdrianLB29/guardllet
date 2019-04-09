@@ -26,6 +26,13 @@ header {
 
 }
 
+.Lb-Error{
+
+    text-align: center;
+    color: red;
+
+}
+
 .btn-completar {
 
     width: 80%;
