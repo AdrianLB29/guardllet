@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+using System.Configuration;
+using System.Text.RegularExpressions;
+
 namespace Guardllet_Desarrollo.Backend.Data.Accounts
 {
     public class Validar
@@ -31,6 +34,25 @@ namespace Guardllet_Desarrollo.Backend.Data.Accounts
                 }
 
                 return "Ingresa un Nombre Correcto";
+            }
+        }
+
+        public static bool Correo(string correo)
+        {
+            bool resultado = false;
+
+            String exprecion_correo = ConfigurationManager.AppSettings["Regla_Correo"];
+
+            if (correo.Trim().Length > 50 || correo.Trim().Length < 5)
+            {
+                return resultado;
+            }
+            else
+            {
+                Match M;
+                Regex Validador = new Regex(exprecion_correo, RegexOptions.IgnoreCase);
+                M = Validador.Match(correo);
+                return M.Success;
             }
         }
     }

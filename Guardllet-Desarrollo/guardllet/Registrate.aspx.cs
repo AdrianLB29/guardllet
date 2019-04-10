@@ -23,8 +23,9 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
         }
 
         protected void BtnRegistrar_Click(object sender, EventArgs e)
-        {     
-            
+        {
+            bool correo_valido = Validar.Correo(TxtCorreo.Text.Trim());
+
             if(TxtContraseña.Text == TxtContraseñaC.Text)
             {
                 if (TxtContraseña.Text.Length >= 8)
