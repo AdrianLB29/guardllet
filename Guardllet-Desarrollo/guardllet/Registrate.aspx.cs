@@ -41,8 +41,23 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
                         Response.Redirect("Datos.aspx", false);
                         HttpContext.Current.ApplicationInstance.CompleteRequest();
                     }
+                    else
+                    {
+                        LbError.Visible = true;
+                        LbError.Text = "Error al registrar usuario, intentalo mas tarde";
+                    }
                 }
-            }       
+                else
+                {
+                    LbError.Visible = true;
+                    LbError.Text = "La contraseña es damaciado facil, intenta usar otra";
+                }
+            }
+            else
+            {
+                LbError.Visible = true;
+                LbError.Text = "Las contraseñas deben coincidir";
+            }
         }
     }
 }

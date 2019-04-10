@@ -44,6 +44,8 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
             // Obtiene la escuela que selecciono en usuario
             int escuela = Convert.ToInt16(ListaEscuelas.SelectedIndex.ToString());
 
+
+
             int registro_datos = AgregarDatos.Generales(TxtNombre.Text.Trim(), TxtApellidoP.Text.Trim(), TxtApellidoM.Text.Trim(), TxtCelular.Text.Trim());
 
             if (registro_datos != 0) 

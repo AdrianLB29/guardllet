@@ -13,15 +13,6 @@ namespace Guardllet_Desarrollo.Frontend.Customers {
     public partial class MiDinero {
         
         /// <summary>
-        /// Control Lb_Bienvenido.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Lb_Bienvenido;
-        
-        /// <summary>
         /// Control form1.
         /// </summary>
         /// <remarks>
@@ -56,6 +47,15 @@ namespace Guardllet_Desarrollo.Frontend.Customers {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Lb_Apellido_M;
+        
+        /// <summary>
+        /// Control Lb_Bienvenido.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Lb_Bienvenido;
         
         /// <summary>
         /// Control Monedero.

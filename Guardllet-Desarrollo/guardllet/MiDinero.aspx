@@ -13,29 +13,54 @@
 
 </head>
 <body>
+<form id="form1" runat="server">
+<div class="container">
+    <nav id="barra" class="navbar navbar-default nav-prs">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a href="#" class="navbar-brand color">
+                        <asp:Label ID="Lb_Nombre" runat="server" Text=""></asp:Label>
+                        <asp:Label ID="Lb_Apellido_p" runat="server" Text=""></asp:Label>
+                        <asp:Label ID="Lb_Apellido_M" runat="server" Text=""></asp:Label>
+                    </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-1">
+                <ul class="nav navbar-nav navbar-right color">
+                    <li><a href="#inicio" class="color">Perfil</a></li>
+                    <li><a href="#inicio" class="color">Cerrar Sesion</a></li>
+                </ul>      
+           </div>
+        </div>
+    </nav>    
+</div>
 <asp:Label ID="Lb_Bienvenido" runat="server" Text="Bienvenido"></asp:Label>
 
-<form id="form1" runat="server">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <div class="tarjeta-monedero">
-                <div class="tarjeta-wrap">
-                    <div class="tarjeta">
-                        <div class="adelante">
-                            <asp:Label ID="Lb_Nombre" runat="server" Text=""></asp:Label>
-                            <asp:Label ID="Lb_Apellido_p" runat="server" Text=""></asp:Label>
-                            <asp:Label ID="Lb_Apellido_M" runat="server" Text=""></asp:Label>
-                        </div>
-                        <div class="atras">
-                            <asp:Image ID="Monedero" runat="server" Height="98px" Width="131px" />
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="tarjeta-monedero">
+            <div class="tarjeta-wrap">
+                <div class="tarjeta">
+                    <div class="adelante">
+                        
+                    </div>
+                    <div class="atras">
+                        <asp:Image ID="Monedero" runat="server" Height="98px" Width="131px" />
                
-                            <asp:Label ID="Lb_Saldo" runat="server" Text=""></asp:Label>
-                        </div>
+                        <asp:Label ID="Lb_Saldo" runat="server" Text=""></asp:Label>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
 </form>
  
            
