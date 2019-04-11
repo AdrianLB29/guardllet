@@ -26,26 +26,34 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
         {
             bool correo_valido = Validar.Correo(TxtCorreo.Text.Trim());
 
-            if(TxtContraseña.Text == TxtContraseñaC.Text)
+            if (correo_valido)
             {
                 if (TxtContraseña.Text.Length >= 8)
                 {
-                    int id_usuario = RegistroUsuario.Registro(TxtCorreo.Text.Trim(), TxtContraseña.Text.Trim());
-
-                    if (id_usuario != 0)
+                    if (TxtContraseña.Text == TxtContraseñaC.Text)
                     {
-                        bool correo = EnviarCorreo.Registro(TxtCorreo.Text.Trim());
+                        int id_usuario = RegistroUsuario.Registro(TxtCorreo.Text.Trim(), TxtContraseña.Text.Trim());
 
-                        Session["usuario"] = id_usuario;
-                        string id = id_usuario.ToString();
-                        FormsAuthentication.SetAuthCookie(id, false);
-                        Response.Redirect("Datos.aspx", false);
-                        HttpContext.Current.ApplicationInstance.CompleteRequest();
+                        if (id_usuario != 0)
+                        {
+                            bool correo = EnviarCorreo.Registro(TxtCorreo.Text.Trim());
+
+                            Session["usuario"] = id_usuario;
+                            string id = id_usuario.ToString();
+                            FormsAuthentication.SetAuthCookie(id, false);
+                            Response.Redirect("Datos.aspx", false);
+                            HttpContext.Current.ApplicationInstance.CompleteRequest();
+                        }
+                        else
+                        {
+                            LbError.Visible = true;
+                            LbError.Text = "Error al registrar usuario, intentalo mas tarde";
+                        }
                     }
                     else
                     {
                         LbError.Visible = true;
-                        LbError.Text = "Error al registrar usuario, intentalo mas tarde";
+                        LbError.Text = "Las contraseñas deben coincidir";
                     }
                 }
                 else
@@ -57,8 +65,9 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
             else
             {
                 LbError.Visible = true;
-                LbError.Text = "Las contraseñas deben coincidir";
+                LbError.Text = "Ingresa un correo Valido";
             }
+            
         }
     }
 }
