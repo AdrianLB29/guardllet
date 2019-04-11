@@ -50,6 +50,9 @@
                 <asp:Button ID="BtnRegistrar" runat="server" Text="Continuar" OnClick="BtnRegistrar_Click" CssClass="btn-registrate"/>
             </div>
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 a-s">
+            <a href="">Iniciar sesion</a> | <a>Inicio</a>
+        </div>
     </form>
 </div>
 
