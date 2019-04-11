@@ -71,7 +71,7 @@
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <Content Include="Bootstrap\js\jquery.js" />
     <Content Include="Bootstrap\js\npm.js" />
-    <Content Include="guardllet.aspx" />
+    <Content Include="default.aspx" />
     <Content Include="guardllet.css" />
     <Content Include="guardllet\Bootstrap\css\bootstrap-theme.css" />
     <Content Include="guardllet\Bootstrap\css\bootstrap-theme.min.css" />
@@ -107,12 +107,12 @@
     <Compile Include="Backend\Data\Wallet\Monedero.cs" />
     <Compile Include="Backend\Data\Wallet\ObtenerMonedero.cs" />
     <Compile Include="Backend\Emails\EnviarCorreo.cs" />
-    <Compile Include="guardllet.aspx.cs">
-      <DependentUpon>guardllet.aspx</DependentUpon>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="guardllet.aspx.designer.cs">
-      <DependentUpon>guardllet.aspx</DependentUpon>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="guardllet\Datos.aspx.cs">
       <DependentUpon>Datos.aspx</DependentUpon>
