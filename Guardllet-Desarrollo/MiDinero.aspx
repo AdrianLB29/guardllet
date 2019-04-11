@@ -6,8 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="Css/MiDinero/MiDinero.css" />
+<link rel="stylesheet" type="text/css" href="Static/Bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="Static/Css/MiDinero.css"/>
 
     <title></title>
 
@@ -68,5 +68,5 @@
 </html>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript" src="Bootstrap/js/jquery.js"></script>
-<script type="text/javascript" src="Bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="Static/Bootstrap/js/jquery.js"></script>
+<script type="text/javascript" src="Static/Bootstrap/js/bootstrap.min.js"></script>

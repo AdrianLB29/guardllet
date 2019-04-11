@@ -14,14 +14,15 @@ namespace Guardllet_Desarrollo
 
         }
 
-        protected void BtnIngresar_Click(object sender, EventArgs e)
+        protected void BtnEntrar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("guardllet/Entra.aspx");
+            Response.Redirect("Entra.aspx");
         }
 
-        protected void BtnRegitrarse_Click(object sender, EventArgs e)
+        protected void BtnRegistrar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("guardllet/Registrate.aspx");
+            Response.Redirect("Registrate.aspx");
         }
+
     }
 }

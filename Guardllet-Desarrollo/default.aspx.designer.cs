@@ -13,30 +13,30 @@ namespace Guardllet_Desarrollo {
     public partial class _default {
         
         /// <summary>
-        /// Control Form1.
+        /// Control form1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Control BtnIngresar.
+        /// Control BtnEntrar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnIngresar;
+        protected global::System.Web.UI.WebControls.Button BtnEntrar;
         
         /// <summary>
-        /// Control BtnRegitrarse.
+        /// Control BtnRegistrar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnRegitrarse;
+        protected global::System.Web.UI.WebControls.Button BtnRegistrar;
     }
 }

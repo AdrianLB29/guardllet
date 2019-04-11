@@ -61,39 +61,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap\css\bootstrap-theme.css" />
-    <Content Include="Bootstrap\css\bootstrap-theme.min.css" />
-    <Content Include="Bootstrap\css\bootstrap.css" />
-    <Content Include="Bootstrap\css\bootstrap.min.css" />
-    <Content Include="Bootstrap\css\estilos.css" />
-    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Bootstrap\js\bootstrap.js" />
-    <Content Include="Bootstrap\js\bootstrap.min.js" />
-    <Content Include="Bootstrap\js\jquery.js" />
-    <Content Include="Bootstrap\js\npm.js" />
+    <Content Include="Static\Bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Static\Bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Static\Bootstrap\css\bootstrap.css" />
+    <Content Include="Static\Bootstrap\css\bootstrap.min.css" />
+    <Content Include="Static\Bootstrap\css\estilos.css" />
+    <Content Include="Static\Bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Static\Bootstrap\js\bootstrap.js" />
+    <Content Include="Static\Bootstrap\js\bootstrap.min.js" />
+    <Content Include="Static\Bootstrap\js\jquery.js" />
+    <Content Include="Static\Bootstrap\js\npm.js" />
     <Content Include="default.aspx" />
     <Content Include="guardllet.css" />
-    <Content Include="guardllet\Bootstrap\css\bootstrap-theme.css" />
-    <Content Include="guardllet\Bootstrap\css\bootstrap-theme.min.css" />
-    <Content Include="guardllet\Bootstrap\css\bootstrap.css" />
-    <Content Include="guardllet\Bootstrap\css\bootstrap.min.css" />
-    <Content Include="guardllet\Bootstrap\css\estilos.css" />
-    <Content Include="guardllet\Bootstrap\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="guardllet\Bootstrap\js\bootstrap.js" />
-    <Content Include="guardllet\Bootstrap\js\bootstrap.min.js" />
-    <Content Include="guardllet\Bootstrap\js\jquery.js" />
-    <Content Include="guardllet\Bootstrap\js\npm.js" />
-    <Content Include="guardllet\Css\Datos\Datos.css" />
-    <Content Include="guardllet\Css\Entra\Entra.css" />
-    <Content Include="guardllet\Css\MiDinero\MiDinero.css" />
-    <Content Include="guardllet\Css\Registrate\Registrate.css" />
-    <Content Include="guardllet\Datos.aspx" />
-    <Content Include="guardllet\Entra.aspx" />
-    <Content Include="guardllet\Multimedia\fondo.jpg" />
-    <Content Include="guardllet\Registrate.aspx" />
-    <Content Include="guardllet\Administrar.aspx" />
-    <Content Include="guardllet\MiDinero.aspx" />
-    <Content Include="guardllet\Vender.aspx" />
+    <Content Include="Static\Css\Datos.css" />
+    <Content Include="Static\Css\Entra.css" />
+    <Content Include="Static\Css\MiDinero.css" />
+    <Content Include="Static\Css\Registrate.css" />
+    <Content Include="Datos.aspx" />
+    <Content Include="Entra.aspx" />
+    <Content Include="Static\Multimedia\fondo.jpg" />
+    <Content Include="Registrate.aspx" />
+    <Content Include="Administrar.aspx" />
+    <Content Include="MiDinero.aspx" />
+    <Content Include="Vender.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -114,67 +104,59 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="guardllet\Datos.aspx.cs">
+    <Compile Include="Datos.aspx.cs">
       <DependentUpon>Datos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="guardllet\Datos.aspx.designer.cs">
+    <Compile Include="Datos.aspx.designer.cs">
       <DependentUpon>Datos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="guardllet\Entra.aspx.cs">
+    <Compile Include="Entra.aspx.cs">
       <DependentUpon>Entra.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="guardllet\Entra.aspx.designer.cs">
+    <Compile Include="Entra.aspx.designer.cs">
       <DependentUpon>Entra.aspx</DependentUpon>
     </Compile>
-    <Compile Include="guardllet\Registrate.aspx.cs">
+    <Compile Include="Registrate.aspx.cs">
       <DependentUpon>Registrate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="guardllet\Registrate.aspx.designer.cs">
+    <Compile Include="Registrate.aspx.designer.cs">
       <DependentUpon>Registrate.aspx</DependentUpon>
     </Compile>
-    <Compile Include="guardllet\Administrar.aspx.cs">
+    <Compile Include="Administrar.aspx.cs">
       <DependentUpon>Administrar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="guardllet\Administrar.aspx.designer.cs">
+    <Compile Include="Administrar.aspx.designer.cs">
       <DependentUpon>Administrar.aspx</DependentUpon>
     </Compile>
-    <Compile Include="guardllet\MiDinero.aspx.cs">
+    <Compile Include="MiDinero.aspx.cs">
       <DependentUpon>MiDinero.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="guardllet\MiDinero.aspx.designer.cs">
+    <Compile Include="MiDinero.aspx.designer.cs">
       <DependentUpon>MiDinero.aspx</DependentUpon>
     </Compile>
-    <Compile Include="guardllet\Vender.aspx.cs">
+    <Compile Include="Vender.aspx.cs">
       <DependentUpon>Vender.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="guardllet\Vender.aspx.designer.cs">
+    <Compile Include="Vender.aspx.designer.cs">
       <DependentUpon>Vender.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap\css\bootstrap-theme.css.map" />
-    <Content Include="Bootstrap\css\bootstrap-theme.min.css.map" />
-    <Content Include="Bootstrap\css\bootstrap.css.map" />
-    <Content Include="Bootstrap\css\bootstrap.min.css.map" />
-    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="guardllet\Bootstrap\css\bootstrap-theme.css.map" />
-    <Content Include="guardllet\Bootstrap\css\bootstrap-theme.min.css.map" />
-    <Content Include="guardllet\Bootstrap\css\bootstrap.css.map" />
-    <Content Include="guardllet\Bootstrap\css\bootstrap.min.css.map" />
-    <Content Include="guardllet\Bootstrap\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="guardllet\Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="guardllet\Bootstrap\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="guardllet\Bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Static\Bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Static\Bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="Static\Bootstrap\css\bootstrap.css.map" />
+    <Content Include="Static\Bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Static\Bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Static\Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Static\Bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Static\Bootstrap\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Properties\PublishProfiles\guardllet - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\Guardllet - FTP %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\guardllet - FTP.pubxml" />
@@ -194,20 +176,7 @@
     <Folder Include="Backend\Messages\" />
     <Folder Include="Backend\Reports\" />
     <Folder Include="Backend\Transactions\" />
-    <Folder Include="guardllet\Css\Administrar\" />
-    <Folder Include="guardllet\Css\Vender\" />
-    <Folder Include="guardllet\Js\Administrar\" />
-    <Folder Include="guardllet\Js\Completar-Datos\" />
-    <Folder Include="guardllet\Js\Entra\" />
-    <Folder Include="guardllet\Js\MiDinero\" />
-    <Folder Include="guardllet\Js\Registrate\" />
-    <Folder Include="guardllet\Js\Vender\" />
-    <Folder Include="guardllet\Multimedia\Administrar\" />
-    <Folder Include="guardllet\Multimedia\Completar-Datos\" />
-    <Folder Include="guardllet\Multimedia\Entra\" />
-    <Folder Include="guardllet\Multimedia\MiDinero\" />
-    <Folder Include="guardllet\Multimedia\Registrate\" />
-    <Folder Include="guardllet\Multimedia\Vender\" />
+    <Folder Include="Static\Js\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
