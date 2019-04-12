@@ -47,10 +47,14 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 a-s">
-            <a href="">Recuperar Contraseña &nbsp;</a> | <a href="Registrate.aspx">&nbsp; Registrate</a>
+            <a href="#">Recuperar Contraseña &nbsp;</a> | <a href="Registrate.aspx">&nbsp; Registrate</a>
         </div>
     </form>
 </div>
+
+<footer>
+   
+</footer>
 
 </body>
 </html>
