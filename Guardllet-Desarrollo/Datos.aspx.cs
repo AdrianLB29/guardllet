@@ -46,50 +46,74 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
 
             bool valida_celular = Validar.Celular(TxtCelular.Text.Trim());
 
-            bool valida_grupo = Validar.Grupo(TxtGrupo.Text.Trim().ToUpper());
-
-            bool valida_boleta = Validar.Boleta(TxtBoleta.Text.Trim().ToUpper());
-
-
-            int registro_datos = AgregarDatos.Generales(TxtNombre.Text.Trim(), TxtApellidoP.Text.Trim(), TxtApellidoM.Text.Trim(), TxtCelular.Text.Trim());
-
-            if (registro_datos != 0) 
+            if (valida_celular)
             {
-                int registro_datos_escolares = AgregarDatos.Escolares(escuela, TxtBoleta.Text.Trim(), TxtGrupo.Text.Trim().ToUpper(), TxtEdad.Text.Trim());
+                bool valida_boleta = Validar.Boleta(TxtBoleta.Text.Trim());
 
-                if (registro_datos_escolares != 0)
+                if (valida_boleta)
                 {
-                    int vincular_datos = Datos.VincularDatosGenerales(id, registro_datos);
+                    bool valida_grupo = Validar.Grupo(TxtGrupo.Text.Trim().ToUpper());
 
-                    if (vincular_datos != 0)
+                    if (valida_grupo)
                     {
-                        int vincular_datos_escolares = Datos.VincularDatosEscolares(registro_datos, registro_datos_escolares);
+                        int registro_datos = AgregarDatos.Generales(TxtNombre.Text.Trim(), TxtApellidoP.Text.Trim(), TxtApellidoM.Text.Trim(), TxtCelular.Text.Trim());
 
-                        if (vincular_datos_escolares != 0)
+                        if (registro_datos != 0)
                         {
+                            int registro_datos_escolares = AgregarDatos.Escolares(escuela, TxtBoleta.Text.Trim(), TxtGrupo.Text.Trim().ToUpper(), TxtEdad.Text.Trim());
 
-                            string codigo = CreacionCodigo.Monedero(TxtBoleta.Text.Trim());
-                            Byte[] codigo_barras = CreacionCodigo.Barras(codigo);
-
-                            int registro_monedero = Monedero.Crear(codigo, codigo_barras);
-
-                            if (registro_monedero != 0)
+                            if (registro_datos_escolares != 0)
                             {
+                                int vincular_datos = Datos.VincularDatosGenerales(id, registro_datos);
 
-                                int vincular_codigo = Monedero.Vincular(id, registro_monedero);
-
-                                if (vincular_codigo != 0) 
+                                if (vincular_datos != 0)
                                 {
-                                    
-                                    string id_usuario = id.ToString();
-                                    FormsAuthentication.SetAuthCookie(id_usuario, false);
-                                    Response.Redirect("MiDinero.aspx", false);
-                                    HttpContext.Current.ApplicationInstance.CompleteRequest();
+                                    int vincular_datos_escolares = Datos.VincularDatosEscolares(registro_datos, registro_datos_escolares);
+
+                                    if (vincular_datos_escolares != 0)
+                                    {
+
+                                        string codigo = CreacionCodigo.Monedero(TxtBoleta.Text.Trim());
+                                        Byte[] codigo_barras = CreacionCodigo.Barras(codigo);
+
+                                        int registro_monedero = Monedero.Crear(codigo, codigo_barras);
+
+                                        if (registro_monedero != 0)
+                                        {
+
+                                            int vincular_codigo = Monedero.Vincular(id, registro_monedero);
+
+                                            if (vincular_codigo != 0)
+                                            {
+
+                                                string id_usuario = id.ToString();
+                                                FormsAuthentication.SetAuthCookie(id_usuario, false);
+                                                Response.Redirect("MiDinero.aspx", false);
+                                                HttpContext.Current.ApplicationInstance.CompleteRequest();
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
                     }
+                    else
+                    {
+                        LbError.Visible = true;
+                        LbError.Text = "Ingresa un numero de boleta valido";
+                    }
                 }
+                else
+                {
+                    LbError.Visible = true;
+                    LbError.Text = "Ingresa un grupo valido";
+                }
+
+            }
+            else
+            {
+                LbError.Visible = true;
+                LbError.Text = "Ingresa un numero de celular valido";
             }
         }
     }

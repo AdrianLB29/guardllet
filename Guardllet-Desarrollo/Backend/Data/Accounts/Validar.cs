@@ -50,16 +50,20 @@ namespace Guardllet_Desarrollo.Backend.Data.Accounts
 
         public static bool Boleta(string boleta)
         {
-
-            string kjsdafjhg = boleta.Substring(0, 1);
-            string kjsdadsffjhg = boleta.Substring(1, 1);
-            string kjsdafdfjhg = boleta.Substring(2, 1);
+            string jhsfdkdfh = boleta.Substring(4, 2);
 
             if (boleta.Length == 10)
             {
                 if (boleta.Substring(0, 1) == "2" && boleta.Substring(1, 1) == "0" && boleta.Substring(2, 1) == "1")
                 {
-                    return true;
+                    if(boleta.Substring(4, 2) == "13")
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
                 else
                 {
