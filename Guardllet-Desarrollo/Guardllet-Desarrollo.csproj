@@ -84,7 +84,9 @@
     <Content Include="Administrar.aspx" />
     <Content Include="MiDinero.aspx" />
     <Content Include="Vender.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Backend\Data\Accounts\Datos.cs" />
