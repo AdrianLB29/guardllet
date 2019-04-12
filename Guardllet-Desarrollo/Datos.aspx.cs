@@ -44,13 +44,18 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
             // Obtiene la escuela que selecciono en usuario
             int escuela = Convert.ToInt16(ListaEscuelas.SelectedIndex.ToString());
 
+            bool valida_celular = Validar.Celular(TxtCelular.Text.Trim());
+
+            bool valida_grupo = Validar.Grupo(TxtGrupo.Text.Trim().ToUpper());
+
+            bool valida_boleta = Validar.Boleta(TxtBoleta.Text.Trim().ToUpper());
 
 
             int registro_datos = AgregarDatos.Generales(TxtNombre.Text.Trim(), TxtApellidoP.Text.Trim(), TxtApellidoM.Text.Trim(), TxtCelular.Text.Trim());
 
             if (registro_datos != 0) 
             {
-                int registro_datos_escolares = AgregarDatos.Escolares(escuela, TxtBoleta.Text.Trim(), TxtGrupo.Text.Trim(), TxtEdad.Text.Trim());
+                int registro_datos_escolares = AgregarDatos.Escolares(escuela, TxtBoleta.Text.Trim(), TxtGrupo.Text.Trim().ToUpper(), TxtEdad.Text.Trim());
 
                 if (registro_datos_escolares != 0)
                 {
