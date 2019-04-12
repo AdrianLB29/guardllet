@@ -18,7 +18,8 @@ header {
 footer {
     width: 100%;
     height: 20px;
-    background-color: black;
+    background-color: #1e1e47;
+    margin-top: 20%;
 }
 
 .margen {

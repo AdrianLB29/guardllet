@@ -22,7 +22,7 @@
 
 <div class="Contenedor-titulo">
     <div class="col-xs-12 col-sm-12 col-md-12">
-        <h3 class="titulo">COMPLETA TUS DATOS</h3>
+        <h3 class="titulo">COMPLETA TUS DATOS!</h3>
     </div>
 </div>
 
@@ -85,6 +85,10 @@
             </div>
     </form>
 </div>
+
+<footer>
+   
+</footer>
 
 </body>
 </html>
