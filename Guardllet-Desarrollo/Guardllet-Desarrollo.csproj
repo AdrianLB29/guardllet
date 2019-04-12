@@ -79,10 +79,13 @@
     <Content Include="Static\Css\Registrate.css" />
     <Content Include="Datos.aspx" />
     <Content Include="Entra.aspx" />
+    <Content Include="Static\Multimedia\Datos.png" />
+    <Content Include="Static\Multimedia\Entra.png" />
     <Content Include="Static\Multimedia\fondo.jpg" />
     <Content Include="Registrate.aspx" />
     <Content Include="Administrar.aspx" />
     <Content Include="MiDinero.aspx" />
+    <Content Include="Static\Multimedia\Registrate.png" />
     <Content Include="Vender.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

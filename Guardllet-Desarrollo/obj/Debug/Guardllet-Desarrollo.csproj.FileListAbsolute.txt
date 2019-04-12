@@ -45,3 +45,9 @@ C:\Users\josue\Documents\Visual Studio 2012\Projects\Guardllet-Desarrollo\Guardl
 C:\Users\josue\Documents\Visual Studio 2012\Projects\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.csprojResolveAssemblyReference.cache
 C:\Users\josue\Documents\Visual Studio 2012\Projects\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.dll
 C:\Users\josue\Documents\Visual Studio 2012\Projects\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.pdb
+C:\Users\SAE2 00\Downloads\Guardllet-Desarrollo\Guardllet-Desarrollo\bin\Guardllet-Desarrollo.dll.config
+C:\Users\SAE2 00\Downloads\Guardllet-Desarrollo\Guardllet-Desarrollo\bin\Guardllet-Desarrollo.dll
+C:\Users\SAE2 00\Downloads\Guardllet-Desarrollo\Guardllet-Desarrollo\bin\Guardllet-Desarrollo.pdb
+C:\Users\SAE2 00\Downloads\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.csprojResolveAssemblyReference.cache
+C:\Users\SAE2 00\Downloads\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.dll
+C:\Users\SAE2 00\Downloads\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.pdb

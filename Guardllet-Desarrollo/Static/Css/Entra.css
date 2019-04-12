@@ -4,7 +4,14 @@
 
 }
 
-body {
+body{
+
+    background-image: url(../Multimedia/Entra.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
 }
 
 header {
@@ -75,4 +82,10 @@ a {
     text-align: center;
     margin-top: 0%;
     margin-bottom: 10%;
+}
+
+::-webkit-input-placeholder {
+     
+    color:black; 
+
 }
