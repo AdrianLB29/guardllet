@@ -91,10 +91,40 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
                                                 Response.Redirect("MiDinero.aspx", false);
                                                 HttpContext.Current.ApplicationInstance.CompleteRequest();
                                             }
+                                            else
+                                            {
+                                                LbError.Visible = true;
+                                                LbError.Text = "Error al registrar datos, intentalo mas tarde";
+                                            }
+                                        }
+                                        else
+                                        {
+                                            LbError.Visible = true;
+                                            LbError.Text = "Error al registrar datos, intentalo mas tarde";
                                         }
                                     }
+                                    else
+                                    {
+                                        LbError.Visible = true;
+                                        LbError.Text = "Error al registrar datos, intentalo mas tarde";
+                                    }
+                                }
+                                else
+                                {
+                                    LbError.Visible = true;
+                                    LbError.Text = "Error al registrar datos, intentalo mas tarde";
                                 }
                             }
+                            else
+                            {
+                                LbError.Visible = true;
+                                LbError.Text = "Error al registrar datos, intentalo mas tarde";
+                            }
+                        }
+                        else
+                        {
+                            LbError.Visible = true;
+                            LbError.Text = "Error al registrar datos, intentalo mas tarde";
                         }
                     }
                     else

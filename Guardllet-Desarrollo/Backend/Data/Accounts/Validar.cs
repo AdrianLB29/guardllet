@@ -31,11 +31,16 @@ namespace Guardllet_Desarrollo.Backend.Data.Accounts
 
         public static bool Celular(string celular)
         {
+            String exprecion_celular = ConfigurationManager.AppSettings["Regla_Telefono"];
+
             if (celular.Length == 10)
             {
                 if (celular.Substring(0, 1) == "5" && celular.Substring(1, 1) == "5")
                 {
-                    return true;
+                    Match M;
+                    Regex Validador = new Regex(exprecion_celular, RegexOptions.IgnoreCase);
+                    M = Validador.Match(celular);
+                    return M.Success;
                 }
                 else
                 {
@@ -50,7 +55,7 @@ namespace Guardllet_Desarrollo.Backend.Data.Accounts
 
         public static bool Boleta(string boleta)
         {
-            string jhsfdkdfh = boleta.Substring(4, 2);
+            String exprecion_boleta = ConfigurationManager.AppSettings["Regla_Boleta"];
 
             if (boleta.Length == 10)
             {
@@ -58,7 +63,10 @@ namespace Guardllet_Desarrollo.Backend.Data.Accounts
                 {
                     if(boleta.Substring(4, 2) == "13")
                     {
-                        return true;
+                        Match M;
+                        Regex Validador = new Regex(exprecion_boleta, RegexOptions.IgnoreCase);
+                        M = Validador.Match(boleta);
+                        return M.Success;
                     }
                     else
                     {
