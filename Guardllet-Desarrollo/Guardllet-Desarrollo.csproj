@@ -72,7 +72,7 @@
     <Content Include="Static\Bootstrap\js\jquery.js" />
     <Content Include="Static\Bootstrap\js\npm.js" />
     <Content Include="default.aspx" />
-    <Content Include="guardllet.css" />
+    <Content Include="Static\Css\default.css" />
     <Content Include="Static\Css\Datos.css" />
     <Content Include="Static\Css\Entra.css" />
     <Content Include="Static\Css\MiDinero.css" />

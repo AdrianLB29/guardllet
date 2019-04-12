@@ -30,27 +30,32 @@
     <form id="form1" runat="server" class="form-horizontal">
             <div class="form-group">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <asp:TextBox ID="TxtNombre" runat="server" placeholder="Nombre(s) *" CssClass="form-control" required></asp:TextBox>
+                    <asp:TextBox ID="TxtNombre" runat="server" placeholder="Nombre(s) *" CssClass="form-control" required minlength="3" maxlength="40">
+                    </asp:TextBox>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <asp:TextBox ID="TxtApellidoP" runat="server" placeholder="Apellido Paterno *" CssClass="form-control" required></asp:TextBox>
+                    <asp:TextBox ID="TxtApellidoP" runat="server" placeholder="Apellido Paterno *" CssClass="form-control" required minlength="3" maxlength="40">
+                    </asp:TextBox>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <asp:TextBox ID="TxtApellidoM" runat="server" placeholder="Apellido Materno *" CssClass="form-control" required></asp:TextBox>
+                    <asp:TextBox ID="TxtApellidoM" runat="server" placeholder="Apellido Materno *" CssClass="form-control" required minlength="3" maxlength="40">
+                    </asp:TextBox>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <asp:TextBox ID="TxtCelular" runat="server" placeholder="Celular *" CssClass="form-control" required TextMode="Phone"></asp:TextBox>
+                    <asp:TextBox ID="TxtCelular" runat="server" placeholder="Celular *" CssClass="form-control" required type="tel" minlength="10" maxlength="10">
+                    </asp:TextBox>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <asp:TextBox ID="TxtEdad" runat="server" placeholder="Edad *" CssClass="form-control" required TextMode="Number"></asp:TextBox>
+                    <asp:TextBox ID="TxtEdad" runat="server" placeholder="Edad *" CssClass="form-control" required type="number" min="14" max="20">
+                    </asp:TextBox>
                 </div>
             </div>
             <div class="form-group">
@@ -60,12 +65,14 @@
             </div>
             <div class="form-group">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <asp:TextBox ID="TxtBoleta" runat="server" placeholder="Boleta *" CssClass="form-control" required TextMode="Number"></asp:TextBox>
+                    <asp:TextBox ID="TxtBoleta" runat="server" placeholder="Boleta *" CssClass="form-control" required type="tel" minlength="10" maxlength="10">
+                    </asp:TextBox>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <asp:TextBox ID="TxtGrupo" runat="server" placeholder="Grupo *" CssClass="form-control" required></asp:TextBox>
+                    <asp:TextBox ID="TxtGrupo" runat="server" placeholder="Grupo *" CssClass="form-control" required minlength="4" maxlength="5">
+                    </asp:TextBox>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 Lb-Error">

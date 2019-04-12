@@ -22,7 +22,7 @@
 
 <div class="Contenedor-titulo">
     <div class="col-xs-12 col-sm-12 col-md-12">
-        <h3 class="titulo">INICIA SESION</h3>
+        <h3 class="titulo">INICIA SESION!</h3>
     </div>
 </div>
 
@@ -45,6 +45,9 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <asp:Button ID="BtnEntrar" runat="server" Text="Entrar" OnClick="BtnEntrar_Click" CssClass="btn-registrate"/>
             </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 a-s">
+            <a href="">Recuperar Contraseña &nbsp;</a> | <a href="Registrate.aspx">&nbsp; Registrate</a>
         </div>
     </form>
 </div>
