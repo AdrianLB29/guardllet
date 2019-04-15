@@ -1,24 +1,29 @@
 ﻿* {
 
     font-family: serif;
+    color: white;
 
 }
 
 body {
+
+    background-color: #3e4451;
+
 }
 
 header {
 
     width: 100%;
     height: 70px;
-    background-color: #1e1e47;
+    background-color: #3e4451;
 
 }
 
 footer {
+
     width: 100%;
     height: 20px;
-    background-color: #1e1e47;
+    background-color: #3e4451;
     margin-top: 20%;
 }
 
@@ -50,6 +55,13 @@ footer {
     width: 80%;
     height: 40px;
     margin: 5% 10% 10%;
+    border: solid 1px black;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 
 }
 
@@ -60,11 +72,53 @@ footer {
 }
 
 .a-s {
+
+    color: white;
     text-align: center;
     margin-top: -10%;
 }
 
 a {
-    color: #1e1e47;
+    color: white;
     text-decoration: none;
+}
+
+.form-control::placeholder {
+
+    color: #efe6e6;
+    opacity: 1;
+
+}
+
+#TxtCorreo {
+    
+    background-color: #3e4451;
+    border-top: solid 1px #3b404a;
+    border-left: solid 1px #3b404a;
+    border-right: solid 1px #3b404a;
+    border-bottom: solid 1px aqua;
+    border-radius: 0px;
+    color: white;
+}
+
+#TxtContraseña {
+    
+    background-color: #3e4451;
+    border-top: solid 1px #3b404a;
+    border-left: solid 1px #3b404a;
+    border-right: solid 1px #3b404a;
+    border-bottom: solid 1px aqua;
+    border-radius: 0px;
+    color: white;
+}
+
+#TxtContraseñaC {
+    
+    background-color: #3e4451;
+    border-top: solid 1px #3b404a;
+    border-left: solid 1px #3b404a;
+    border-right: solid 1px #3b404a;
+    border-bottom: solid 1px aqua;
+    border-radius: 0px;
+    color: white;
 }
