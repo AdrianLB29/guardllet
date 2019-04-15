@@ -1,4 +1,9 @@
-﻿* {
+﻿@font-face {
+    font-family: bebas;
+    src: url(../Fuentes/);
+}
+
+* {
 
     font-family: serif;
     color: white;
@@ -87,6 +92,7 @@ a {
 
     color: #efe6e6;
     opacity: 1;
+    text-align: center;
 
 }
 
@@ -96,9 +102,10 @@ a {
     border-top: solid 1px #3b404a;
     border-left: solid 1px #3b404a;
     border-right: solid 1px #3b404a;
-    border-bottom: solid 1px aqua;
+    border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
+    text-align: center;
 }
 
 #TxtContraseña {
@@ -107,9 +114,11 @@ a {
     border-top: solid 1px #3b404a;
     border-left: solid 1px #3b404a;
     border-right: solid 1px #3b404a;
-    border-bottom: solid 1px aqua;
+    border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
+    text-align: center;
+
 }
 
 #TxtContraseñaC {
@@ -118,7 +127,9 @@ a {
     border-top: solid 1px #3b404a;
     border-left: solid 1px #3b404a;
     border-right: solid 1px #3b404a;
-    border-bottom: solid 1px aqua;
+    border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
+    text-align: center;
+
 }

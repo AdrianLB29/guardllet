@@ -39,7 +39,7 @@
         </div>
         <div class="form-group">
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <asp:TextBox ID="TxtContraseñaC" runat="server" CssClass="form-control" placeholder="Confrimar" TextMode="Password" required></asp:TextBox>
+                <asp:TextBox ID="TxtContraseñaC" runat="server" CssClass="form-control" placeholder="Confrimar Contraseña" TextMode="Password" required></asp:TextBox>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 Lb-Error">

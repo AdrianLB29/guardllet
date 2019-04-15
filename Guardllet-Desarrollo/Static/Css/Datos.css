@@ -77,9 +77,10 @@ footer {
     border-top: solid 1px #3b404a;
     border-left: solid 1px #3b404a;
     border-right: solid 1px #3b404a;
-    border-bottom: solid 1px aqua;
+    border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
+    text-align: center;
 
 }
 
@@ -89,9 +90,10 @@ footer {
     border-top: solid 1px #3b404a;
     border-left: solid 1px #3b404a;
     border-right: solid 1px #3b404a;
-    border-bottom: solid 1px aqua;
+    border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
+    text-align: center;
 
 }
 
@@ -101,9 +103,10 @@ footer {
     border-top: solid 1px #3b404a;
     border-left: solid 1px #3b404a;
     border-right: solid 1px #3b404a;
-    border-bottom: solid 1px aqua;
+    border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
+    text-align: center;
 
 }
 
@@ -113,9 +116,10 @@ footer {
     border-top: solid 1px #3b404a;
     border-left: solid 1px #3b404a;
     border-right: solid 1px #3b404a;
-    border-bottom: solid 1px aqua;
+    border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
+    text-align: center;
 
 }
 
@@ -125,9 +129,10 @@ footer {
     border-top: solid 1px #3b404a;
     border-left: solid 1px #3b404a;
     border-right: solid 1px #3b404a;
-    border-bottom: solid 1px aqua;
+    border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
+    text-align: center;
 
 }
 
@@ -137,9 +142,10 @@ footer {
     border-top: solid 1px #3b404a;
     border-left: solid 1px #3b404a;
     border-right: solid 1px #3b404a;
-    border-bottom: solid 1px aqua;
+    border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
+    text-align: center;
 
 }
 
@@ -149,9 +155,10 @@ footer {
     border-top: solid 1px #3b404a;
     border-left: solid 1px #3b404a;
     border-right: solid 1px #3b404a;
-    border-bottom: solid 1px aqua;
+    border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
+    text-align: center;
 
 }
 
@@ -161,9 +168,10 @@ footer {
     border-top: solid 1px #3b404a;
     border-left: solid 1px #3b404a;
     border-right: solid 1px #3b404a;
-    border-bottom: solid 1px aqua;
+    border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
+    text-align: center;
 
 }
 
@@ -171,5 +179,6 @@ footer {
 
     color: #efe6e6;
     opacity: 1;
+    text-align: center;
 
 }
