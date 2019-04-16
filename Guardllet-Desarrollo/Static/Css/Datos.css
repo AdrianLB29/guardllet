@@ -1,13 +1,12 @@
 ﻿* {
 
-    font-family: serif;
-    color: white;
+    font-family: Gibson,Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
 
 }
 
 body {
 
-    background-color: #3e4451;
+    background-color: #001935;
 
 }
 
@@ -15,7 +14,7 @@ header {
 
     width: 100%;
     height: 70px;
-    background-color: #3e4451;
+    background-color: #001935;
 
 }
 
@@ -23,7 +22,7 @@ footer {
 
     width: 100%;
     height: 20px;
-    background-color: #3e4451;
+    background-color: #001935;
     margin-top: 20%;
 }
 
@@ -55,10 +54,10 @@ footer {
     width: 80%;
     height: 40px;
     margin: 1% 10% 10%;
-    border: solid 1px black;
+    border: solid 1px #001124;
     border-radius: 20px;
     color: white;
-    background-color: black;
+    background-color: #001124;
     -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
@@ -67,16 +66,16 @@ footer {
 
 .titulo {
 
-    font-size: 300%;
+    color: white;
 
 }
 
 #TxtNombre {
 
-    background-color: #3e4451;
-    border-top: solid 1px #3b404a;
-    border-left: solid 1px #3b404a;
-    border-right: solid 1px #3b404a;
+    background-color: #01172f;
+    border-top: solid 1px #001935;
+    border-left: solid 1px #001935;
+    border-right: solid 1px #001935;
     border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
@@ -86,92 +85,99 @@ footer {
 
 #TxtApellidoP {
 
-    background-color: #3e4451;
-    border-top: solid 1px #3b404a;
-    border-left: solid 1px #3b404a;
-    border-right: solid 1px #3b404a;
+    background-color: #01172f;
+    border-top: solid 1px #001935;
+    border-left: solid 1px #001935;
+    border-right: solid 1px #001935;
     border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
     text-align: center;
+    margin-top: 3%;
 
 }
 
 #TxtApellidoM {
 
-    background-color: #3e4451;
-    border-top: solid 1px #3b404a;
-    border-left: solid 1px #3b404a;
-    border-right: solid 1px #3b404a;
+    background-color: #01172f;
+    border-top: solid 1px #001935;
+    border-left: solid 1px #001935;
+    border-right: solid 1px #001935;
     border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
     text-align: center;
+    margin-top: 3%;
 
 }
 
 #TxtCelular {
 
-    background-color: #3e4451;
-    border-top: solid 1px #3b404a;
-    border-left: solid 1px #3b404a;
-    border-right: solid 1px #3b404a;
+    background-color: #01172f;
+    border-top: solid 1px #001935;
+    border-left: solid 1px #001935;
+    border-right: solid 1px #001935;
     border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
     text-align: center;
+    margin-top: 3%;
 
 }
 
 #TxtEdad {
 
-    background-color: #3e4451;
-    border-top: solid 1px #3b404a;
-    border-left: solid 1px #3b404a;
-    border-right: solid 1px #3b404a;
+    background-color: #01172f;
+    border-top: solid 1px #001935;
+    border-left: solid 1px #001935;
+    border-right: solid 1px #001935;
     border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
     text-align: center;
+    margin-top: 3%;
 
 }
 
 #ListaEscuelas {
 
-    background-color: #3e4451;
-    border-top: solid 1px #3b404a;
-    border-left: solid 1px #3b404a;
-    border-right: solid 1px #3b404a;
+    background-color: #01172f;
+    border-top: solid 1px #001935;
+    border-left: solid 1px #001935;
+    border-right: solid 1px #001935;
     border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
     text-align: center;
+    margin-top: 3%;
 
 }
 
 #TxtBoleta {
 
-    background-color: #3e4451;
-    border-top: solid 1px #3b404a;
-    border-left: solid 1px #3b404a;
-    border-right: solid 1px #3b404a;
+    background-color: #01172f;
+    border-top: solid 1px #001935;
+    border-left: solid 1px #001935;
+    border-right: solid 1px #001935;
     border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
     text-align: center;
+    margin-top: 3%;
 
 }
 
 #TxtGrupo {
 
-    background-color: #3e4451;
-    border-top: solid 1px #3b404a;
-    border-left: solid 1px #3b404a;
-    border-right: solid 1px #3b404a;
+    background-color: #01172f;
+    border-top: solid 1px #001935;
+    border-left: solid 1px #001935;
+    border-right: solid 1px #001935;
     border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
     text-align: center;
+    margin-top: 3%;
 
 }
 

@@ -39,7 +39,7 @@
         </div>
         <div class="form-group">
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <asp:TextBox ID="TxtContraseñaC" runat="server" CssClass="form-control" placeholder="Confrimar Contraseña" TextMode="Password" required></asp:TextBox>
+                <asp:TextBox ID="TxtContraseñaC" runat="server" CssClass="form-control" placeholder="Confirmar Contraseña" TextMode="Password" required></asp:TextBox>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 Lb-Error">
@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 a-s">
-            <a href="Entra.aspx">Iniciar Sesion &nbsp;</a> | <a href="default.aspx">&nbsp; Inicio</a>
+            <a class="color-ext" href="Entra.aspx">Iniciar Sesion &nbsp;</a> | <a class="color-ext" href="default.aspx">&nbsp; Inicio</a>
         </div>
     </form>
 </div>

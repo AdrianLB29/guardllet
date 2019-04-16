@@ -1,12 +1,11 @@
 ﻿* {
 
-    font-family: serif;
-    color: white;
+    font-family: Gibson,Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
 }
 
 body {
     
-    background-color: #3e4451;
+    background-color: #001935;
 
 }
 
@@ -14,7 +13,7 @@ header {
 
     width: 100%;
     height: 70px;
-    background-color: #3e4451;
+    background-color: #001935;
 
 }
 
@@ -22,7 +21,7 @@ footer {
 
     width: 100%;
     height: 20px;
-    background-color: #3e4451;
+    background-color: #001935;
     margin-top: 20%;
 }
 
@@ -44,7 +43,7 @@ footer {
 
 .titulo {
 
-
+    color: white;
 }
 
 .Lb-Error{
@@ -59,10 +58,10 @@ footer {
     width: 80%;
     height: 40px;
     margin: 5% 10% 0%;
-    border: solid 1px black;
+    border: solid 1px #001124;
     border-radius: 20px;
     color: white;
-    background-color: black;
+    background-color: #001124;
     -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
@@ -77,24 +76,24 @@ footer {
 
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
-
 .a-s {
+
     text-align: center;
     margin-top: 0%;
     margin-bottom: 10%;
     color: white;
 }
 
+.color-ext {
+    color: white;
+}
+
 #TxtCorreo {
     
-    background-color: #3e4451;
-    border-top: solid 1px #3b404a;
-    border-left: solid 1px #3b404a;
-    border-right: solid 1px #3b404a;
+    background-color: #01172f;
+    border-top: solid 1px #001935;
+    border-left: solid 1px #001935;
+    border-right: solid 1px #001935;
     border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;
@@ -104,10 +103,10 @@ a {
 
 #TxtContraseña {
     
-    background-color: #3e4451;
-    border-top: solid 1px #3b404a;
-    border-left: solid 1px #3b404a;
-    border-right: solid 1px #3b404a;
+    background-color: #01172f;
+    border-top: solid 1px #001935;
+    border-left: solid 1px #001935;
+    border-right: solid 1px #001935;
     border-bottom: solid 1px white;
     border-radius: 0px;
     color: white;

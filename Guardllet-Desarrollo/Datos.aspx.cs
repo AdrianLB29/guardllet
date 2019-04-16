@@ -22,7 +22,7 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
             {
 
                 // Carga el DrowpList con las escuelas disponibles 
-                ListaEscuelas.Items.Insert(0, "Escuela");
+                ListaEscuelas.Items.Insert(0, "Selecciona tu escuela");
                 Dictionary<int, Dictionary<string, string>> Paises = Datos.ObtenerEscuelas();
                 int numero_paises = Paises.Count();
                 for (int i = 0; i < numero_paises; i++)
@@ -130,13 +130,14 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
                     else
                     {
                         LbError.Visible = true;
-                        LbError.Text = "Ingresa un numero de boleta valido";
+                        LbError.Text = "Ingresa un grupo valido";
                     }
                 }
                 else
                 {
                     LbError.Visible = true;
-                    LbError.Text = "Ingresa un grupo valido";
+                    LbError.Text = "Ingresa un numero de boleta valido";
+
                 }
 
             }

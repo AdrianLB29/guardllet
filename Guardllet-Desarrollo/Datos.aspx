@@ -36,7 +36,7 @@
             </div>
             <div class="form-group">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <asp:TextBox ID="TxtApellidoP" runat="server" placeholder="Apellido Paterno *" CssClass="form-control" required minlength="3" maxlength="40">
+                    <asp:TextBox ID="TxtApellidoP" runat="server" placeholder="Apellido Paterno *" CssClass="form-control margen-form" required minlength="3" maxlength="40">
                     </asp:TextBox>
                 </div>
             </div>
