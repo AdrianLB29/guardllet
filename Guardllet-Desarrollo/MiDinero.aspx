@@ -32,7 +32,7 @@
                         
                     </div>
                     <div class="atras">
-                        <asp:Image ID="Monedero" runat="server" Height="98px" Width="131px" />
+                        <asp:Image ID="Monedero" runat="server" Height="99px" Width="220px" />
                
                         <asp:Label ID="Lb_Saldo" runat="server" Text=""></asp:Label>
                     </div>

@@ -14,7 +14,7 @@ namespace Guardllet_Desarrollo.Frontend.Customers
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string id = "1";//Session["usuario"].ToString();
+            string id = Session["usuario"].ToString();
             int id_datos = ObtenerDatos.id_datos(Convert.ToInt16(id));
             int id_monedero = ObtenerMonedero.id_monedero(Convert.ToInt16(id));
 
