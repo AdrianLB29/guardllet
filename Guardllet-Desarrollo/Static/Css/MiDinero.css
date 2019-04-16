@@ -3,15 +3,26 @@
 
 .tarjeta-monedero {
     width: 100%;
-    height: 450px;
-    background-color: black;
+    height: 250px;
+  
 }
 
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #001935;
+}
+
+.margen {
+
+    margin-top: 5%;
+}
 
 .tarjeta{
-	width: 300px;
-	height: 350px;
-	background: #F29720;
+
+	width: 100%;
+    height: 250px;
+	background: #001935;
 	position: relative;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
@@ -19,6 +30,7 @@
 	transition: .7s ease;
 	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
 	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    border-radius: 15px;
 
 }
 
@@ -30,10 +42,12 @@
 	left: 0;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+
 }
 
 .adelante{
 	width: 100%;
+    border-radius: 15px;
 }
 
 .atras{
@@ -53,10 +67,11 @@
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-
+    background-color: white;
 	text-align: center;
 	color: #fff;
 	font-family: "open sans";
+    border-radius: 15px;
 }
 
 .tarjeta-wrap:hover .tarjeta{
