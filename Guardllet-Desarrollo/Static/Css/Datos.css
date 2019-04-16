@@ -80,7 +80,10 @@ footer {
     border-radius: 0px;
     color: white;
     text-align: center;
-
+    height: 45px;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
 }
 
 #TxtApellidoP {
@@ -94,7 +97,10 @@ footer {
     color: white;
     text-align: center;
     margin-top: 3%;
-
+    height: 45px;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
 }
 
 #TxtApellidoM {
@@ -108,7 +114,10 @@ footer {
     color: white;
     text-align: center;
     margin-top: 3%;
-
+    height: 45px;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
 }
 
 #TxtCelular {
@@ -122,7 +131,10 @@ footer {
     color: white;
     text-align: center;
     margin-top: 3%;
-
+    height: 45px;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
 }
 
 #TxtEdad {
@@ -136,7 +148,10 @@ footer {
     color: white;
     text-align: center;
     margin-top: 3%;
-
+    height: 45px;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
 }
 
 #ListaEscuelas {
@@ -150,7 +165,10 @@ footer {
     color: white;
     text-align: center;
     margin-top: 3%;
-
+    height: 45px;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
 }
 
 #TxtBoleta {
@@ -164,7 +182,10 @@ footer {
     color: white;
     text-align: center;
     margin-top: 3%;
-
+    height: 45px;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
 }
 
 #TxtGrupo {
@@ -178,7 +199,10 @@ footer {
     color: white;
     text-align: center;
     margin-top: 3%;
-
+    height: 45px;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
 }
 
 .form-control::placeholder {
