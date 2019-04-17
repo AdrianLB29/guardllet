@@ -13,12 +13,12 @@
 
 </head>
 <body>
-<div class="container">
- <header>
+
+<header>
     
 
- </header>
-</div>
+</header>
+
 
 <form id="form1" runat="server">
 
@@ -40,10 +40,25 @@
             </div>
         </div>
     </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 margen">
+        <div class="saldo">
+
+        </div>
+    </div>
   </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 margen">
+            <div class="productos">
+
+            </div>
+        </div>
+    </div>
 </div>
 </form>
  
+<footer>
+
+</footer>
            
 </body>
 </html>
