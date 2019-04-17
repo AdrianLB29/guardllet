@@ -75,10 +75,13 @@
     <Content Include="Static\Css\default.css" />
     <Content Include="Static\Css\Datos.css" />
     <Content Include="Static\Css\Entra.css" />
+    <Content Include="Static\Css\iconos.css" />
     <Content Include="Static\Css\MiDinero.css" />
     <Content Include="Static\Css\Registrate.css" />
     <Content Include="Datos.aspx" />
     <Content Include="Entra.aspx" />
+    <Content Include="Static\Fuentes\iconos\icomoon.svg" />
+    <Content Include="Static\Multimedia\cerrar.png" />
     <Content Include="Static\Multimedia\Datos.png" />
     <Content Include="Static\Multimedia\Entra.png" />
     <Content Include="Static\Multimedia\fondo.jpg" />
@@ -169,6 +172,9 @@
     <None Include="Properties\PublishProfiles\Guardllet - Web Deploy %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\guardllet - Web Deploy.pubxml" />
     <Content Include="Static\Fuentes\Bebas-Regular.ttf" />
+    <Content Include="Static\Fuentes\iconos\icomoon.eot" />
+    <Content Include="Static\Fuentes\iconos\icomoon.ttf" />
+    <Content Include="Static\Fuentes\iconos\icomoon.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -22,22 +22,31 @@ namespace Guardllet_Desarrollo.Frontend.Customers {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Control btnPerfil.
+        /// Control BotonHome.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPerfil;
+        protected global::System.Web.UI.HtmlControls.HtmlButton BotonHome;
         
         /// <summary>
-        /// Control btnSecion.
+        /// Control BotonPerfil.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSecion;
+        protected global::System.Web.UI.HtmlControls.HtmlButton BotonPerfil;
+        
+        /// <summary>
+        /// Control BotonSesion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton BotonSesion;
         
         /// <summary>
         /// Control Lb_Escuela.
@@ -74,5 +83,14 @@ namespace Guardllet_Desarrollo.Frontend.Customers {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Monedero;
+        
+        /// <summary>
+        /// Control Lb_Saldo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Lb_Saldo;
     }
 }

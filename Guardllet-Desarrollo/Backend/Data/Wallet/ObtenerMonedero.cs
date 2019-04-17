@@ -62,7 +62,7 @@ namespace Guardllet_Desarrollo.Backend.Data.Wallet
             }
         }
 
-        public static int Saldo(string id_monedero) 
+        public static int Saldo(int id_monedero) 
         {
             string StringConexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
 
@@ -70,7 +70,7 @@ namespace Guardllet_Desarrollo.Backend.Data.Wallet
             {
 
                 Conexion.Open();
-                string cmd = string.Format("SELECT SALDO FROM MONEDERO Where ID_MONEDERO ='{0}'", id_monedero);
+                string cmd = string.Format("SELECT SALDO FROM MONEDERO Where ID_MONEDERO = {0}", id_monedero);
                 DataSet Datos = new DataSet();
                 SqlDataAdapter DP = new SqlDataAdapter(cmd, Conexion);
                 DP.Fill(Datos);

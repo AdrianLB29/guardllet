@@ -9,6 +9,7 @@
 
 <link rel="stylesheet" type="text/css" href="Static/Bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="Static/Css/Entra.css">
+    <link rel="stylesheet" type="text/css" href="Static/Css/iconos.css">
 
 
     <title></title>

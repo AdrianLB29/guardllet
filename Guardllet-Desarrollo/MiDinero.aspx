@@ -8,6 +8,7 @@
 
 <link rel="stylesheet" type="text/css" href="Static/Bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="Static/Css/MiDinero.css"/>
+ <link rel="stylesheet" type="text/css" href="Static/Css/iconos.css"/>
 
     <title></title>
 
@@ -18,8 +19,9 @@
 
 <header>
     <div class="menu">
-        <asp:Button ID="btnPerfil" runat="server" Text="Perfil" class="BtnMenu"/>
-        <asp:Button ID="btnSecion" runat="server" Text="Cerrar Sesion" class="BtnMenu" OnClick="btnSecion_Click"/>
+        <button id="BotonHome" runat="server" type="submit" class="btnMenuH"><span class="icon-home"></span></button>
+        <button id="BotonPerfil" runat="server" type="submit" class="btnMenuP"><span class="icon-user"></span></button>
+        <button id="BotonSesion" runat="server" type="submit" onserverclick="BotonSesion_Click" class="BtnMenuS"><span class="icon-exit"></span></button>
     </div>
 </header>
 
@@ -43,7 +45,7 @@
     </div>
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 margen">
         <div class="saldo">
-
+            <asp:Label ID="Lb_Saldo" runat="server" Text=""></asp:Label>
         </div>
     </div>
   </div>

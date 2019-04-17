@@ -27,9 +27,14 @@ namespace Guardllet_Desarrollo.Frontend.Customers
                     Dictionary<string, string> datos = ObtenerDatos.Generales(id_datos);
                     Dictionary<string, string> datos_escolares = ObtenerDatos.Escolares(id_datos_escolares);
 
+                    int saldo = ObtenerMonedero.Saldo(id_monedero);
+
                     Lb_Nombre.Text = datos["Nombre"] + datos["Apellido_p"] + datos["Apellido_m"];
                     Lb_Escuela.Text = "CECyT 13 'Ricardo Flores Magon'";
                     Lb_Boleta.Text = datos_escolares["Boleta"];
+
+                    Lb_Saldo.Text = "Saldo actual: "+ saldo.ToString();
+
 
                     Byte[] monedero = ObtenerMonedero.CodigoImg(id_monedero);
 
@@ -48,7 +53,7 @@ namespace Guardllet_Desarrollo.Frontend.Customers
             
         }
 
-        protected void btnSecion_Click(object sender, EventArgs e)
+        protected void BotonSesion_Click(object sender, EventArgs e)
         {
             Session.RemoveAll();
             Session.Abandon();
