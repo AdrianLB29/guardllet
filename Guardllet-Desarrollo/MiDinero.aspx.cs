@@ -48,14 +48,13 @@ namespace Guardllet_Desarrollo.Frontend.Customers
             
         }
 
-        protected void btnSession_Click(object sender, EventArgs e)
+        protected void btnSecion_Click(object sender, EventArgs e)
         {
             Session.RemoveAll();
             Session.Abandon();
             Response.Cookies.Add(new HttpCookie("ASP.NET_SessionId", ""));
             Response.AppendHeader("Cache-Control", "no-store");
             Response.Redirect("default.aspx");
-
         }
     }
 }

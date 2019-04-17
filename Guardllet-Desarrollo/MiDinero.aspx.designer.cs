@@ -31,13 +31,13 @@ namespace Guardllet_Desarrollo.Frontend.Customers {
         protected global::System.Web.UI.WebControls.Button btnPerfil;
         
         /// <summary>
-        /// Control btnSession.
+        /// Control btnSecion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSession;
+        protected global::System.Web.UI.WebControls.Button btnSecion;
         
         /// <summary>
         /// Control Lb_Escuela.

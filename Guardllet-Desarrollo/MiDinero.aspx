@@ -19,7 +19,7 @@
 <header>
     <div class="menu">
         <asp:Button ID="btnPerfil" runat="server" Text="Perfil" class="BtnMenu"/>
-        <asp:Button ID="btnSession" runat="server" Text="Cerrar Sesion" class="BtnMenu" OnClick="btnSession_Click"/>
+        <asp:Button ID="btnSecion" runat="server" Text="Cerrar Sesion" class="BtnMenu" OnClick="btnSecion_Click"/>
     </div>
 </header>
 
