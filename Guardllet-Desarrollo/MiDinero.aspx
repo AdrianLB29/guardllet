@@ -21,7 +21,7 @@
     <div class="menu">
         <button id="BotonHome" runat="server" type="submit" class="btnMenuH"><span class="icon-home"></span></button>
         <button id="BotonPerfil" runat="server" type="submit" class="btnMenuP"><span class="icon-user"></span></button>
-        <button id="BotonSesion" runat="server" type="submit" onserverclick="btnCerrarSesion_Click" class="BtnMenuS"><span class="icon-exit">oo</span></button>
+        <button id="BotonSesion" runat="server" type="submit" onserverclick="BotonSesion_Click" class="BtnMenuS"><span class="icon-exit">oo</span></button>
     </div>
 </header>
 
