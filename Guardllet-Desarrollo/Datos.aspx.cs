@@ -17,22 +17,34 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            if (!IsPostBack)
+            if (!Page.IsPostBack)
             {
-
-                // Carga el DrowpList con las escuelas disponibles 
-                ListaEscuelas.Items.Insert(0, "Selecciona tu escuela");
-                Dictionary<int, Dictionary<string, string>> Paises = Datos.ObtenerEscuelas();
-                int numero_paises = Paises.Count();
-                for (int i = 0; i < numero_paises; i++)
+                if (Session["usuario"] != null)
                 {
-                    Dictionary<string, string> Pais = Paises[i];
-                    int id = Convert.ToInt16(Pais["Id"]);
-                    string nombre = Pais["Nombre"];
-                    ListaEscuelas.Items.Insert(id, nombre);
+                    if (!IsPostBack)
+                    {
+
+                        // Carga el DrowpList con las escuelas disponibles 
+                        ListaEscuelas.Items.Insert(0, "Selecciona tu escuela");
+                        Dictionary<int, Dictionary<string, string>> Paises = Datos.ObtenerEscuelas();
+                        int numero_paises = Paises.Count();
+                        for (int i = 0; i < numero_paises; i++)
+                        {
+                            Dictionary<string, string> Pais = Paises[i];
+                            int id = Convert.ToInt16(Pais["Id"]);
+                            string nombre = Pais["Nombre"];
+                            ListaEscuelas.Items.Insert(id, nombre);
+                        }
+
+
+
+                    }
                 }
-   
+                else
+                {
+                    Response.AppendHeader("Cache-Control", "no-store");
+                    Response.Redirect("default.aspx");
+                }
             }
         }
 

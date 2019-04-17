@@ -14,15 +14,48 @@ namespace Guardllet_Desarrollo.Frontend.Customers
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string id = Session["usuario"].ToString();
-            int id_datos = ObtenerDatos.id_datos(Convert.ToInt16(id));
-            int id_monedero = ObtenerMonedero.id_monedero(Convert.ToInt16(id));
+            if (!Page.IsPostBack)
+            {
+                if (Session["usuario"] != null)
+                {
+                    string id = Session["usuario"].ToString();
 
-            Dictionary<string, string> datos = ObtenerDatos.Generales(id_datos);
-            Byte[] monedero = ObtenerMonedero.CodigoImg(id_monedero);
+                    int id_datos = ObtenerDatos.id_datos(Convert.ToInt16(id));
+                    int id_datos_escolares = ObtenerDatos.id_datos_escolares(id_datos);
+                    int id_monedero = ObtenerMonedero.id_monedero(Convert.ToInt16(id));
 
-            string ConvercionImg = "Data:image/jpg;base64," + Convert.ToBase64String(monedero);
-            Monedero.ImageUrl = ConvercionImg;
+                    Dictionary<string, string> datos = ObtenerDatos.Generales(id_datos);
+                    Dictionary<string, string> datos_escolares = ObtenerDatos.Escolares(id_datos_escolares);
+
+                    Lb_Nombre.Text = datos["Nombre"] + datos["Apellido_p"] + datos["Apellido_m"];
+                    Lb_Escuela.Text = "CECyT 13 'Ricardo Flores Magon'";
+                    Lb_Boleta.Text = datos_escolares["Boleta"];
+
+                    Byte[] monedero = ObtenerMonedero.CodigoImg(id_monedero);
+
+                    string ConvercionImg = "Data:image/jpg;base64," + Convert.ToBase64String(monedero);
+                    Monedero.ImageUrl = ConvercionImg;
+
+                }
+                else
+                {
+                    Response.AppendHeader("Cache-Control", "no-store");
+                    Response.Redirect("default.aspx");
+                }
+                
+            } 
+            
+            
+        }
+
+        protected void btnSession_Click(object sender, EventArgs e)
+        {
+            Session.RemoveAll();
+            Session.Abandon();
+            Response.Cookies.Add(new HttpCookie("ASP.NET_SessionId", ""));
+            Response.AppendHeader("Cache-Control", "no-store");
+            Response.Redirect("default.aspx");
+
         }
     }
 }

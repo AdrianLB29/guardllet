@@ -14,13 +14,14 @@
 </head>
 <body>
 
-<header>
-    
-
-</header>
-
-
 <form id="form1" runat="server">
+
+<header>
+    <div class="menu">
+        <asp:Button ID="btnPerfil" runat="server" Text="Perfil" class="BtnMenu"/>
+        <asp:Button ID="btnSession" runat="server" Text="Cerrar Sesion" class="BtnMenu" OnClick="btnSession_Click"/>
+    </div>
+</header>
 
 <div class="container">
   <div class="row">
@@ -29,12 +30,12 @@
             <div class="tarjeta-wrap">
                 <div class="tarjeta">
                     <div class="adelante">
-                        
+                        <asp:Label ID="Lb_Escuela" runat="server" Text=""></asp:Label>
+                        <asp:Label ID="Lb_Nombre" runat="server" Text=""></asp:Label>
+                        <asp:Label ID="Lb_Boleta" runat="server" Text=""></asp:Label>
                     </div>
                     <div class="atras">
                         <asp:Image ID="Monedero" runat="server" Height="99px" Width="220px" />
-               
-                        <asp:Label ID="Lb_Saldo" runat="server" Text=""></asp:Label>
                     </div>
                 </div>
             </div>

@@ -24,7 +24,7 @@ namespace Guardllet_Desarrollo.Backend.Data.Wallet
 
             data.Format = BarcodeFormat.CODE_128;
 
-            Bitmap img = new Bitmap(data.Write(codigo), 200, 150);
+            Bitmap img = new Bitmap(data.Write(codigo), 300, 200);
 
             Image img_codigo = (Image)img;
 
