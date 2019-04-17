@@ -16,7 +16,7 @@ header {
 .menu {
 
     width: 40%;
-    height: 100%;
+    height: 97%;
     margin-left: 60%;
 }
 
@@ -32,12 +32,10 @@ header {
 }
 
 #BotonHome:hover {
-    
-    border: solid 0px;
-    margin-left: 15%;
+
+    text-shadow: 4px 3px 3px black;
     font-size: 23px;
 }
-
 
 #BotonPerfil {
 
@@ -52,9 +50,8 @@ header {
 }
 
 #BotonPerfil:hover {
-    
-    border: solid 0px;
-    margin-left: 15%;
+
+    text-shadow: 4px 3px 3px black;
     font-size: 23px;
 }
 
@@ -69,9 +66,8 @@ header {
 }
 
 #BotonSesion:hover {
-    
-    border: solid 0px;
-    margin-left: 15%;
+
+    text-shadow: 4px 3px 3px black;
     font-size: 23px;
 }
 
@@ -113,12 +109,38 @@ header {
 .adelante{
 	width: 100%;
     border-radius: 15px;
+    color: white;
+    padding: 15px;
 }
 
+.titulo {
+    text-align: center;
+    font-size: 140%;
+}
+
+.Nombre {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 140%;
+}
+
+.Boleta {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 190%;
+    text-shadow: 3px 2px 2px black;
+}
+
+.fecha {
+    text-align: center;
+    font-size: 120%;
+    text-shadow: 3px 2px 2px black;
+}
 .atras{
+
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
-
 	padding: 15px;
 	display: -webkit-box;
 	display: -webkit-flex;

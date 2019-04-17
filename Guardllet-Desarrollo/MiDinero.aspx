@@ -21,7 +21,7 @@
     <div class="menu">
         <button id="BotonHome" runat="server" type="submit" class="btnMenuH"><span class="icon-home"></span></button>
         <button id="BotonPerfil" runat="server" type="submit" class="btnMenuP"><span class="icon-user"></span></button>
-        <button id="BotonSesion" runat="server" type="submit" onserverclick="BotonSesion_Click" class="BtnMenuS"><span class="icon-exit">oo</span></button>
+        <button id="BotonSesion" runat="server" type="submit" onserverclick="BotonSesion_Click" class="BtnMenuS"><span class="icon-exit"></span></button>
     </div>
 </header>
 
@@ -32,9 +32,18 @@
             <div class="tarjeta-wrap">
                 <div class="tarjeta">
                     <div class="adelante">
-                        <asp:Label ID="Lb_Escuela" runat="server" Text=""></asp:Label>
-                        <asp:Label ID="Lb_Nombre" runat="server" Text=""></asp:Label>
-                        <asp:Label ID="Lb_Boleta" runat="server" Text=""></asp:Label>
+                        <div class="titulo">
+                            <asp:Label ID="Lb_Escuela" runat="server" Text=""></asp:Label>
+                        </div>
+                        <div class="Nombre">
+                            <asp:Label ID="Lb_Nombre" runat="server" Text=""></asp:Label>
+                        </div>
+                        <div class="Boleta">
+                            <asp:Label ID="Lb_Boleta" runat="server" Text=""></asp:Label>
+                        </div>
+                        <div class="fecha">
+                            <h5>07/21</h5>
+                        </div>
                     </div>
                     <div class="atras">
                         <asp:Image ID="Monedero" runat="server" Height="99px" Width="220px" />

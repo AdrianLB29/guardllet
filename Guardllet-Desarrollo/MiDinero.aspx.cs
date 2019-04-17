@@ -29,7 +29,7 @@ namespace Guardllet_Desarrollo.Frontend.Customers
 
                     int saldo = ObtenerMonedero.Saldo(id_monedero);
 
-                    Lb_Nombre.Text = datos["Nombre"] + datos["Apellido_p"] + datos["Apellido_m"];
+                    Lb_Nombre.Text = datos["Nombre"]+" "+datos["Apellido_p"]+" "+datos["Apellido_m"];
                     Lb_Escuela.Text = "CECyT 13 'Ricardo Flores Magon'";
                     Lb_Boleta.Text = datos_escolares["Boleta"];
 
