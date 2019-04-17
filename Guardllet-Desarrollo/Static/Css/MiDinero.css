@@ -31,7 +31,7 @@ header {
     font-size: 20px;
 }
 
-span:hover {
+#BotonHome:hover {
     
     border: solid 0px;
     margin-left: 15%;
@@ -51,8 +51,14 @@ span:hover {
 
 }
 
-#BotonSesion {
+#BotonPerfil:hover {
+    
+    border: solid 0px;
+    margin-left: 15%;
+    font-size: 23px;
+}
 
+#BotonSesion {
     width: 10%;
     height: 100%;
     background-color: #001935;
@@ -60,6 +66,13 @@ span:hover {
     border: solid 0px;
     margin-left: 15%;
     font-size: 20px;
+}
+
+#BotonSesion:hover {
+    
+    border: solid 0px;
+    margin-left: 15%;
+    font-size: 23px;
 }
 
 .margen {
