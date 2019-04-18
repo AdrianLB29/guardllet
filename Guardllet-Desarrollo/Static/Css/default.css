@@ -79,26 +79,31 @@ main {
 }
 
 .botones-i-r {
+
     margin-top: 500px;
 }
 
 #BtnEntrar {
+
     width: 45%;
     height: 50px;
     border: solid 0px;
-    background-color: #341222;
+    background-color: #68244480;
     color: white;
     border-radius: 15px;
+
 }
 
 #BtnRegistrar {
+
     width: 45%;
     height: 50px;
     margin-left: 8%;
     border: solid 0px;
-    background-color: #341222;
+    background-color: #68244480;
     color: white;
     border-radius: 15px;
+
 }
 
 #contenedor-contacto {
