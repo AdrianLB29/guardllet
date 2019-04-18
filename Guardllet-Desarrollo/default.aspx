@@ -15,18 +15,26 @@
 </head>
 <body>
     <header>
-        <button id="botonInicio"><span class="icon-home3"></span>&nbsp; Inicio</button>
-         <button id="botonContacto"><span class="icon-mail2"></span>&nbsp; Contacto</button>
-        <button id="botonAcerca"><span class="icon-notification"></span>&nbsp; Acerca de</button>
-    </header>    
-    
-    <form id="form1" runat="server">
-    <div>
-    <h1>Guardllet</h1>
-        <asp:Button ID="BtnEntrar" runat="server" Text="Iniciar Sesion" OnClick="BtnEntrar_Click" />
-        <asp:Button ID="BtnRegistrar" runat="server" Text="Registrate" OnClick="BtnRegistrar_Click" />
+        <button id="botonInicio" type="button" onclick="window.location='#contenedor-inicio'"><span class="icon-home3"></span>&nbsp; Inicio</button>
+         <button id="botonContacto" type="button" onclick="window.location='#contenedor-contacto'" ><span class="icon-mail2"></span>&nbsp; Contacto</button>
+        <button id="botonAcerca" type="button" onclick="window.location='#contenedor-acerca'"><span class="icon-notification"></span>&nbsp; Acerca de</button>
+    </header> 
+<main>
+    <div id="contenedor-inicio">
+       <form id="form1" runat="server">
+           <asp:Button ID="BtnEntrar" runat="server" Text="Iniciar Sesion" OnClick="BtnEntrar_Click" />
+           <asp:Button ID="BtnRegistrar" runat="server" Text="Registrate" OnClick="BtnRegistrar_Click" />
+       </form>
     </div>
-    </form>
+    
+    <div id="contenedor-contacto" class="efecto">
+        <a href="#contenedor-inicio"></a>
+    </div>
+
+    <div id="contenedor-acerca" class="efecto">
+
+    </div>
+</main>
 </body>
 </html>
 
