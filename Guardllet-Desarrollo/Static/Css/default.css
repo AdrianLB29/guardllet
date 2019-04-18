@@ -18,6 +18,8 @@ header {
     width: 30%;
     height: 100%;
     color: white;
+    background-color: #fff0;
+    border: solid 0px;
 
 }
 
@@ -26,7 +28,8 @@ header {
     width: 30%;
     height: 100%;
     color: white;
-
+    background-color: #fff0;
+    border: solid 0px;
 }
 
 #botonAcerca {
@@ -34,5 +37,6 @@ header {
     width: 30%;
     height: 100%;
     color: white;
-
+    background-color: #fff0;
+    border: solid 0px;
 }
