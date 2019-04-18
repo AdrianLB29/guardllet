@@ -21,10 +21,17 @@
     </header> 
 <main>
     <div id="contenedor-inicio">
-       <form id="form1" runat="server">
-           <asp:Button ID="BtnEntrar" runat="server" Text="Iniciar Sesion" OnClick="BtnEntrar_Click" />
-           <asp:Button ID="BtnRegistrar" runat="server" Text="Registrate" OnClick="BtnRegistrar_Click" />
-       </form>
+        <div class="contenedor-secundario">
+            <div class="botones-i-r">
+                <form id="form1" runat="server">
+           
+               <asp:Button ID="BtnEntrar" runat="server" Text="Iniciar Sesion" OnClick="BtnEntrar_Click" />
+           
+               <asp:Button ID="BtnRegistrar" runat="server" Text="Registrate" OnClick="BtnRegistrar_Click" />
+           
+               </form>
+            </div>
+        </div>
     </div>
     
     <div id="contenedor-contacto" class="efecto">
