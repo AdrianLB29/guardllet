@@ -1,9 +1,4 @@
-﻿@font-face {
-    font-family: bebas;
-    src: url(../Fuentes/);
-}
-
-* {
+﻿* {
 
     font-family: Gibson,Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
 
@@ -29,6 +24,7 @@ footer {
     height: 20px;
     background-color: #001935;
     margin-top: 20%;
+
 }
 
 .margen {
@@ -80,6 +76,7 @@ footer {
     color: white;
     text-align: center;
     margin-top: -10%;
+
 }
 
 .form-control::placeholder {
@@ -92,33 +89,38 @@ footer {
 
 #TxtCorreo {
     
-    background-color: #021e3e;
+    background-color: #052345;
     border-radius: 15px;
     color: white;
     text-align: center;
     height: 45px;
+
 }
 
 #TxtContraseña {
     
-    background-color: #021e3e;
+    background-color:#052345 ;
     border-radius: 15px;
     color: white;
     text-align: center;
     height: 45px;
     margin-top: 3%;
+
 }
 
 #TxtContraseñaC {
     
-    background-color: #021e3e;
+    background-color: #052345;
     border-radius: 15px;
     color: white;
     text-align: center;
     height: 45px;
     margin-top: 3%;
+
 }
 
 .color-ext {
+
     color: white;
+
 }

@@ -1,6 +1,7 @@
 ﻿* {
 
     font-family: Gibson,Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+
 }
 
 body {
@@ -23,6 +24,7 @@ footer {
     height: 20px;
     background-color: #001935;
     margin-top: 20%;
+
 }
 
 .margen {
@@ -44,6 +46,7 @@ footer {
 .titulo {
 
     color: white;
+
 }
 
 .Lb-Error{
@@ -82,29 +85,34 @@ footer {
     margin-top: 0%;
     margin-bottom: 10%;
     color: white;
+
 }
 
 .color-ext {
+
     color: white;
+
 }
 
 #TxtCorreo {
     
-    background-color: #021e3e;
+    background-color: #052345;
     border-radius: 15px;
     color: white;
     text-align: center;
     height: 45px;
+
 }
 
 #TxtContraseña {
     
-    background-color: #021e3e;
+    background-color: #052345;
     border-radius: 15px;
     color: white;
     text-align: center;
     height: 45px;
     margin-top: 3%;
+
 }
 
 .form-control::placeholder {
