@@ -1,6 +1,12 @@
 ﻿body {
 }
 
+* {
+
+    font-family: Gibson,Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+
+}
+
 .tarjeta-monedero {
     width: 100%;
     height: 250px;
