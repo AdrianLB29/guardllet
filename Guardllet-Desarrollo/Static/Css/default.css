@@ -45,7 +45,7 @@ header {
 main {
 
     width: 100%;
-    height: 700px;
+    height: 800px;
 
 }
 
@@ -123,4 +123,9 @@ main {
     transition: all 500ms;
 }
  
+footer {
+    width: 100%;
+    height: 10px;
+    background-color: #68244480;
+}
  
