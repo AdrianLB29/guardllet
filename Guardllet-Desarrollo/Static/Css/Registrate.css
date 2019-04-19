@@ -101,9 +101,6 @@ footer {
     color: white;
     text-align: center;
     height: 45px;
-    -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
-    -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
-    box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
 }
 
 #TxtContraseña {
@@ -118,10 +115,6 @@ footer {
     text-align: center;
     height: 45px;
     margin-top: 3%;
-    -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
-    -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
-    box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
-
 }
 
 #TxtContraseñaC {
@@ -136,9 +129,6 @@ footer {
     text-align: center;
     height: 45px;
     margin-top: 3%;
-    -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
-    -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
-    box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
 }
 
 .color-ext {
