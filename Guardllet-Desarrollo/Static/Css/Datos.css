@@ -24,6 +24,7 @@ footer {
     height: 20px;
     background-color: #001935;
     margin-top: 20%;
+
 }
 
 .margen {
@@ -72,28 +73,21 @@ footer {
 
 #TxtNombre {
 
-    background-color: #01172f;
-    border-top: solid 1px #001935;
-    border-left: solid 1px #001935;
-    border-right: solid 1px #001935;
-    border-bottom: solid 1px white;
-    border-radius: 0px;
+    background-color:#052345 ;
+    border-radius: 15px;
     color: white;
     text-align: center;
     height: 45px;
     -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+
 }
 
 #TxtApellidoP {
 
-    background-color: #01172f;
-    border-top: solid 1px #001935;
-    border-left: solid 1px #001935;
-    border-right: solid 1px #001935;
-    border-bottom: solid 1px white;
-    border-radius: 0px;
+    background-color:#052345 ;
+    border-radius: 15px;
     color: white;
     text-align: center;
     margin-top: 3%;
@@ -101,16 +95,13 @@ footer {
     -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+
 }
 
 #TxtApellidoM {
 
-    background-color: #01172f;
-    border-top: solid 1px #001935;
-    border-left: solid 1px #001935;
-    border-right: solid 1px #001935;
-    border-bottom: solid 1px white;
-    border-radius: 0px;
+    background-color:#052345 ;
+    border-radius: 15px;
     color: white;
     text-align: center;
     margin-top: 3%;
@@ -118,16 +109,13 @@ footer {
     -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+
 }
 
 #TxtCelular {
 
-    background-color: #01172f;
-    border-top: solid 1px #001935;
-    border-left: solid 1px #001935;
-    border-right: solid 1px #001935;
-    border-bottom: solid 1px white;
-    border-radius: 0px;
+    background-color:#052345 ;
+    border-radius: 15px;
     color: white;
     text-align: center;
     margin-top: 3%;
@@ -135,16 +123,13 @@ footer {
     -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+
 }
 
 #TxtEdad {
 
-    background-color: #01172f;
-    border-top: solid 1px #001935;
-    border-left: solid 1px #001935;
-    border-right: solid 1px #001935;
-    border-bottom: solid 1px white;
-    border-radius: 0px;
+    background-color:#052345 ;
+    border-radius: 15px;
     color: white;
     text-align: center;
     margin-top: 3%;
@@ -152,16 +137,13 @@ footer {
     -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+
 }
 
 #ListaEscuelas {
 
-    background-color: #01172f;
-    border-top: solid 1px #001935;
-    border-left: solid 1px #001935;
-    border-right: solid 1px #001935;
-    border-bottom: solid 1px white;
-    border-radius: 0px;
+    background-color:#052345 ;
+    border-radius: 15px;
     color: white;
     text-align: center;
     margin-top: 3%;
@@ -169,16 +151,13 @@ footer {
     -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+
 }
 
 #TxtBoleta {
 
-    background-color: #01172f;
-    border-top: solid 1px #001935;
-    border-left: solid 1px #001935;
-    border-right: solid 1px #001935;
-    border-bottom: solid 1px white;
-    border-radius: 0px;
+    background-color:#052345 ;
+    border-radius: 15px;
     color: white;
     text-align: center;
     margin-top: 3%;
@@ -186,16 +165,13 @@ footer {
     -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+
 }
 
 #TxtGrupo {
 
-    background-color: #01172f;
-    border-top: solid 1px #001935;
-    border-left: solid 1px #001935;
-    border-right: solid 1px #001935;
-    border-bottom: solid 1px white;
-    border-radius: 0px;
+    background-color:#052345 ;
+    border-radius: 15px;
     color: white;
     text-align: center;
     margin-top: 3%;
@@ -203,6 +179,7 @@ footer {
     -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
     box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+
 }
 
 .form-control::placeholder {
