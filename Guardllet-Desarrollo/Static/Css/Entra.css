@@ -90,35 +90,23 @@ footer {
 
 #TxtCorreo {
     
-    background-color: #01172f;
-    border-top: solid 1px #001935;
-    border-left: solid 1px #001935;
-    border-right: solid 1px #001935;
-    border-bottom: solid 1px white;
-    border-radius: 0px;
+    background-color: #021e3e;
+    border-radius: 15px;
     color: white;
     text-align: center;
     height: 45px;
-    -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
-    -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
-    box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    text-shadow: 1px 3px black;
 }
 
 #TxtContraseña {
     
-    background-color: #01172f;
-    border-top: solid 1px #001935;
-    border-left: solid 1px #001935;
-    border-right: solid 1px #001935;
-    border-bottom: solid 1px white;
-    border-radius: 0px;
+    background-color: #021e3e;
+    border-radius: 15px;
     color: white;
     text-align: center;
     height: 45px;
     margin-top: 3%;
-    -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
-    -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
-    box-shadow: 2px 2px 2px 1px rgba(0,0,0,1);
+    text-shadow: 1px 3px black;
 }
 
 .form-control::placeholder {

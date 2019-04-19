@@ -92,26 +92,20 @@ footer {
 
 #TxtCorreo {
     
-    background-color: #01172f;
-    border-top: solid 1px #001935;
-    border-left: solid 1px #001935;
-    border-right: solid 1px #001935;
-    border-bottom: solid 1px white;
-    border-radius: 0px;
+    background-color: #021e3e;
+    border-radius: 15px;
     color: white;
+    text-shadow: 1px 3px black;
     text-align: center;
     height: 45px;
 }
 
 #TxtContraseña {
     
-    background-color: #01172f;
-    border-top: solid 1px #001935;
-    border-left: solid 1px #001935;
-    border-right: solid 1px #001935;
-    border-bottom: solid 1px white;
-    border-radius: 0px;
+    background-color: #021e3e;
+    border-radius: 15px;
     color: white;
+    text-shadow: 1px 3px black;
     text-align: center;
     height: 45px;
     margin-top: 3%;
@@ -119,13 +113,10 @@ footer {
 
 #TxtContraseñaC {
     
-    background-color: #01172f;
-    border-top: solid 1px #001935;
-    border-left: solid 1px #001935;
-    border-right: solid 1px #001935;
-    border-bottom: solid 1px white;
-    border-radius: 0px;
+    background-color: #021e3e;
+    border-radius: 15px;
     color: white;
+    text-shadow: 1px 3px black;
     text-align: center;
     height: 45px;
     margin-top: 3%;
