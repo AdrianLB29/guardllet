@@ -10,17 +10,18 @@
 <link rel="stylesheet" type="text/css" href="Static/Bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="Static/Css/default.css">
 <link rel="stylesheet" type="text/css" href="Static/Css/iconos.css">
+<link rel="stylesheet" type="text/css" href="Static/Swiper/swiper.min.css">
 
     <title></title>
 </head>
 <body>
     <header>
-        <button id="botonInicio" type="button" onclick="window.location='#contenedor-inicio'"><span class="icon-home3"></span>&nbsp; Inicio</button>
-         <button id="botonContacto" type="button" onclick="window.location='#contenedor-contacto'" ><span class="icon-mail2"></span>&nbsp; Contacto</button>
-        <button id="botonAcerca" type="button" onclick="window.location='#contenedor-acerca'"><span class="icon-notification"></span>&nbsp; Acerca de</button>
+        <button id="botonInicio" type="button" onclick="window.location='#inicio'"><span class="icon-home3"></span>&nbsp; Inicio</button>
+         <button id="botonContacto" type="button" onclick="window.location='#contacto'" ><span class="icon-mail2"></span>&nbsp; Contacto</button>
+        <button id="botonAcerca" type="button" onclick="window.location='#acerca'"><span class="icon-notification"></span>&nbsp; Acerca de</button>
     </header> 
 <main>
-    <div id="contenedor-inicio">
+    <div id="inicio">
         <div class="contenedor-secundario">
             <div class="botones-i-r">
                 <form id="form1" runat="server">
@@ -34,12 +35,16 @@
         </div>
     </div>
     
-    <div id="contenedor-contacto" class="efecto">
-        <a href="#contenedor-inicio"></a>
+    <div id="contacto" class="efecto">
+        <div class="segundo-contenedor">
+
+        </div>
     </div>
 
-    <div id="contenedor-acerca" class="efecto">
+    <div id="acerca" class="efecto">
+        <div class="segundo-contenedor">
 
+        </div>
     </div>
 </main>
     <footer>
@@ -53,3 +58,4 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" src="Static/Bootstrap/js/jquery.js"></script>
 <script type="text/javascript" src="Static/Bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="Static/Swiper/swiper.min.js"></script>

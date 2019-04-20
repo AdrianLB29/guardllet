@@ -69,7 +69,7 @@ main {
  
 }
 
-#contenedor-inicio {
+#inicio {
 
     position:absolute;
     width:100%;
@@ -113,13 +113,13 @@ main {
 
 }
 
-#contenedor-contacto {
+#contacto {
 
     background-color: white;
 
 }
 
- #contenedor-acerca {
+ #acerca {
 
     background-color: white;
 }
