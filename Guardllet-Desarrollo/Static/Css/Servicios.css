@@ -1,4 +1,20 @@
-﻿body {
+﻿@media screen and (max-width: 980px){
+
+.swiper-slide {
+
+      background-position: left;
+      width: 300px;
+      height: 400px;
+      background-color: black;
+
+}
+
+}
+
+body {
+
+    background-color: white;
+    height: 100%;
 
 }
 
@@ -9,11 +25,22 @@ header {
     background-color: #001935;
 }
 
+main {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+
+}
+
 .menu {
 
     width: 60%;
     height: 97%;
     margin-left: 40%;
+
 }
 
 #BotonHome {
@@ -87,4 +114,20 @@ header {
     text-shadow: 4px 3px 3px black;
     font-size: 23px;
 
+}
+
+.swiper-container {
+
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 40px;
+
+}
+
+.swiper-slide {
+
+      background-position: left;
+      width: 700px;
+      height: 500px;
+      background-color: black;
 }

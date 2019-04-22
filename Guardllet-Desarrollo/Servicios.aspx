@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+<link rel="stylesheet" type="text/css" href="Static/Swiper/swiper.min.css">
 <link rel="stylesheet" type="text/css" href="Static/Bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="Static/Css/Servicios.css"/>
 <link rel="stylesheet" type="text/css" href="Static/Css/iconos.css"/>
@@ -28,6 +29,24 @@
     </div>
 </header>
 
+<main>
+
+   <div class="swiper-container">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+
+      </div>
+       <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+   </div>
+
+</main>
 </form>
 
 </body>
@@ -36,3 +55,25 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" src="Static/Bootstrap/js/jquery.js"></script>
 <script type="text/javascript" src="Static/Bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="Static/Swiper/swiper.min.js"></script>
+
+<script>
+
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 40,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+
+</script>

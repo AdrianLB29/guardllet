@@ -33,7 +33,7 @@ namespace Guardllet_Desarrollo.Frontend.Customers
                     Lb_Escuela.Text = "CECyT 13 'Ricardo Flores Magon'";
                     Lb_Boleta.Text = datos_escolares["Boleta"];
 
-                    Lb_Saldo.Text = "Saldo actual: "+ saldo.ToString();
+                    Lb_Saldo.Text = saldo.ToString();
 
 
                     Byte[] monedero = ObtenerMonedero.CodigoImg(id_monedero);
