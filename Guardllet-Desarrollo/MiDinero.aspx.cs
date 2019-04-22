@@ -71,5 +71,10 @@ namespace Guardllet_Desarrollo.Frontend.Customers
         {
             Response.Redirect("Servicios.aspx");
         }
+
+        protected void BotonPerfil_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Perfil.aspx");
+        }
     }
 }

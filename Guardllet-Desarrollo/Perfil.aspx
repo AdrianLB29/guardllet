@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" type="text/css" href="Static/Bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="Static/Css/Entra.css">
+<link rel="stylesheet" type="text/css" href="Static/Css/Perfil.css">
 <link rel="stylesheet" type="text/css" href="Static/Css/iconos.css">
 
     <title>Perfil</title>
@@ -16,9 +16,20 @@
 </head>
 
 <body>
+
 <form id="form1" runat="server">
   
+<header>
+    <div class="menu">
+        <button id="BotonHome" runat="server" type="submit" onserverclick="BotonHome_Click" class="btnMenuH"><span class="icon-home"></span></button>
+        <button id="BotonServicios" runat="server" type="submit" onserverclick="BotonServicios_Click" class="btnMenuSV"><span class="icon-cart"></span></button>
+        <button id="BotonPerfil" runat="server" type="submit" onserverclick="BotonPerfil_Click" class="btnMenuP"><span class="icon-user"></span></button>
+        <button id="BotonSesion" runat="server" type="submit" onserverclick="BotonSesion_Click" class="BtnMenuS"><span class="icon-exit"></span></button>
+    </div>
+</header>
+
 </form>
+
 </body>
 
 </html>

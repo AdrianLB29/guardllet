@@ -11,7 +11,18 @@ namespace Guardllet_Desarrollo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!Page.IsPostBack)
+            {
+                if (Session["usuario"] != null)
+                {
+                }
+                else
+                {
+                    Response.AppendHeader("Cache-Control", "no-store");
+                    Response.Redirect("default.aspx");
+                }
 
+            } 
         }
 
         protected void BotonSesion_Click(object sender, EventArgs e)
@@ -31,6 +42,11 @@ namespace Guardllet_Desarrollo
         protected void BotonServicios_Click(object sender, EventArgs e)
         {
             Response.Redirect("Servicios.aspx");
+        }
+
+        protected void BotonPerfil_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Perfil.aspx");
         }
     }
 }
