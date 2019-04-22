@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Perfil.aspx" />
+    <Content Include="Servicios.aspx" />
     <Content Include="Static\Bootstrap\css\bootstrap-theme.css" />
     <Content Include="Static\Bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="Static\Bootstrap\css\bootstrap.css" />
@@ -81,6 +82,7 @@
     <Content Include="Static\Css\Registrate.css" />
     <Content Include="Datos.aspx" />
     <Content Include="Entra.aspx" />
+    <Content Include="Static\Css\Servicios.css" />
     <Content Include="Static\Fuentes\iconos\icomoon.svg" />
     <Content Include="Static\Multimedia\cerrar.png" />
     <Content Include="Static\Multimedia\Datos.png" />
@@ -156,6 +158,13 @@
     </Compile>
     <Compile Include="MiDinero.aspx.designer.cs">
       <DependentUpon>MiDinero.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios.aspx.cs">
+      <DependentUpon>Servicios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Servicios.aspx.designer.cs">
+      <DependentUpon>Servicios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vender.aspx.cs">
       <DependentUpon>Vender.aspx</DependentUpon>

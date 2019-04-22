@@ -62,6 +62,14 @@ namespace Guardllet_Desarrollo.Frontend.Customers
             Response.Redirect("default.aspx");
         }
 
-        
+        protected void BotonHome_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MiDinero.aspx");
+        }
+
+        protected void BotonServicios_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Servicios.aspx");
+        }
     }
 }
