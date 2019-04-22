@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="Static/Css/MiDinero.css"/>
  <link rel="stylesheet" type="text/css" href="Static/Css/iconos.css"/>
 
-    <title></title>
+    <title>Mi dinero</title>
 
 </head>
 <body>

@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="Static/Css/Servicios.css"/>
 <link rel="stylesheet" type="text/css" href="Static/Css/iconos.css"/>
 
-    <title></title>
+    <title>Servicios</title>
 
 </head>
 <body>
