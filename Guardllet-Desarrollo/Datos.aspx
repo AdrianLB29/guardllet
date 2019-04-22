@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="Static/Css/Datos.css">
 
     
-    <title></title>
+    <title>Completa tus datos</title>
 
 </head>
 <body>

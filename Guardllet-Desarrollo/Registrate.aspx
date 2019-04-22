@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="Static/Bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="Static/Css/Registrate.css" />
 
-    <title></title>
+    <title>Registrate</title>
 
 </head>
 <body>

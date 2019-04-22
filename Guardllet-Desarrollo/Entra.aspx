@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css" href="Static/Css/iconos.css">
 
 
-    <title></title>
+    <title>Entra</title>
 
 </head>
 <body>
