@@ -4,9 +4,11 @@
 
 
 header {
+
     width: 100%;
     height: 80px;
     background-color: #001935;
+
 }
 
 .menu {
@@ -14,6 +16,7 @@ header {
     width: 60%;
     height: 97%;
     margin-left: 40%;
+
 }
 
 #BotonHome {
@@ -24,12 +27,14 @@ header {
     color: white;
     border: solid 0px;
     font-size: 20px;
+
 }
 
 #BotonHome:hover {
 
     text-shadow: 4px 3px 3px black;
     font-size: 23px;
+
 }
 
 #BotonServicios {
@@ -67,9 +72,11 @@ header {
 
     text-shadow: 4px 3px 3px black;
     font-size: 23px;
+
 }
 
 #BotonSesion {
+
     width: 10%;
     height: 100%;
     background-color: #001935;
@@ -77,6 +84,7 @@ header {
     border: solid 0px;
     margin-left: 15%;
     font-size: 20px;
+
 }
 
 #BotonSesion:hover {

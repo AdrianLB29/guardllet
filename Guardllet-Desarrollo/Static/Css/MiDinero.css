@@ -1,4 +1,5 @@
 ﻿body {
+
 }
 
 * {
@@ -8,15 +9,18 @@
 }
 
 .tarjeta-monedero {
+
     width: 100%;
     height: 250px;
   
 }
 
 header {
+
     width: 100%;
     height: 80px;
     background-color: #001935;
+
 }
 
 .menu {
@@ -24,6 +28,7 @@ header {
     width: 60%;
     height: 97%;
     margin-left: 40%;
+
 }
 
 #BotonHome {
@@ -34,12 +39,14 @@ header {
     color: white;
     border: solid 0px;
     font-size: 20px;
+
 }
 
 #BotonHome:hover {
 
     text-shadow: 4px 3px 3px black;
     font-size: 23px;
+
 }
 
 #BotonServicios {
@@ -77,9 +84,11 @@ header {
 
     text-shadow: 4px 3px 3px black;
     font-size: 23px;
+
 }
 
 #BotonSesion {
+
     width: 10%;
     height: 100%;
     background-color: #001935;
@@ -87,6 +96,7 @@ header {
     border: solid 0px;
     margin-left: 15%;
     font-size: 20px;
+
 }
 
 #BotonSesion:hover {
@@ -101,8 +111,11 @@ header {
 }
 
 #Monedero {
+
     margin-top: 30%;
+
 }
+
 .tarjeta{
 
 	width: 100%;
@@ -120,6 +133,7 @@ header {
 }
 
 .adelante, .atras{
+
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -131,22 +145,28 @@ header {
 }
 
 .adelante{
+
 	width: 100%;
     border-radius: 15px;
     color: white;
     padding: 15px;
+
 }
 
 .titulo {
+
     text-align: center;
     font-size: 140%;
+
 }
 
 .Nombre {
+
     text-align: center;
     margin-top: 5%;
     margin-left: 5%;
     font-size: 140%;
+
 }
 
 .Boleta {
@@ -157,9 +177,11 @@ header {
 }
 
 .fecha {
+
     text-align: center;
     font-size: 120%;
     text-shadow: 3px 2px 2px black;
+
 }
 .atras{
 
@@ -183,11 +205,14 @@ header {
 	color: #fff;
 	font-family: "open sans";
     border-radius: 15px;
+
 }
 
 .tarjeta-wrap:hover .tarjeta{
+
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
+
 }
 
 .saldo {
