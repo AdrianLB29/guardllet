@@ -83,9 +83,12 @@
       </div>
       <div class="swiper-pagination"></div>
    </div>
-
 </main>
 </form>
+
+<footer>
+
+</footer>
 
 </body>
 </html>
