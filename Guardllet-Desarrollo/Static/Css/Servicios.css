@@ -114,9 +114,9 @@ main {
 
 .swiper-slide {
 
-      background-position: center;
-      width: 350px;
-      height: 450px;
+      background-position: left;
+      width: 370px;
+      height: 500px;
       background-color: #edf1f6;
 
 }
