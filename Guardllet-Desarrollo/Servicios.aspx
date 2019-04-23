@@ -41,8 +41,11 @@
 
                 </div>
                 <div class="descripcion">
-                    <h4>!Pago de examen a titulo de suficiencia!</h4>
-                    <h5>Precio: 10$</h5>
+                    <p>!Pago de examen a titulo de suficiencia!
+                    <br />
+                        <small>Precio: 10$</small>
+                    </p>
+                    <button class="Boton-Detalles"><span class="icon-file-text"></span>&nbsp; Detalles</button>
                 </div>
             </div>
         </div>
@@ -52,8 +55,11 @@
 
                 </div>
                 <div class="descripcion">
-                    <h4>!Paga la reposicion de tu credencial!</h4>
-                    <h5>Precio: 58$</h5>
+                    <p>!Paga la reposicion de tu credencial!
+                    <br />
+                        <small>Precio: 58$</small>
+                    </p>
+                    <button class="Boton-Detalles"><span class="icon-file-text"></span>&nbsp; Detalles</button>
                 </div>
             </div>
         </div>
@@ -63,22 +69,14 @@
 
                 </div>
                 <div class="descripcion">
-                    <h4>!Paga tus Articulos de Papeleria!</h4>
-                    <h5>Precios desde 1$</h5>
+                    <p>!Paga tus Articulos de Papeleria!
+                    <br />
+                        <small>Precios desde 1$</small>
+                    </p>
+                    <button class="Boton-Detalles"><span class="icon-file-text"></span>&nbsp; Detalles</button>
                 </div>
             </div>
         </div>
-        <div class="swiper-slide">
-            <div class="servicio">
-                <div class="imagen">
-
-                </div>
-                <div class="descripcion">
-
-                </div>
-            </div>
-        </div>
-        <div class="swiper-slide"></div>
       </div>
       <div class="swiper-pagination"></div>
    </div>
