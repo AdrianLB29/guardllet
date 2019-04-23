@@ -79,9 +79,11 @@
             </div>
         </div>
         <div class="swiper-slide"></div>
-
       </div>
       <div class="swiper-pagination"></div>
+   </div>
+   <div class="mas-informacion">
+
    </div>
 </main>
 </form>
