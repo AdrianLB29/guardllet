@@ -45,7 +45,7 @@ namespace Guardllet_Desarrollo.Frontend.Customers
                 else
                 {
                     Response.AppendHeader("Cache-Control", "no-store");
-                    Response.Redirect("default.aspx");
+                    Response.Redirect("default.aspx", true);
                 }
                 
             } 

@@ -72,7 +72,9 @@
             <div class="fila3">
                 <p id="ultima">Ultima recarga: </p>
             </div>
-            <div class="fila4"></div>
+            <div class="fila4">
+                <p>Busca los puntos de recarga en tu escuela</p>
+            </div>
         </div>
     </div>
   </div>
