@@ -56,8 +56,23 @@
     </div>
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 margen">
         <div class="saldo">
-
-            <asp:Label ID="Lb_Saldo" runat="server" Text=""></asp:Label>
+            <div class="fila1">
+                <p>¡ Tu saldo actual es !</p>
+            </div>
+            <div class="fila2">
+                <div class="texto-saldo">
+                   <p id="saldo">
+                      <asp:Label ID="Lb_Saldo" runat="server" Text=""></asp:Label> $
+                   </p>
+                </div>
+                <div class="boton-saldo">
+                    <button id="BotonRecargar" type="submit"><span class="icon-spinner11"></span></button>
+                </div>
+            </div>
+            <div class="fila3">
+                <p id="ultima">Ultima recarga: </p>
+            </div>
+            <div class="fila4"></div>
         </div>
     </div>
   </div>

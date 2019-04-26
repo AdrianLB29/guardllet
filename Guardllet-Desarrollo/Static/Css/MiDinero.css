@@ -216,7 +216,6 @@ header {
     background-color: white;
 	text-align: center;
 	color: #fff;
-	font-family: "open sans";
     border-radius: 15px;
 
 }
@@ -235,7 +234,68 @@ header {
    background-color: #edf1f6;
    border-radius: 10px;
    margin-top: 10px;
+   position: relative;
   
+}
+
+.fila1 {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    font-size: 30px;
+}
+
+
+.fila2 {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    margin-top: 90px;
+    display: table;
+}
+
+.texto-saldo {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.boton-saldo {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#saldo {
+    font-size: 50px;
+    margin-left: 50%;
+}
+
+.fila3 {
+    margin-top: 170px;
+    position: absolute;
+    width: 95%;
+    height: 20px;
+}
+
+#ultima {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+#BotonRecargar {
+
+    background-color: #25d7e4;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border: solid 0px;
+    border-radius: 25px;
+    text-shadow: 1px 1px 3px black;
+    margin-left: 60px;
+
 }
 
 .productos {
