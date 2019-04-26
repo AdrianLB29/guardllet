@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="fila3">
-                <p id="ultima">Ultima recarga: </p>
+                <p id="ultima">Ultima recarga: <asp:Label ID="Lb_Fecha" runat="server" Text="No disponible"></asp:Label> </p>
             </div>
             <div class="fila4">
                 <p>Busca los puntos de recarga en tu escuela</p>
