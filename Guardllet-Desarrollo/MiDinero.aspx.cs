@@ -76,5 +76,10 @@ namespace Guardllet_Desarrollo.Frontend.Customers
         {
             Response.Redirect("Perfil.aspx");
         }
+
+        protected void BotonRecargar_ServerClick(object sender, EventArgs e)
+        {
+            Response.Redirect("MiDinero.aspx");
+        }
     }
 }

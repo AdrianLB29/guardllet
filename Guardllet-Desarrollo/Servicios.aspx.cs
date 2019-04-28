@@ -48,5 +48,25 @@ namespace Guardllet_Desarrollo
         {
             Response.Redirect("Perfil.aspx");
         }
+
+        protected void BotonPagar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MiDinero.aspx");
+        }
+
+        protected void BotonPagardos_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MiDinero.aspx");
+        }
+
+        protected void BotonPagartres_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MiDinero.aspx");
+        }
+
+        protected void BotonPagarcuatro_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MiDinero.aspx");
+        }
     }
 }

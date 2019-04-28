@@ -45,7 +45,7 @@
                     <br />
                         <small>Precio: 10$</small>
                     </p>
-                    <button class="Boton-Detalles"><span class="icon-file-text"></span>&nbsp; Detalles</button>
+                    <button class="Boton-Detalles" onclick="ets()" type="button"><span class="icon-file-text"></span>&nbsp; Detalles</button>
                 </div>
             </div>
         </div>
@@ -59,7 +59,21 @@
                     <br />
                         <small>Precio: 58$</small>
                     </p>
-                    <button class="Boton-Detalles"><span class="icon-file-text"></span>&nbsp; Detalles</button>
+                    <button class="Boton-Detalles" onclick="credencial()" type="button"><span class="icon-file-text"></span>&nbsp; Detalles</button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="servicio">
+                <div class="imagen">
+
+                </div>
+                <div class="descripcion">
+                    <p>!Paga tu deuda en biblioteca!
+                    <br />
+                        <small>Precio: 68$</small>
+                    </p>
+                    <button class="Boton-Detalles" onclick="deuda()" type="button"><span class="icon-file-text"></span>&nbsp; Detalles</button>
                 </div>
             </div>
         </div>
@@ -73,15 +87,15 @@
                     <br />
                         <small>Precios desde 1$</small>
                     </p>
-                    <button class="Boton-Detalles"><span class="icon-file-text"></span>&nbsp; Detalles</button>
+                    <button class="Boton-Detalles" onclick="copias()" type="button"><span class="icon-file-text"></span>&nbsp; Detalles</button>
                 </div>
             </div>
         </div>
       </div>
       <div class="swiper-pagination"></div>
    </div>
-   <div class="mas-informacion">
-       <div class="informacion">
+   <div class="mas-informacion" id="informacion">
+       <div class="informacion" id="ets">
            <div class="titulo-producto">
                <p>Examen a titulo de suficiencia</p>
            </div>
@@ -120,12 +134,135 @@
                </div>
            </div>
            <div class="pagar">
-              <center><button type="submit" id="Boton-Pagar"><span class="icon-credit-card"></span>&nbsp; Pagar</button></center> 
+              <center><button type="submit" id="BotonPagar" runat="server" onserverclick="BotonPagar_Click"><span class="icon-credit-card"></span>&nbsp; Pagar</button></center> 
            </div>
        </div>
-       <div class="informacion-dos"></div>
-       <div class="informacion-tres"></div>
-       <div class="informacion-cuatro"></div>
+       <div class="informacion-dos" id="credencial">
+           <div class="titulo-producto">
+               <p>Reposicion de credencial</p>
+           </div>
+           <div class="elementos">
+               <div class="categoria">
+                   <div class="letras">
+                       <p>Categoria</p>
+                   </div>
+                   <div class="numeros">
+                       <p>Tramites escolares</p>
+                   </div>
+               </div>
+               <div class="precio">
+                   <div class="letras">
+                       <p>Precio</p>
+                   </div>
+                   <div class="numeros">
+                       <p>58</p>
+                   </div>
+               </div>
+               <div class="comision">
+                   <div class="letras">
+                       <p>Comision</p>
+                   </div>
+                   <div class="numeros">
+                       <p>0</p>
+                   </div>
+               </div>
+               <div class="total">
+                   <div class="letras">
+                       <p>Total</p>
+                   </div>
+                   <div class="numeros">
+                       <p>58</p>
+                   </div>
+               </div>
+           </div>
+           <div class="pagar">
+              <center><button type="submit" id="BotonPagardos" runat="server" onserverclick="BotonPagardos_Click"><span class="icon-credit-card"></span>&nbsp; Pagar</button></center> 
+           </div>
+       </div>
+       <div class="informacion-tres" id="biblioteca">
+           <div class="titulo-producto">
+               <p>Deuda en biblioteca</p>
+           </div>
+           <div class="elementos">
+               <div class="categoria">
+                   <div class="letras">
+                       <p>Categoria</p>
+                   </div>
+                   <div class="numeros">
+                       <p>Tramites escolares</p>
+                   </div>
+               </div>
+               <div class="precio">
+                   <div class="letras">
+                       <p>Precio</p>
+                   </div>
+                   <div class="numeros">
+                       <p>68</p>
+                   </div>
+               </div>
+               <div class="comision">
+                   <div class="letras">
+                       <p>Comision</p>
+                   </div>
+                   <div class="numeros">
+                       <p>0</p>
+                   </div>
+               </div>
+               <div class="total">
+                   <div class="letras">
+                       <p>Total</p>
+                   </div>
+                   <div class="numeros">
+                       <p>68</p>
+                   </div>
+               </div>
+           </div>
+           <div class="pagar">
+              <center><button type="submit" id="BotonPagartres" runat="server" onserverclick="BotonPagartres_Click"><span class="icon-credit-card"></span>&nbsp; Pagar</button></center> 
+           </div>
+       </div>
+       <div class="informacion-cuatro" id="copias">
+           <div class="titulo-producto">
+               <p>Papeleria</p>
+           </div>
+           <div class="elementos">
+               <div class="categoria">
+                   <div class="letras">
+                       <p>Categoria</p>
+                   </div>
+                   <div class="numeros">
+                       <p>Utiles escolares</p>
+                   </div>
+               </div>
+               <div class="precio">
+                   <div class="letras">
+                       <p>Precio</p>
+                   </div>
+                   <div class="numeros">
+                       <p>No aplica</p>
+                   </div>
+               </div>
+               <div class="comision">
+                   <div class="letras">
+                       <p>Comision</p>
+                   </div>
+                   <div class="numeros">
+                       <p>No aplica</p>
+                   </div>
+               </div>
+               <div class="total">
+                   <div class="letras">
+                       <p>Total</p>
+                   </div>
+                   <div class="numeros">
+                       <p>No aplica</p>
+                   </div>
+               </div>
+           </div>
+           <div class="pagar">
+              <center><button type="submit" id="BotonPagarcuatro" runat="server" onserverclick="BotonPagarcuatro_Click"><span class="icon-credit-card"></span>&nbsp; Pagar</button></center> 
+           </div>
+       </div>
    </div>
 </main>
 </form>
@@ -160,5 +297,41 @@
             el: '.swiper-pagination',
         },
     });
+
+</script>
+
+<script type="text/javascript">
+
+    function ets() {
+        document.getElementById('ets').style.display = 'block';
+        document.getElementById('credencial').style.display = 'none';
+        document.getElementById('biblioteca').style.display = 'none';
+        document.getElementById('copias').style.display = 'none';
+        location.href = "#informacion";
+    }
+
+    function credencial() {
+        document.getElementById('ets').style.display = 'none';
+        document.getElementById('credencial').style.display = 'block';
+        document.getElementById('biblioteca').style.display = 'none';
+        document.getElementById('copias').style.display = 'none';
+        location.href = "#informacion";
+    }
+
+    function deuda() {
+        document.getElementById('ets').style.display = 'none';
+        document.getElementById('credencial').style.display = 'none';
+        document.getElementById('biblioteca').style.display = 'block';
+        document.getElementById('copias').style.display = 'none';
+        location.href = "#informacion";
+    }
+
+    function copias() {
+        document.getElementById('ets').style.display = 'none';
+        document.getElementById('credencial').style.display = 'none';
+        document.getElementById('biblioteca').style.display = 'none';
+        document.getElementById('copias').style.display = 'block';
+        location.href = "#informacion";
+    }
 
 </script>

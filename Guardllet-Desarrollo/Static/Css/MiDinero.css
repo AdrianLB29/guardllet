@@ -244,7 +244,7 @@ header {
     text-align: center;
     margin-top: 20px;
     position: absolute;
-    font-size: 30px;
+    font-size: x-large;
 }
 
 
@@ -257,20 +257,20 @@ header {
 }
 
 .texto-saldo {
-    width: 50%;
+    width: 55%;
     height: 100%;
     float: left;
 }
 
 .boton-saldo {
     float: left;
-    width: 50%;
+    width: 45%;
     height: 100%;
 }
 
 #saldo {
     font-size: 50px;
-    margin-left: 50%;
+    margin-left: 55%;
 }
 
 .fila3 {
@@ -303,8 +303,8 @@ header {
     border: solid 0px;
     border-radius: 25px;
     text-shadow: 1px 1px 3px black;
-    margin-left: 60px;
     margin-top: 10px;
+    margin-left: 22.5%;
 }
 
 .productos {

@@ -66,7 +66,7 @@
                    </p>
                 </div>
                 <div class="boton-saldo">
-                    <button id="BotonRecargar" type="submit"><span class="icon-spinner11"></span></button>
+                    <button id="BotonRecargar" type="submit" runat="server" onserverclick="BotonRecargar_ServerClick"><span class="icon-spinner11"></span></button>
                 </div>
             </div>
             <div class="fila3">
