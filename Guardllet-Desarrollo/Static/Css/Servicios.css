@@ -154,7 +154,6 @@ main {
     background-color: #edf1f6;
     color: black;
     border: solid 1px #001935;
-    border-radius: 10px;
     height: 30px;
     width: 100px;
     -webkit-box-shadow: 2px 6px 10px -4px rgba(0,0,0,0.75);
@@ -172,6 +171,104 @@ main {
     margin-left: 2.5%;
     margin-top: 5%;
     border-radius: 10px;
+
+}
+
+.informacion {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.titulo-producto {
+
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    margin-top: 15px;
+    text-align: center;
+    font-size: large;
+}
+
+.elementos {
+
+    width: 90%;
+    height: 55%;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 5%;
+
+}
+
+.categoria {
+
+    width: 100%;
+    height: 25%;
+    display: table;
+    position: relative;
+}
+
+.precio {
+
+    width: 100%;
+    height: 25%;
+    display: table;
+    position: relative;
+}
+
+.comision {
+
+    width: 100%;
+    height: 25%;
+    display: table;
+    position: relative;
+}
+
+.total {
+
+    width: 100%;
+    height: 25%;
+    display: table;
+    position: relative;
+}
+
+.letras {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    color: black;
+    font-size: 17px;
+}
+
+.numeros {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    margin-left: 50%;
+    text-align: right;
+    color: #5a5757;
+    font-style: italic;
+}
+
+.pagar {
+
+    width: 100%;
+    height: 50px;
+    margin-top: 250px;
+    position: absolute;
+}
+
+#Boton-Pagar {
+
+    background-color: #001935;
+    height: 35px;
+    width: 90px;
+    color: white;
+    border: solid 0px;
 
 }
 

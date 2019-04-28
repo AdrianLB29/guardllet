@@ -81,7 +81,51 @@
       <div class="swiper-pagination"></div>
    </div>
    <div class="mas-informacion">
-
+       <div class="informacion">
+           <div class="titulo-producto">
+               <p>Examen a titulo de suficiencia</p>
+           </div>
+           <div class="elementos">
+               <div class="categoria">
+                   <div class="letras">
+                       <p>Categoria</p>
+                   </div>
+                   <div class="numeros">
+                       <p>Tramites escolares</p>
+                   </div>
+               </div>
+               <div class="precio">
+                   <div class="letras">
+                       <p>Precio</p>
+                   </div>
+                   <div class="numeros">
+                       <p>10</p>
+                   </div>
+               </div>
+               <div class="comision">
+                   <div class="letras">
+                       <p>Comision</p>
+                   </div>
+                   <div class="numeros">
+                       <p>0</p>
+                   </div>
+               </div>
+               <div class="total">
+                   <div class="letras">
+                       <p>Total</p>
+                   </div>
+                   <div class="numeros">
+                       <p>10</p>
+                   </div>
+               </div>
+           </div>
+           <div class="pagar">
+              <center><button type="submit" id="Boton-Pagar"><span class="icon-credit-card"></span>&nbsp; Pagar</button></center> 
+           </div>
+       </div>
+       <div class="informacion-dos"></div>
+       <div class="informacion-tres"></div>
+       <div class="informacion-cuatro"></div>
    </div>
 </main>
 </form>
