@@ -225,7 +225,7 @@ main {
     position: absolute;
     margin-top: 80px;
     margin-left: 5%;
-
+    border-bottom: solid 1px #001935;
 }
 
 .categoria {
@@ -284,7 +284,7 @@ main {
 
     width: 100%;
     height: 50px;
-    margin-top: 250px;
+    margin-top: 255px;
     position: absolute;
 }
 
