@@ -51,3 +51,11 @@ C:\Users\SAE2 00\Downloads\Guardllet-Desarrollo\Guardllet-Desarrollo\bin\Guardll
 C:\Users\SAE2 00\Downloads\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.csprojResolveAssemblyReference.cache
 C:\Users\SAE2 00\Downloads\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.dll
 C:\Users\SAE2 00\Downloads\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.pdb
+C:\Users\Nahum\Desktop\Nueva carpeta (3)\Guardllet-Desarrollo\Guardllet-Desarrollo\bin\Guardllet-Desarrollo.dll.config
+C:\Users\Nahum\Desktop\Nueva carpeta (3)\Guardllet-Desarrollo\Guardllet-Desarrollo\bin\Guardllet-Desarrollo.dll
+C:\Users\Nahum\Desktop\Nueva carpeta (3)\Guardllet-Desarrollo\Guardllet-Desarrollo\bin\Guardllet-Desarrollo.pdb
+C:\Users\Nahum\Desktop\Nueva carpeta (3)\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.csprojAssemblyReference.cache
+C:\Users\Nahum\Desktop\Nueva carpeta (3)\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.csproj.CoreCompileInputs.cache
+C:\Users\Nahum\Desktop\Nueva carpeta (3)\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.csproj.CopyComplete
+C:\Users\Nahum\Desktop\Nueva carpeta (3)\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.dll
+C:\Users\Nahum\Desktop\Nueva carpeta (3)\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.pdb
