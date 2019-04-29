@@ -13,7 +13,7 @@ namespace Guardllet_Desarrollo.Backend.Data.Wallet
     {
         public static string Monedero(string data) 
         {
-            string codigo = "IPN000" + data + "00000";
+            string codigo = "IPN000" + data + "0000";
 
             return codigo;
         }
