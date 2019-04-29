@@ -94,6 +94,7 @@
     <Content Include="Registrate.aspx" />
     <Content Include="Administrar.aspx" />
     <Content Include="MiDinero.aspx" />
+    <Content Include="Static\Multimedia\images.png" />
     <Content Include="Static\Multimedia\Registrate.png" />
     <Content Include="Static\Swiper\swiper.min.css" />
     <Content Include="Static\Swiper\swiper.min.js" />

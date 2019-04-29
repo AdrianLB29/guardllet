@@ -45,7 +45,7 @@ namespace Guardllet_Desarrollo.Frontend.Customers
                 else
                 {
                     Response.AppendHeader("Cache-Control", "no-store");
-                    Response.Redirect("default.aspx");
+                    Response.Redirect("default.aspx", true);
                 }
                 
             } 
@@ -75,6 +75,11 @@ namespace Guardllet_Desarrollo.Frontend.Customers
         protected void BotonPerfil_Click(object sender, EventArgs e)
         {
             Response.Redirect("Perfil.aspx");
+        }
+
+        protected void BotonRecargar_ServerClick(object sender, EventArgs e)
+        {
+            Response.Redirect("MiDinero.aspx");
         }
     }
 }

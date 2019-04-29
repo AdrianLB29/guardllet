@@ -182,6 +182,7 @@ header {
 }
 
 .Boleta {
+
     margin-top: 10%;
     text-align: center;
     font-size: 190%;
@@ -215,7 +216,6 @@ header {
     background-color: white;
 	text-align: center;
 	color: #fff;
-	font-family: "open sans";
     border-radius: 15px;
 
 }
@@ -231,17 +231,87 @@ header {
 
    width: 100%;
    height: 250px;
-   background-color: #f9fbfe;
+   background-color: #edf1f6;
    border-radius: 10px;
    margin-top: 10px;
+   position: relative;
   
+}
+
+.fila1 {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    font-size: x-large;
+}
+
+
+.fila2 {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    margin-top: 90px;
+    display: table;
+}
+
+.texto-saldo {
+    width: 55%;
+    height: 100%;
+    float: left;
+}
+
+.boton-saldo {
+    float: left;
+    width: 45%;
+    height: 100%;
+}
+
+#saldo {
+    font-size: 50px;
+    margin-left: 55%;
+}
+
+.fila3 {
+    margin-top: 175px;
+    position: absolute;
+    width: 95%;
+    height: 20px;
+    text-align: center;
+}
+
+#ultima {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.fila4 {
+    width: 100%;
+    height: 20px;
+    margin-top: 215px;
+    position: absolute;
+    text-align: center;
+}
+
+#BotonRecargar {
+
+    background-color: #25d7e4;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border: solid 0px;
+    border-radius: 25px;
+    text-shadow: 1px 1px 3px black;
+    margin-top: 10px;
+    margin-left: 22.5%;
 }
 
 .productos {
 
     width: 100%;
     height: 500px;
-    background-color: #f9fbfe;
+    background-color: #edf1f6;
     border-radius: 10px;
     margin-top: 10px;
 

@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="Static/Css/MiDinero.css"/>
  <link rel="stylesheet" type="text/css" href="Static/Css/iconos.css"/>
 
-    <title>Mi dinero</title>
+    <title>Mi Dinero</title>
 
 </head>
 
@@ -56,8 +56,25 @@
     </div>
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 margen">
         <div class="saldo">
-
-            <asp:Label ID="Lb_Saldo" runat="server" Text=""></asp:Label>
+            <div class="fila1">
+                <p>¡ Tu saldo actual es !</p>
+            </div>
+            <div class="fila2">
+                <div class="texto-saldo">
+                   <p id="saldo">
+                      <asp:Label ID="Lb_Saldo" runat="server" Text=""></asp:Label> $
+                   </p>
+                </div>
+                <div class="boton-saldo">
+                    <button id="BotonRecargar" type="submit" runat="server" onserverclick="BotonRecargar_ServerClick"><span class="icon-spinner11"></span></button>
+                </div>
+            </div>
+            <div class="fila3">
+                <p id="ultima">Ultima recarga: <asp:Label ID="Lb_Fecha" runat="server" Text="No disponible"></asp:Label> </p>
+            </div>
+            <div class="fila4">
+                <p>Busca los puntos de recarga en tu escuela</p>
+            </div>
         </div>
     </div>
   </div>

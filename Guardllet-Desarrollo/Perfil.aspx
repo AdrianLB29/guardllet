@@ -28,7 +28,23 @@
     </div>
 </header>
 
+<div class="portada">
+    <div class="foto">
+       
+    </div>
+</div>
+<div class="datos">
+
+</div>
+
+<div class="estadisticas">
+
+</div>
 </form>
+
+<footer>
+
+</footer>
 
 </body>
 
