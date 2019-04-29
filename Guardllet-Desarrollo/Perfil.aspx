@@ -28,18 +28,31 @@
     </div>
 </header>
 
-<div class="portada">
-    <div class="foto">
-       
+<div class="contenedor-in">
+    <div class="contenedor-i">
+        <div class="imagen">
+
+        </div>
+    </div>
+    <div class="contenedor-n">
+        <div class="nombre">
+            <p id="nombre">
+                <asp:Label runat="server" Text="" ID="LbNombre"></asp:Label>
+            </p>
+        </div>
+        <div class="escuela">
+            <p id="escuela">
+               <asp:Label runat="server" Text=" " ID="LbEscuela"></asp:Label>
+            </p>
+        </div>
+        <div class="boleta">
+            <p id="boleta">
+               <asp:Label runat="server" Text=" " ID="LbBoleta"></asp:Label>
+            </p>
+        </div>
     </div>
 </div>
-<div class="datos">
 
-</div>
-
-<div class="estadisticas">
-
-</div>
 </form>
 
 <footer>

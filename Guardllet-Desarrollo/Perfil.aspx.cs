@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using Guardllet_Desarrollo.Backend.Data.Customers;
+
 namespace Guardllet_Desarrollo
 {
     public partial class Perfil : System.Web.UI.Page
@@ -15,6 +17,17 @@ namespace Guardllet_Desarrollo
             {
                 if (Session["usuario"] != null)
                 {
+                    string id = Session["usuario"].ToString();
+
+                    int id_datos = ObtenerDatos.id_datos(Convert.ToInt16(id));
+                    int id_datos_escolares = ObtenerDatos.id_datos_escolares(id_datos);
+
+                    Dictionary<string, string> datos = ObtenerDatos.Generales(id_datos);
+                    Dictionary<string, string> datos_escolares = ObtenerDatos.Escolares(id_datos_escolares);
+
+                    LbNombre.Text = datos["Nombre"] + " " + datos["Apellido_p"] + " " + datos["Apellido_m"];
+                    LbBoleta.Text = datos_escolares["Boleta"];
+                    LbEscuela.Text = "Cecyt 13 'Ricardo Flores Magon'";
                 }
                 else
                 {
