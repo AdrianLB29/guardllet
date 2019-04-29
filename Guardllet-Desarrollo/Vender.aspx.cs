@@ -34,7 +34,7 @@ namespace Guardllet_Desarrollo.Frontend.Sellers
                 try 
                 {
                     Conexion.Open();
-                    SqlCommand cmd = new SqlCommand("UPDATE MONEDERO Set SALDO = " + st +" where CODIGO = 'IPN00020151302790000'", Conexion); //update MONEDERO SET SALDO = " + Convert.ToInt16(st)  + "  WHERE CODIGO = '" + tbNoMenedero.Text + "'", Conexion
+                    SqlCommand cmd = new SqlCommand("UPDATE MONEDERO Set SALDO = " + st +" where CODIGO = '" + tbNoMenedero.Text + "'", Conexion); //update MONEDERO SET SALDO = " + Convert.ToInt16(st)  + "  WHERE CODIGO = '" + tbNoMenedero.Text + "'", Conexion
                     cmd.ExecuteNonQuery();
 
                     tbsaldo.Text = "";
