@@ -7,7 +7,7 @@
 body {
 
     background-color: #001935;
-
+    color: white;
 }
 
 header {
@@ -52,6 +52,48 @@ header {
 }
 
 .Boton-Ets {
+
+    width: 80%;
+    height: 40px;
+    margin-left: 10%;
+    border: solid 1px #001124;
+    border-radius: 20px;
+    color: white;
+    background-color: #001124;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.Boton-Crd {
+
+    width: 80%;
+    height: 40px;
+    margin-left: 10%;
+    border: solid 1px #001124;
+    border-radius: 20px;
+    color: white;
+    background-color: #001124;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.Boton-Deu {
+
+    width: 80%;
+    height: 40px;
+    margin-left: 10%;
+    border: solid 1px #001124;
+    border-radius: 20px;
+    color: white;
+    background-color: #001124;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.Boton-Cop {
 
     width: 80%;
     height: 40px;

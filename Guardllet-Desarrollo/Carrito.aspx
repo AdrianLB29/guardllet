@@ -31,17 +31,17 @@
         <form id="form1" runat="server" class="form-horizontal">
             <div class="form-group">
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <asp:TextBox ID="TxtMateria" runat="server" Visible="False" CssClass="form-control"  placeholder="Materia"></asp:TextBox>
-                <asp:TextBox ID="TxtMonto" runat="server" Visible="False"  CssClass="form-control" placeholder="Total de la deuda"></asp:TextBox>
-                <asp:TextBox ID="TxtCopias" runat="server" Visible="False" CssClass="form-control" placeholder="Total a pagar"></asp:TextBox>
+                <asp:TextBox ID="TxtMateria" runat="server" Visible="False" CssClass="form-control" required placeholder="Materia"></asp:TextBox>
+                <asp:TextBox ID="TxtMonto" runat="server" Visible="False"  CssClass="form-control" required type="number" max="500" placeholder="Total de la deuda"></asp:TextBox>
+                <asp:TextBox ID="TxtCopias" runat="server" Visible="False" CssClass="form-control" required type="number" max="500" placeholder="Total a pagar"></asp:TextBox>
             </div>
             </div>
             <div class="form-group">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <asp:Button ID="BtnPagarEts" runat="server" OnClick="BtnPagarEts_Click" class="Boton-Ets" Text="Pagar" Visible="False" />
-                <asp:Button ID="BtnPagarCrd" runat="server" OnClick="BtnPagarCrd_Click" Text="Pagar" Visible="False"/>
-                <asp:Button ID="BtnPagarDeu" runat="server" OnClick="BtnPagarDeu_Click" Text="Pagar" Visible="False"/>
-                <asp:Button ID="BtnPagarCop" runat="server" OnClick="BtnPagarCop_Click" Text="Pagar" Visible="False"/>
+                <asp:Button ID="BtnPagarCrd" runat="server" OnClick="BtnPagarCrd_Click" class="Boton-Crd" Text="Pagar" Visible="False"/>
+                <asp:Button ID="BtnPagarDeu" runat="server" OnClick="BtnPagarDeu_Click" class="Boton-Deu" Text="Pagar" Visible="False"/>
+                <asp:Button ID="BtnPagarCop" runat="server" OnClick="BtnPagarCop_Click" class="Boton-Cop" Text="Pagar" Visible="False"/>
             </div>
             </div>
         </form>
