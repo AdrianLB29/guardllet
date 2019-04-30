@@ -30,13 +30,20 @@ namespace Guardllet_Desarrollo
                     LbBoleta.Text = datos_escolares["Boleta"];
                     LbEscuela.Text = "Cecyt 13 'Ricardo Flores Magon'";
 
-                    
+
 
                     for (int i = 0; i < 5; i++)
                     {
                         HtmlGenericControl item = new HtmlGenericControl("div");
-                        item.Attributes.Add("class","ticket");
+                        item.Attributes.Add("class", "ticket");
                         item.ID = "compra";
+
+                        HtmlGenericControl ITEM2 = new HtmlGenericControl("div");
+                        ITEM2.Attributes.Add("class", "fecha");
+                        ITEM2.ID = "fecha";
+
+                        item.Controls.Add(ITEM2);
+
                         ContenedorTickets.Controls.Add(item);
                     }
                 }
