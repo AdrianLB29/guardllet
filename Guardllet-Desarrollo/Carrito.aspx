@@ -16,10 +16,14 @@
 </head>
 <body>
 
+<header>
+
+</header>
+
     <div class="container">
-        <asp:Label ID="LbExamen" runat="server" Text="Paga tu examen" Visible="False"></asp:Label>
-        <asp:Label ID="LbCredencial" runat="server" Text="Paga tu credencial" Visible="False"></asp:Label>
-        <asp:Label ID="LbDeuda" runat="server" Text="Paga tu deuda" Visible="False"></asp:Label>
+        <asp:Label ID="LbExamen" runat="server" Text="Paga tu examen a titulo de suficiencia" Visible="False"></asp:Label>
+        <asp:Label ID="LbCredencial" runat="server" Text="Paga la reposicion de tu credencial" Visible="False"></asp:Label>
+        <asp:Label ID="LbDeuda" runat="server" Text="Paga tu deuda en biblioteca" Visible="False"></asp:Label>
         <asp:Label ID="LbCopias" runat="server" Text="Paga tus copias" Visible="False"></asp:Label>
     </div>
 
@@ -27,21 +31,25 @@
         <form id="form1" runat="server" class="form-horizontal">
             <div class="form-group">
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <asp:TextBox ID="TxtMateria" runat="server" Visible="False"></asp:TextBox>
-                <asp:TextBox ID="TxtMonto" runat="server" Visible="False"></asp:TextBox>
-                <asp:TextBox ID="TxtCopias" runat="server" Visible="False"></asp:TextBox>
+                <asp:TextBox ID="TxtMateria" runat="server" Visible="False" CssClass="form-control"  placeholder="Materia"></asp:TextBox>
+                <asp:TextBox ID="TxtMonto" runat="server" Visible="False"  CssClass="form-control" placeholder="Total de la deuda"></asp:TextBox>
+                <asp:TextBox ID="TxtCopias" runat="server" Visible="False" CssClass="form-control" placeholder="Total a pagar"></asp:TextBox>
             </div>
             </div>
             <div class="form-group">
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <asp:Button ID="BtnPagarEts" runat="server" OnClick="BtnPagarEts_Click" Text="Pagar" Visible="False" />
+                <asp:Button ID="BtnPagarEts" runat="server" OnClick="BtnPagarEts_Click" class="Boton-Ets" Text="Pagar" Visible="False" />
                 <asp:Button ID="BtnPagarCrd" runat="server" OnClick="BtnPagarCrd_Click" Text="Pagar" Visible="False"/>
                 <asp:Button ID="BtnPagarDeu" runat="server" OnClick="BtnPagarDeu_Click" Text="Pagar" Visible="False"/>
                 <asp:Button ID="BtnPagarCop" runat="server" OnClick="BtnPagarCop_Click" Text="Pagar" Visible="False"/>
             </div>
             </div>
         </form>
-    </div>    
+    </div>  
+
+<footer>
+
+</footer>  
 </body>
 </html>
 
