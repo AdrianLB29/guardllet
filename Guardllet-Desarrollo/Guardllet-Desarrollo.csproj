@@ -88,6 +88,7 @@
     <Content Include="Datos.aspx" />
     <Content Include="Entra.aspx" />
     <Content Include="Static\Css\Servicios.css" />
+    <Content Include="Static\Css\Vender.css" />
     <Content Include="Static\Fuentes\iconos\icomoon.svg" />
     <Content Include="Static\Multimedia\cerrar.png" />
     <Content Include="Static\Multimedia\Datos.png" />
