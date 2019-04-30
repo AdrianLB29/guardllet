@@ -54,7 +54,7 @@
 
         <div class="contenedor-tickets">
             <div class="titulo-tickets">
-                <p id="titulo">¡Tickets de compra!</p>
+                <p id="titulo" aling="center">¡Tickets de compra!</p>
             </div>
             <div id="ContenedorTickets" runat="server">
 
