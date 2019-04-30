@@ -52,9 +52,9 @@
             </div>
         </div>
 
-        <div class="contenedor-tickets">
-        </div>
+        <div class="contenedor-tickets" id="ContenedorTickets" runat="server">
 
+        </div>
         <div class="contenedor-datos">
             <button type="button" id="BotonActualizar">¡Editar datos!</button>
         </div>

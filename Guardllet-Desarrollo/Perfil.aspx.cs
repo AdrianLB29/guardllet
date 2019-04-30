@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.UI.HtmlControls;
 
 using Guardllet_Desarrollo.Backend.Data.Customers;
 
@@ -28,6 +29,16 @@ namespace Guardllet_Desarrollo
                     LbNombre.Text = datos["Nombre"] + " " + datos["Apellido_p"] + " " + datos["Apellido_m"];
                     LbBoleta.Text = datos_escolares["Boleta"];
                     LbEscuela.Text = "Cecyt 13 'Ricardo Flores Magon'";
+
+                    
+
+                    for (int i = 0; i < 5; i++)
+                    {
+                        HtmlGenericControl item = new HtmlGenericControl("div");
+                        item.Attributes.Add("class","ticket");
+                        item.ID = "compra";
+                        ContenedorTickets.Controls.Add(item);
+                    }
                 }
                 else
                 {
