@@ -17,14 +17,30 @@
 <body>
 
 <header>
-
+    <div class="menu">
+        <div class="cancelar">
+            <button type="button" id="BtnCancelar"><span class=""></span></button>
+        </div>
+    </div>
 </header>
 
     <div class="container">
-        <asp:Label ID="LbExamen" runat="server" Text="Paga tu examen a titulo de suficiencia" Visible="False"></asp:Label>
-        <asp:Label ID="LbCredencial" runat="server" Text="Paga la reposicion de tu credencial" Visible="False"></asp:Label>
-        <asp:Label ID="LbDeuda" runat="server" Text="Paga tu deuda en biblioteca" Visible="False"></asp:Label>
-        <asp:Label ID="LbCopias" runat="server" Text="Paga tus copias" Visible="False"></asp:Label>
+        <div class="Contenedor-titulo">
+            <div class="texto-titulo">
+                <asp:Label ID="LbExamen" runat="server" Text="Paga tu examen a titulo de suficiencia" Visible="False"></asp:Label>
+                <asp:Label ID="LbCredencial" runat="server" Text="Paga la reposicion de tu credencial" Visible="False"></asp:Label>
+                <asp:Label ID="LbDeuda" runat="server" Text="Paga tu deuda en biblioteca" Visible="False"></asp:Label>
+                <asp:Label ID="LbCopias" runat="server" Text="Paga tus copias" Visible="False"></asp:Label>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="Contenedor-imagen">
+            <div class="imagen">
+
+            </div>
+        </div>
     </div>
 
     <div class="container">
