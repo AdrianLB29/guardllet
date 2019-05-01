@@ -13,5 +13,18 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
         {
 
         }
+
+        protected void btnProducto_Click(object sender, EventArgs e)
+        {
+            lId.Visible = true;
+            txtID.Visible = true;
+            lNombre.Visible = true;
+            txtNombre.Visible = true;
+            lCodigo.Visible = true;
+            txtCodigo.Visible = true;
+            Image1.Visible = true;
+            btnProducto.Enabled = false;
+
+        }
     }
 }
