@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using Guardllet_Desarrollo.Backend.Data.Customers;
+using Guardllet_Desarrollo.Backend.Data.Wallet;
+
 namespace Guardllet_Desarrollo
 {
     public partial class carrito : System.Web.UI.Page
@@ -50,22 +53,96 @@ namespace Guardllet_Desarrollo
 
         protected void BtnPagarEts_Click(object sender, EventArgs e)
         {
+            int precio = 10; 
 
+            string materia = TxtMateria.Text;
+
+            int id_usuario = Convert.ToInt16(Session["usuario"]);
+            int id_monedero = ObtenerMonedero.id_monedero(id_usuario);
+
+            int saldo = ObtenerMonedero.Saldo(id_monedero);
+
+            int proceso = saldo - precio;
+            if (proceso > 0) 
+            {
+                bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, proceso);
+            }
+            else
+            {
+
+            }
         }
 
         protected void BtnPagarCrd_Click(object sender, EventArgs e)
         {
+            int precio = 58;
 
+            string materia = TxtMateria.Text;
+
+            int id_usuario = Convert.ToInt16(Session["usuario"]);
+
+            int id_monedero = ObtenerMonedero.id_monedero(id_usuario);
+
+            int saldo = ObtenerMonedero.Saldo(id_monedero);
+
+            int nuevo_saldo = saldo - precio;
+
+            if (nuevo_saldo > 0)
+            {
+
+            }
+            else
+            {
+
+            }
         }
 
         protected void BtnPagarDeu_Click(object sender, EventArgs e)
         {
+            int precio = Convert.ToInt16(TxtMonto.Text.Trim());
 
+            string materia = TxtMateria.Text;
+
+            int id_usuario = Convert.ToInt16(Session["usuario"]);
+
+            int id_monedero = ObtenerMonedero.id_monedero(id_usuario);
+
+            int saldo = ObtenerMonedero.Saldo(id_monedero);
+
+            int proceso = saldo - precio;
+
+            if (proceso > 0)
+            {
+
+            }
+            else
+            {
+
+            }
         }
 
         protected void BtnPagarCop_Click(object sender, EventArgs e)
         {
+            int precio = Convert.ToInt16(TxtCopias.Text.Trim());
 
+            string materia = TxtMateria.Text;
+
+            int id_usuario = Convert.ToInt16(Session["usuario"]);
+
+            int id_monedero = ObtenerMonedero.id_monedero(id_usuario);
+
+            int saldo = ObtenerMonedero.Saldo(id_monedero);
+
+            int proceso = saldo - precio;
+
+            if (proceso > 0)
+            {
+
+            }
+            else
+            {
+
+            }
         }
     }
 }

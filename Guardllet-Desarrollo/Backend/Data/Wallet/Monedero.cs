@@ -98,5 +98,40 @@ namespace Guardllet_Desarrollo.Backend.Data.Wallet
                 return 0;
             }
         }
+
+        public static bool ActualizarSaldo(int id_monedero, int nuevo_saldo)
+        {
+            string StringConexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
+            try
+            {
+                using (SqlConnection Conexion = new SqlConnection(StringConexion))
+                {
+                    Conexion.Open();
+                    SqlCommand command = new SqlCommand("ActualizarSaldo", Conexion);
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    SqlParameter param_mond = new SqlParameter("@ID_MONEDERO", SqlDbType.Int);
+                    param_mond.Direction = ParameterDirection.Input;
+                    param_mond.Value = id_monedero;
+                    command.Parameters.Add(param_mond);
+
+                    SqlParameter param_n_saldo = new SqlParameter("@NUEVO_SALDO", SqlDbType.Int);
+                    param_n_saldo.Direction = ParameterDirection.Input;
+                    param_n_saldo.Value = nuevo_saldo;
+                    command.Parameters.Add(param_n_saldo);
+
+                    command.ExecuteScalar();
+
+                    Conexion.Close();
+
+                    return true;
+                }
+            }
+            catch (Exception exc)
+            {
+                Console.WriteLine(exc);
+                return false;
+            }
+        }
     }
 }
