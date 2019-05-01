@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 
 using Guardllet_Desarrollo.Backend.Data.Customers;
 using Guardllet_Desarrollo.Backend.Data.Wallet;
+using Guardllet_Desarrollo.Backend.Data.Movements;
 
 namespace Guardllet_Desarrollo
 {
@@ -62,10 +63,12 @@ namespace Guardllet_Desarrollo
 
             int saldo = ObtenerMonedero.Saldo(id_monedero);
 
-            int proceso = saldo - precio;
-            if (proceso > 0) 
+            int nuevo_saldo = saldo - precio;
+            if (nuevo_saldo > 0) 
             {
-                bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, proceso);
+                bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, nuevo_saldo);
+
+                int registro = MovimientoCV.Registrar(1, id_monedero, 1, 12342);
             }
             else
             {

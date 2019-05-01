@@ -473,6 +473,62 @@ END
 --------------------------------------------------------------
 GO
 
+------PROCEDIMIENTO PARA REGISTRAR--------
+-------------MOVIMIENTO CV----------------
+
+CREATE PROCEDURE [dbo].[RegistroMovimientoCV]
+
+@ID_PRODUCTO INT,
+@ID_MONEDERO INT,
+@ESTADO INT,
+@FECHA DATETIME,
+@NUMERO_AUTORIZACION VARCHAR(50),
+@MENSAJE VARCHAR(500),
+
+@ID_REGISTRO INT OUTPUT
+
+AS
+
+BEGIN
+    
+Insert Into MOVIMIENTO_CV
+(
+    ID_PRODUCTO,
+	ID_MONEDERO,
+	ESTADO,
+	FECHA,
+	NUMERO_AUTORIZACION,
+	MENSAJE
+)
+
+Values
+
+(
+	@ID_PRODUCTO,
+	@ID_MONEDERO,
+	@ESTADO,
+	@FECHA,
+	@NUMERO_AUTORIZACION,
+	@MENSAJE
+)
+
+END
+
+BEGIN
+
+DECLARE @ID AS INT 
+
+SELECT @ID = ID_MOVIMIENTO_CV FROM MOVIMIENTO_CV WHERE NUMERO_AUTORIZACION = @NUMERO_AUTORIZACION
+SET @ID_REGISTRO = @ID
+
+RETURN(@ID_REGISTRO)
+
+END
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+GO
+
 ----------------------------------
 ---INSERCION DE DATOS ESTATICOS---
 ----------------------------------
@@ -482,5 +538,5 @@ VALUES ('Cecyt 13 "Ricardo Flores Magon"')
 
 GO
 
-SELECT  ID_MONEDERO,SALDO FROM MONEDERO where CODIGO =  'IPN00020151302790000'
+
 
