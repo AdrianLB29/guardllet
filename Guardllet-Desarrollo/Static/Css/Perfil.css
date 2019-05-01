@@ -226,6 +226,14 @@ header {
     min-width: 90px;
 }
 
+#descargar {
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    background-color: #001935;
+    border: solid 0px;
+}
+
 .contenedor-datos {
     width: 95%;
     height: 300px;
