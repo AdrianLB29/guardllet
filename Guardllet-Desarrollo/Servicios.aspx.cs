@@ -51,22 +51,30 @@ namespace Guardllet_Desarrollo
 
         protected void BotonPagar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("MiDinero.aspx");
+            string id = Session["usuario"].ToString();
+            Session["articulo"] = "Examen";
+            Response.Redirect("Carrito.aspx?" + id, false);
         }
 
         protected void BotonPagardos_Click(object sender, EventArgs e)
         {
-            Response.Redirect("MiDinero.aspx");
+            string id = Session["usuario"].ToString();
+            Session["articulo"] = "Credencial";
+            Response.Redirect("Carrito.aspx?" + id, false);
         }
 
         protected void BotonPagartres_Click(object sender, EventArgs e)
         {
-            Response.Redirect("MiDinero.aspx");
+            string id = Session["usuario"].ToString();
+            Session["articulo"] = "Deuda";
+            Response.Redirect("Carrito.aspx?" + id, false);
         }
 
         protected void BotonPagarcuatro_Click(object sender, EventArgs e)
         {
-            Response.Redirect("MiDinero.aspx");
+            string id = Session["usuario"].ToString();
+            Session["articulo"] = "Papeleria";
+            Response.Redirect("Carrito.aspx?" + id, false);
         }
     }
 }

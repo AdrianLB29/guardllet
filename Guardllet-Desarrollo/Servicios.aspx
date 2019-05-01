@@ -45,7 +45,7 @@
                     <br />
                         <small>Precio: 10$</small>
                     </p>
-                    <button class="Boton-Detalles" onclick="ets()" type="button"><span class="icon-file-text"></span>&nbsp; Detalles</button>
+                    <button class="Boton-Detalles" onclick="ets()" type="button"><span class="icon-file-text"></span>&nbsp; Comprar</button>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@
                     <br />
                         <small>Precio: 58$</small>
                     </p>
-                    <button class="Boton-Detalles" onclick="credencial()" type="button"><span class="icon-file-text"></span>&nbsp; Detalles</button>
+                    <button class="Boton-Detalles" onclick="credencial()" type="button"><span class="icon-file-text"></span>&nbsp; Comprar</button>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
                     <br />
                         <small>Precio: 68$</small>
                     </p>
-                    <button class="Boton-Detalles" onclick="deuda()" type="button"><span class="icon-file-text"></span>&nbsp; Detalles</button>
+                    <button class="Boton-Detalles" onclick="deuda()" type="button"><span class="icon-file-text"></span>&nbsp; Comprar</button>
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@
                     <br />
                         <small>Precios desde 1$</small>
                     </p>
-                    <button class="Boton-Detalles" onclick="copias()" type="button"><span class="icon-file-text"></span>&nbsp; Detalles</button>
+                    <button class="Boton-Detalles" onclick="copias()" type="button"><span class="icon-file-text"></span>&nbsp; Comprar</button>
                 </div>
             </div>
         </div>

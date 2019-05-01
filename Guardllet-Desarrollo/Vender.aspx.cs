@@ -16,9 +16,20 @@ namespace Guardllet_Desarrollo.Frontend.Sellers
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // if (!Page.IsPostBack)
-            // {
-            // }
+            if (!Page.IsPostBack)
+            {
+                if (Session["usuario"] != null)
+                {
+                    Usuario.Text = Session["usuario"].ToString();
+                }
+                else
+                {
+                    Response.AppendHeader("Cache-Control", "no-store");
+                    Response.Redirect("default.aspx");
+                }
+            }
+
+            int usuario = Convert.ToInt16(Session["usuario"]);
 
         }
 
@@ -71,6 +82,15 @@ namespace Guardllet_Desarrollo.Frontend.Sellers
                 {
 
                 }
+        }
+
+        protected void btnCerar_Click(object sender, EventArgs e)
+        {
+            Session.RemoveAll();
+            Session.Abandon();
+            Response.Cookies.Add(new HttpCookie("ASP.NET_SessionId", ""));
+            Response.AppendHeader("Cache-Control", "no-store");
+            Response.Redirect("default.aspx");
         }
     }
 }
