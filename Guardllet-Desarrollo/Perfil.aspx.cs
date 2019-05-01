@@ -38,11 +38,42 @@ namespace Guardllet_Desarrollo
                         item.Attributes.Add("class", "ticket");
                         item.ID = "compra";
 
-                        HtmlGenericControl ITEM2 = new HtmlGenericControl("div");
-                        ITEM2.Attributes.Add("class", "fecha");
-                        ITEM2.ID = "fecha";
+                        HtmlGenericControl item2 = new HtmlGenericControl("div");
+                        item2.Attributes.Add("class", "Decoracion");
 
-                        item.Controls.Add(ITEM2);
+                        HtmlGenericControl item3 = new HtmlGenericControl("div");
+                        item3.Attributes.Add("class", "contenido");
+
+                        Label nombre = new Label();
+                        nombre.ID = "NombreProducto";
+                        nombre.Text = "Pago de examen";
+
+                        Label fecha = new Label();
+                        fecha.ID = "FechaCompra";
+                        fecha.Text = "Fecha de compra";
+
+                        item3.Controls.Add(nombre);
+                        item3.Controls.Add(fecha);
+
+                        HtmlGenericControl item4 = new HtmlGenericControl("div");
+                        item4.Attributes.Add("class", "descarga");
+
+                        Label icono = new Label();
+                        icono.Attributes.Add("class", "icon-download");
+                        icono.Visible = false;
+
+                        item4.Controls.Add(icono);
+
+                        Button descargar = new Button();
+                        descargar.ID = "descargar";
+                        descargar.Text = icono.Text;
+                       
+                        item4.Controls.Add(descargar);
+
+                        item.Controls.Add(item2);
+                        item.Controls.Add(item3);
+                        item.Controls.Add(item4);
+
 
                         ContenedorTickets.Controls.Add(item);
                     }

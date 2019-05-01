@@ -52,16 +52,19 @@
             </div>
         </div>
 
-        <div class="contenedor-tickets">
-            <div class="titulo-tickets">
-                <p id="titulo" aling="center">¡Tickets de compra!</p>
-            </div>
-            <div id="ContenedorTickets" runat="server">
-
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 margen">
+            <div class="contenedor-tickets">
+                <div class="titulo-tickets">
+                    <p id="titulo">¡Tickets de compra!</p>
+                </div>
+                <div id="ContenedorTickets" runat="server">
+                </div>
             </div>
         </div>
-        <div class="contenedor-datos">
-            <button type="button" id="BotonActualizar">¡Editar datos!</button>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 margen">
+            <div class="contenedor-datos">
+                <button type="button" id="BotonActualizar">¡Editar datos!</button>
+            </div>
         </div>
     </form>
 
