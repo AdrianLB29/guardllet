@@ -446,6 +446,33 @@ END
 --------------------------------------------------------------
 GO
 
+---PROCEDIMIENTO PARA ACTUALIZAR--------
+--------- SALDO MONEDERO ---------------
+
+CREATE PROCEDURE  [dbo].[ActualizarSaldo]
+
+@ID_MONEDERO INT,
+@NUEVO_SALDO INT
+
+AS
+
+BEGIN
+    
+UPDATE MONEDERO
+
+SET
+ 
+	SALDO = @NUEVO_SALDO
+ 
+WHERE ID_MONEDERO = @ID_MONEDERO
+
+END
+
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+GO
+
 ----------------------------------
 ---INSERCION DE DATOS ESTATICOS---
 ----------------------------------
