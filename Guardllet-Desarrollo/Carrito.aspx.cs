@@ -68,7 +68,7 @@ namespace Guardllet_Desarrollo
             {
                 bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, nuevo_saldo);
                 int registro = MovimientoCV.Registrar(1, id_monedero, 1, 12342);
-                Response.Redirect("Servicios.aspx", true);
+                Response.Redirect("Perfil.aspx", true);
             }
             else
             {
@@ -92,7 +92,7 @@ namespace Guardllet_Desarrollo
             {
                 bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, nuevo_saldo);
                 int registro = MovimientoCV.Registrar(2, id_monedero, 1, 67);
-                Response.Redirect("Servicios.aspx", true);
+                Response.Redirect("Perfil.aspx", true);
             }
             else
             {
@@ -116,7 +116,7 @@ namespace Guardllet_Desarrollo
             {
                 bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, nuevo_saldo);
                 int registro = MovimientoCV.Registrar(3, id_monedero, 1, 697677);
-                Response.Redirect("Servicios.aspx", true);
+                Response.Redirect("Perfil.aspx", true);
             }
             else
             {
@@ -140,7 +140,7 @@ namespace Guardllet_Desarrollo
             {
                 bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, nuevo_saldo);
                 int registro = MovimientoCV.Registrar(3, id_monedero, 1, 697677);
-                Response.Redirect("Servicios.aspx", true);
+                Response.Redirect("Perfil.aspx", true);
             }
             else
             {
