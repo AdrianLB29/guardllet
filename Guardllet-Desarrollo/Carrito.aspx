@@ -19,7 +19,7 @@
 <header>
     <div class="menu">
         <div class="cancelar">
-            <button type="button" id="BtnCancelar"><span class=""></span></button>
+            <button type="button" runat="server" onserverclick="BtnCancelar_Click" id="BtnCancelar"><span class="icon-arrow-left2"></span></button>
         </div>
     </div>
 </header>
