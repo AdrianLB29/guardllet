@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 
 using Guardllet_Desarrollo.Backend.Data.Customers;
 using Guardllet_Desarrollo.Backend.Data.Wallet;
+using Guardllet_Desarrollo.Backend.Data.Movements;
 
 namespace Guardllet_Desarrollo
 {
@@ -62,10 +63,12 @@ namespace Guardllet_Desarrollo
 
             int saldo = ObtenerMonedero.Saldo(id_monedero);
 
-            int proceso = saldo - precio;
-            if (proceso > 0) 
+            int nuevo_saldo = saldo - precio;
+            if (nuevo_saldo >= 0) 
             {
-                bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, proceso);
+                bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, nuevo_saldo);
+                int registro = MovimientoCV.Registrar(1, id_monedero, 1, 12342);
+                Response.Redirect("Perfil.aspx", true);
             }
             else
             {
@@ -75,9 +78,7 @@ namespace Guardllet_Desarrollo
 
         protected void BtnPagarCrd_Click(object sender, EventArgs e)
         {
-            int precio = 58;
-
-            string materia = TxtMateria.Text;
+            int precio = 62;
 
             int id_usuario = Convert.ToInt16(Session["usuario"]);
 
@@ -87,9 +88,11 @@ namespace Guardllet_Desarrollo
 
             int nuevo_saldo = saldo - precio;
 
-            if (nuevo_saldo > 0)
+            if (nuevo_saldo >= 0)
             {
-
+                bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, nuevo_saldo);
+                int registro = MovimientoCV.Registrar(2, id_monedero, 1, 67);
+                Response.Redirect("Perfil.aspx", true);
             }
             else
             {
@@ -101,19 +104,19 @@ namespace Guardllet_Desarrollo
         {
             int precio = Convert.ToInt16(TxtMonto.Text.Trim());
 
-            string materia = TxtMateria.Text;
-
             int id_usuario = Convert.ToInt16(Session["usuario"]);
 
             int id_monedero = ObtenerMonedero.id_monedero(id_usuario);
 
             int saldo = ObtenerMonedero.Saldo(id_monedero);
 
-            int proceso = saldo - precio;
+            int nuevo_saldo = saldo - precio;
 
-            if (proceso > 0)
+            if (nuevo_saldo >= 0)
             {
-
+                bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, nuevo_saldo);
+                int registro = MovimientoCV.Registrar(3, id_monedero, 1, 697677);
+                Response.Redirect("Perfil.aspx", true);
             }
             else
             {
@@ -125,24 +128,29 @@ namespace Guardllet_Desarrollo
         {
             int precio = Convert.ToInt16(TxtCopias.Text.Trim());
 
-            string materia = TxtMateria.Text;
-
             int id_usuario = Convert.ToInt16(Session["usuario"]);
 
             int id_monedero = ObtenerMonedero.id_monedero(id_usuario);
 
             int saldo = ObtenerMonedero.Saldo(id_monedero);
 
-            int proceso = saldo - precio;
+            int nuevo_saldo = saldo - precio;
 
-            if (proceso > 0)
+            if (nuevo_saldo >= 0)
             {
-
+                bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, nuevo_saldo);
+                int registro = MovimientoCV.Registrar(3, id_monedero, 1, 697677);
+                Response.Redirect("Perfil.aspx", true);
             }
             else
             {
 
             }
+        }
+
+        protected void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Servicios.aspx", true);
         }
     }
 }

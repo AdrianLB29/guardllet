@@ -42,7 +42,13 @@ namespace Guardllet_Desarrollo.Backend.Data.Accounts
                     M = Validador.Match(celular);
                     return M.Success;
                 }
-                else
+                else if (celular.Substring(0, 1) == "5" && celular.Substring(1, 1) == "6")
+                {
+                    Match M;
+                    Regex Validador = new Regex(exprecion_celular, RegexOptions.IgnoreCase);
+                    M = Validador.Match(celular);
+                    return M.Success;
+                }
                 {
                     return false;
                 }

@@ -167,41 +167,71 @@ header {
     margin-top: 2%;
     position: relative;
     background-color: #edf1f6;
-    border-radius: 15px;
-    -webkit-box-shadow: 1px 1px 9px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 1px 9px 0px rgba(0,0,0,0.75);
-box-shadow: 1px 1px 9px 0px rgba(0,0,0,0.75);
 }
 
 .titulo-tickets {
-    width: 100%;
+    width: 50%;
     height: 50px;
-    text-align: center;
+    margin-left: 25%;
+    margin-right: 15%;
 }
 
 #titulo {
-    font-size: x-large;
+    font-size: 150%;
     margin-top: 10px;
     position: absolute;
 }
 
 #ContenedorTickets {
-    background-color: white;
+    background-color: #edf1f6;
     width: 97%;
     height: 190px;
     margin-left: 1.5%;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     position: absolute;
-    border-radius: 0px 0px 15px 15px;
 }
 
 #compra {
-    background-color: black;
+    background-color: #0000001a;
     width: 100%;
     height: 100px;
     position: relative;
     margin-top: 10px;
+    display: table;
+}
+
+.Decoracion {
+    height: 100%;
+    width: 10px;
+    background-color: #001935;
+    position: absolute;
+}
+
+.contenido {
+    float: left;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    margin-left: 10px;
+    min-width: 210px;
+}
+
+.descarga {
+    float: left;
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    margin-left: 70%;
+    min-width: 90px;
+}
+
+#descargar {
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    background-color: #001935;
+    border: solid 0px;
 }
 
 .contenedor-datos {
@@ -215,6 +245,6 @@ footer {
     width: 100%;
     height: 50px;
     background-color: #001935;
-    margin-top: 5%;
+    margin-top: 510px;
 
 }

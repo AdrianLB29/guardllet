@@ -113,6 +113,8 @@
     <Compile Include="Backend\Data\Accounts\Validar.cs" />
     <Compile Include="Backend\Data\Customers\AgregarDatos.cs" />
     <Compile Include="Backend\Data\Customers\ObtenerDatos.cs" />
+    <Compile Include="Backend\Data\Movements\Comprobante.cs" />
+    <Compile Include="Backend\Data\Movements\MovimientoCV.cs" />
     <Compile Include="Backend\Data\Wallet\CreacionCodigo.cs" />
     <Compile Include="Backend\Data\Wallet\Monedero.cs" />
     <Compile Include="Backend\Data\Wallet\ObtenerMonedero.cs" />
@@ -216,7 +218,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Backend\Data\Movements\" />
     <Folder Include="Backend\Data\Products\" />
     <Folder Include="Backend\Messages\" />
     <Folder Include="Backend\Reports\" />
