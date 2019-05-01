@@ -1,6 +1,11 @@
 ﻿
-
 #contenido {
   float: left;
   width: 85%;
+}
+
+#CerrarSesion{
+    position: relative;
+
+    right: 300px;
 }

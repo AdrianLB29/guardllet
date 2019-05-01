@@ -19,22 +19,32 @@
                 <div class="row">
                     <div class="col-sm-4">
         <asp:Label ID="Usuario" runat="server" Text=""></asp:Label>
-                     </div>
-                <div>
+                    <br />
+                    <br />
             <asp:Label ID="lSaldo" runat="server" Text=""></asp:Label>
               <div id="contenido">
                          <asp:TextBox ID="tbNoMenedero" runat="server"  ></asp:TextBox>
+                  <br />
                          <asp:TextBox ID="tbsaldo" runat="server"></asp:TextBox>
-              </div>
+                  <br />
+                         <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" class="btn btn-info"/>
+                         <asp:Button ID="btnAgregar" runat="server" Text="Recargar" OnClick="btnAgregar_Click" class="btn btn-info" />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                  <div id="CerrarSesion">
+                      <asp:Button ID="btnCerar" runat="server" Text="Cerrar Sesión" OnClick="btnCerar_Click" class="btn btn-info" />
+                  </div>
+                   
+             </div>
 
-            <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" class="btn btn-info"/>
-            <asp:Button ID="btnAgregar" runat="server" Text="Recargar" OnClick="btnAgregar_Click" class="btn btn-info" />
-            <asp:Button ID="btnCobrar" runat="server" Text="Cobrar" class="btn btn-info" />
-        </div>
+
+
+
         <asp:Label ID="lFinal" runat="server" Text="Label" Visible="False"></asp:Label>
-        <div>
-            <asp:Button ID="btnCerar" runat="server" Text="Cerrar Sesión" OnClick="btnCerar_Click" class="btn btn-info" />
-                        </div>
                    </div>
              </div>
     </form>
