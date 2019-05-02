@@ -68,6 +68,7 @@ namespace Guardllet_Desarrollo
             {
                 bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, nuevo_saldo);
                 int registro = MovimientoCV.Registrar(1, id_monedero, 1, 12342);
+                int ticket = Comprobante.Crear(id_monedero,"Examen a titulo de suficiencia",321341234,precio,materia,1);
                 Response.Redirect("Perfil.aspx", true);
             }
             else
@@ -92,6 +93,7 @@ namespace Guardllet_Desarrollo
             {
                 bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, nuevo_saldo);
                 int registro = MovimientoCV.Registrar(2, id_monedero, 1, 67);
+                int ticket = Comprobante.Crear(id_monedero, "Reposicion de credencial", 321341234, precio, " ", 1);
                 Response.Redirect("Perfil.aspx", true);
             }
             else
@@ -116,6 +118,7 @@ namespace Guardllet_Desarrollo
             {
                 bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, nuevo_saldo);
                 int registro = MovimientoCV.Registrar(3, id_monedero, 1, 697677);
+                int ticket = Comprobante.Crear(id_monedero, "Deuda en biblioteca", 321341234, precio, " ", 1);
                 Response.Redirect("Perfil.aspx", true);
             }
             else
@@ -140,6 +143,7 @@ namespace Guardllet_Desarrollo
             {
                 bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, nuevo_saldo);
                 int registro = MovimientoCV.Registrar(3, id_monedero, 1, 697677);
+                int ticket = Comprobante.Crear(id_monedero, "Papeleria", 321341234, precio, " ", 1);
                 Response.Redirect("Perfil.aspx", true);
             }
             else

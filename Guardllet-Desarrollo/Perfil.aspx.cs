@@ -7,6 +7,8 @@ using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
 
 using Guardllet_Desarrollo.Backend.Data.Customers;
+using Guardllet_Desarrollo.Backend.Data.Wallet;
+using Guardllet_Desarrollo.Backend.Data.Movements;
 
 namespace Guardllet_Desarrollo
 {
@@ -22,6 +24,7 @@ namespace Guardllet_Desarrollo
 
                     int id_datos = ObtenerDatos.id_datos(Convert.ToInt16(id));
                     int id_datos_escolares = ObtenerDatos.id_datos_escolares(id_datos);
+                    int id_monedero = ObtenerMonedero.id_monedero(Convert.ToInt16(id));
 
                     Dictionary<string, string> datos = ObtenerDatos.Generales(id_datos);
                     Dictionary<string, string> datos_escolares = ObtenerDatos.Escolares(id_datos_escolares);
@@ -30,10 +33,14 @@ namespace Guardllet_Desarrollo
                     LbBoleta.Text = datos_escolares["Boleta"];
                     LbEscuela.Text = "Cecyt 13 'Ricardo Flores Magon'";
 
+                    Dictionary<string, Dictionary<string, string>> tickets = Comprobante.Obtener(id_monedero);
 
+                    int numero_tickets = tickets.Count();
 
-                    for (int i = 0; i < 5; i++)
+                    for (int i = numero_tickets-1; i < numero_tickets & i != -1; i--)
                     {
+                        Dictionary<string, string> ticket = tickets[string.Format("{0} Ticket",i)];
+
                         HtmlGenericControl item = new HtmlGenericControl("div");
                         item.Attributes.Add("class", "ticket");
                         item.ID = "compra";
@@ -44,29 +51,33 @@ namespace Guardllet_Desarrollo
                         HtmlGenericControl item3 = new HtmlGenericControl("div");
                         item3.Attributes.Add("class", "contenido");
 
+                        HtmlGenericControl item31 = new HtmlGenericControl("div");
+                        item31.Attributes.Add("class", "definicion");
+
+                        HtmlGenericControl item32 = new HtmlGenericControl("div");
+                        item32.Attributes.Add("class", "fecha");
+
                         Label nombre = new Label();
                         nombre.ID = "NombreProducto";
-                        nombre.Text = "Pago de examen";
+                        nombre.Text = ticket["Nombre"];
 
                         Label fecha = new Label();
                         fecha.ID = "FechaCompra";
-                        fecha.Text = "Fecha de compra";
+                        fecha.Text = ticket["Fecha"];
 
-                        item3.Controls.Add(nombre);
-                        item3.Controls.Add(fecha);
+                        item31.Controls.Add(nombre);
+                        item32.Controls.Add(fecha);
+
+
+                        item3.Controls.Add(item31);
+                        item3.Controls.Add(item32);
 
                         HtmlGenericControl item4 = new HtmlGenericControl("div");
                         item4.Attributes.Add("class", "descarga");
 
-                        Label icono = new Label();
-                        icono.Attributes.Add("class", "icon-download");
-                        icono.Visible = false;
-
-                        item4.Controls.Add(icono);
-
                         Button descargar = new Button();
                         descargar.ID = "descargar";
-                        descargar.Text = icono.Text;
+                        descargar.Text = "Ticket";
                        
                         item4.Controls.Add(descargar);
 

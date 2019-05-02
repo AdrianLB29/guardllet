@@ -217,6 +217,22 @@ header {
     min-width: 210px;
 }
 
+.definicion {
+    width: 97%;
+    height: 30%;
+    margin-top: 10px;
+    margin-left: 3%;
+    font-size: x-large;
+}
+
+.fecha {
+    width: 97%;
+    height: 30%;
+    margin-left: 3%;
+    margin-top: 10px;
+    font-size: large;
+}
+
 .descarga {
     float: left;
     position: absolute;
@@ -232,19 +248,32 @@ header {
     margin: 5%;
     background-color: #001935;
     border: solid 0px;
+    color: white;
+    font-size: large;
 }
 
 .contenedor-datos {
     width: 95%;
     height: 300px;
     margin-left: 2.5%;
+    margin-top: 2%;
+    background-color: #edf1f6;
+}
+
+#BotonActualizar {
+    width: 35%;
+    height: 35px;
+    margin-left: 32.5%;
+    margin-top: 70%;
+    border-radius: 15px;
+    border: 0px;
+    background-color: #001935;
+    color: white;
 }
 
 footer {
-
     width: 100%;
     height: 50px;
     background-color: #001935;
-    margin-top: 510px;
-
+    margin-top: 580px;
 }
