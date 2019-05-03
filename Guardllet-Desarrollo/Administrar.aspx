@@ -12,8 +12,9 @@
     <div>
         <asp:Label ID="LUsuario" runat="server" Text=""></asp:Label>
         <br />
-        <asp:Button ID="btnProducto" runat="server" Text="Producto" OnClick="btnProducto_Click" /><asp:Button ID="btnUsuarios" runat="server" Text="Usuarios" OnClick="btnUsuarios_Click" /><asp:Button ID="btnInformacion" runat="server" Text="Informacion" />
+        <asp:Button ID="btnProducto" runat="server" Text="Producto" OnClick="btnProducto_Click" /><asp:Button ID="btnUsuarios" runat="server" Text="Usuarios" OnClick="btnUsuarios_Click" /><asp:Button ID="btnInformacion" runat="server" Text="Informacion" OnClick="btnInformacion_Click" /><asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar Sesion" OnClick="btnCerrarSesion_Click" />
     </div>
+        
         <div>
             <asp:Label ID="lId" runat="server" Text="ID:" Visible="False"></asp:Label><asp:TextBox ID="txtID" runat="server"  Visible="False"></asp:TextBox>
             <br />

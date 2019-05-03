@@ -299,5 +299,19 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
 
                 }
         }
+
+        protected void btnInformacion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Session.RemoveAll();
+            Session.Abandon();
+            Response.Cookies.Add(new HttpCookie("ASP.NET_SessionId", ""));
+            Response.AppendHeader("Cache-Control", "no-store");
+            Response.Redirect("default.aspx");
+        }
     }
 }
