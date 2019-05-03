@@ -222,15 +222,14 @@ header {
     height: 30%;
     margin-top: 10px;
     margin-left: 3%;
-    font-size: x-large;
+    font-size: 110%;
 }
 
 .fecha {
     width: 97%;
     height: 30%;
     margin-left: 3%;
-    margin-top: 10px;
-    font-size: large;
+    font-size: 95%;
 }
 
 .descarga {
