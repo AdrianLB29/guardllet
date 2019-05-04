@@ -214,7 +214,7 @@ header {
     height: 100%;
     position: absolute;
     margin-left: 10px;
-    min-width: 210px;
+    min-width: 220px;
 }
 
 .definicion {
@@ -222,7 +222,7 @@ header {
     height: 30%;
     margin-top: 10px;
     margin-left: 3%;
-    font-size: 110%;
+    font-size: 120%;
 }
 
 .fecha {
@@ -230,6 +230,7 @@ header {
     height: 30%;
     margin-left: 3%;
     font-size: 95%;
+    margin-top: 20px;
 }
 
 .descarga {
@@ -248,7 +249,7 @@ header {
     background-color: #001935;
     border: solid 0px;
     color: white;
-    font-size: large;
+    font-size: 30px;
 }
 
 .contenedor-datos {

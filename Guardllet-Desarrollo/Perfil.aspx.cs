@@ -75,10 +75,13 @@ namespace Guardllet_Desarrollo
                         HtmlGenericControl item4 = new HtmlGenericControl("div");
                         item4.Attributes.Add("class", "descarga");
 
-                        Button descargar = new Button();
+
+                        HtmlButton descargar = new HtmlButton();
                         descargar.ID = "descargar";
-                        descargar.Text = "Ticket";
-                       
+                        descargar.Attributes.Add("onclick", "DescargarPDF('prueba', 'ticket')");
+                        descargar.Attributes.Add("type", "button");
+                        descargar.Attributes.Add("class", "icon-download");
+
                         item4.Controls.Add(descargar);
 
                         item.Controls.Add(item2);

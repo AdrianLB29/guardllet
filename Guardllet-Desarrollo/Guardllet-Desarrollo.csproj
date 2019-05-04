@@ -90,6 +90,7 @@
     <Content Include="Static\Css\Servicios.css" />
     <Content Include="Static\Css\Vender.css" />
     <Content Include="Static\Fuentes\iconos\icomoon.svg" />
+    <Content Include="Static\Js\jspdf.debug.js" />
     <Content Include="Static\Multimedia\cerrar.png" />
     <Content Include="Static\Multimedia\Datos.png" />
     <Content Include="Static\Multimedia\Entra.png" />
@@ -101,6 +102,7 @@
     <Content Include="Static\Multimedia\Registrate.png" />
     <Content Include="Static\Swiper\swiper.min.css" />
     <Content Include="Static\Swiper\swiper.min.js" />
+    <Content Include="Ticket.aspx" />
     <Content Include="Vender.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -182,6 +184,13 @@
     <Compile Include="Servicios.aspx.designer.cs">
       <DependentUpon>Servicios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Ticket.aspx.cs">
+      <DependentUpon>Ticket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ticket.aspx.designer.cs">
+      <DependentUpon>Ticket.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vender.aspx.cs">
       <DependentUpon>Vender.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -222,7 +231,6 @@
     <Folder Include="Backend\Messages\" />
     <Folder Include="Backend\Reports\" />
     <Folder Include="Backend\Transactions\" />
-    <Folder Include="Static\Js\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

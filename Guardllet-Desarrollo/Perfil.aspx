@@ -20,7 +20,7 @@
     <form id="form1" runat="server">
 
         <header>
-            <div class="menu">
+            <div class="menu" id="prueba">
                 <button id="BotonHome" runat="server" type="submit" onserverclick="BotonHome_Click" class="btnMenuH"><span class="icon-home"></span></button>
                 <button id="BotonServicios" runat="server" type="submit" onserverclick="BotonServicios_Click" class="btnMenuSV"><span class="icon-cart"></span></button>
                 <button id="BotonPerfil" runat="server" type="submit" onserverclick="BotonPerfil_Click" class="btnMenuP"><span class="icon-user"></span></button>
@@ -76,5 +76,16 @@
 </html>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="Static/Js/jspdf.debug.js"></script>
 <script type="text/javascript" src="Static/Bootstrap/js/jquery.js"></script>
 <script type="text/javascript" src="Static/Bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+     function DescargarPDF(ContenidoID, nombre) {
+         var pdf = new jsPDF('p', 'pt', 'letter');
+         html = $('#' + ContenidoID).html();
+         specialElementHandlers = {};
+         margins = { top: 10, bottom: 20, left: 20, width: 522 };
+         pdf.fromHTML(html, margins.left, margins.top, { 'width': margins.width }, function (dispose) { pdf.save(nombre + '.pdf'); }, margins);
+     }
+</script>
