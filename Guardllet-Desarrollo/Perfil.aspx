@@ -20,7 +20,7 @@
     <form id="form1" runat="server">
 
         <header>
-            <div class="menu" id="prueba">
+            <div class="menu">
                 <button id="BotonHome" runat="server" type="submit" onserverclick="BotonHome_Click" class="btnMenuH"><span class="icon-home"></span></button>
                 <button id="BotonServicios" runat="server" type="submit" onserverclick="BotonServicios_Click" class="btnMenuSV"><span class="icon-cart"></span></button>
                 <button id="BotonPerfil" runat="server" type="submit" onserverclick="BotonPerfil_Click" class="btnMenuP"><span class="icon-user"></span></button>
@@ -55,7 +55,7 @@
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 margen">
             <div class="contenedor-tickets">
                 <div class="titulo-tickets">
-                    <p id="titulo">¡Tickets de compra!</p>
+                    <p id="titulo">Comprobantes de compra</p>
                 </div>
                 <div id="ContenedorTickets" runat="server">
                 </div>
@@ -63,7 +63,52 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 margen">
             <div class="contenedor-datos">
-                <button type="button" id="BotonActualizar">¡Editar datos!</button>
+                <div class="datos-titulo">
+                    <p>Datos Personales</p>
+                </div>
+                <div class="datos-nombre">
+                    <div class="atributo">
+                        <p class="p-a">Nombre:</p>
+                    </div>
+                    <div class="valor">
+                        <asp:Label ID="LbDNombre" runat="server" Text=" "></asp:Label>
+                    </div>
+                </div>
+                <div class="datos-apellido-p">
+                    <div class="atributo">
+                        <p class="p-a">Apellido Paterno:</p>
+                    </div>
+                    <div class="valor">
+                        <asp:Label ID="LbDApellidoP" runat="server" Text=" "></asp:Label>
+                    </div>
+                </div>
+                <div class="datos-apellido-m">
+                    <div class="atributo">
+                        <p class="p-a">Apellido Materno:</p>
+                    </div>
+                    <div class="valor">
+                        <asp:Label ID="LbDApellidoM" runat="server" Text=" "></asp:Label>
+                    </div>
+                </div>
+                <div class="datos-celular">
+                    <div class="atributo">
+                        <p class="p-a">Celular:</p>
+                    </div>
+                    <div class="valor">
+                        <asp:Label ID="LbDCelular" runat="server" Text=" "></asp:Label>
+                    </div>
+                </div>
+                <div class="datos-edad">
+                    <div class="atributo">
+                        <p class="p-a">Edad:</p>
+                    </div>
+                    <div class="valor">
+                        <asp:Label ID="LbDEdad" runat="server" Text=" "></asp:Label>
+                    </div>
+                </div>
+                <div class="datos-boton">
+                    <button type="button" id="BotonActualizar">Editar datos</button>
+                </div>
             </div>
         </div>
     </form>

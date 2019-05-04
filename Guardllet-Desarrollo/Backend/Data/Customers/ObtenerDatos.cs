@@ -69,12 +69,14 @@ namespace Guardllet_Desarrollo.Backend.Data.Customers
                     string nombre = Datos.Tables[0].Rows[0]["NOMBRES"].ToString();
                     string apellido_p = Datos.Tables[0].Rows[0]["APELLIDO_P"].ToString();
                     string apellido_m = Datos.Tables[0].Rows[0]["APELLIDO_M"].ToString();
+                    string celular = Datos.Tables[0].Rows[0]["CELULAR"].ToString();
 
                     Dictionary<string, string> Usuario = new Dictionary<string, string>();
 
                     Usuario.Add("Nombre", nombre);
                     Usuario.Add("Apellido_p", apellido_p);
                     Usuario.Add("Apellido_m", apellido_m);
+                    Usuario.Add("Celular", celular);
 
                     return Usuario;
                 }

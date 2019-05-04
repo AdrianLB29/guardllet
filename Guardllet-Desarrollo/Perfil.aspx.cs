@@ -33,6 +33,12 @@ namespace Guardllet_Desarrollo
                     LbBoleta.Text = datos_escolares["Boleta"];
                     LbEscuela.Text = "Cecyt 13 'Ricardo Flores Magon'";
 
+                    LbDNombre.Text = datos["Nombre"];
+                    LbDApellidoP.Text = datos["Apellido_p"];
+                    LbDApellidoM.Text = datos["Apellido_m"];
+                    LbDCelular.Text = datos["Celular"];
+                    LbDEdad.Text = datos_escolares["Edad"] + " " + "años";
+
                     Dictionary<string, Dictionary<string, string>> tickets = Comprobante.Obtener(id_monedero);
 
                     int numero_tickets = tickets.Count();
@@ -67,14 +73,11 @@ namespace Guardllet_Desarrollo
 
                         item31.Controls.Add(nombre);
                         item32.Controls.Add(fecha);
-
-
                         item3.Controls.Add(item31);
                         item3.Controls.Add(item32);
 
                         HtmlGenericControl item4 = new HtmlGenericControl("div");
                         item4.Attributes.Add("class", "descarga");
-
 
                         HtmlButton descargar = new HtmlButton();
                         descargar.ID = "descargar";
@@ -87,7 +90,6 @@ namespace Guardllet_Desarrollo
                         item.Controls.Add(item2);
                         item.Controls.Add(item3);
                         item.Controls.Add(item4);
-
 
                         ContenedorTickets.Controls.Add(item);
                     }
