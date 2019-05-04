@@ -91,15 +91,11 @@
     <Content Include="Static\Css\Vender.css" />
     <Content Include="Static\Fuentes\iconos\icomoon.svg" />
     <Content Include="Static\Js\jspdf.debug.js" />
-    <Content Include="Static\Multimedia\cerrar.png" />
-    <Content Include="Static\Multimedia\Datos.png" />
-    <Content Include="Static\Multimedia\Entra.png" />
-    <Content Include="Static\Multimedia\fondo.jpg" />
     <Content Include="Registrate.aspx" />
     <Content Include="Administrar.aspx" />
     <Content Include="MiDinero.aspx" />
     <Content Include="Static\Multimedia\images.png" />
-    <Content Include="Static\Multimedia\Registrate.png" />
+    <Content Include="Static\Multimedia\perfil.gif" />
     <Content Include="Static\Swiper\swiper.min.css" />
     <Content Include="Static\Swiper\swiper.min.js" />
     <Content Include="Ticket.aspx" />
