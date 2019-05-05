@@ -114,6 +114,14 @@
     </form>
 
     <footer>
+        <div class="derechos">
+            <p>© Derechos reservados a Guardllet S.A de CV.</p>
+        </div>
+        <div class="sociales">
+            <button type="button" id="SocialesFacebook"><span class="icon-facebook"></span></button>
+            <button type="button" id="SocialesTwitter"><span class="icon-twitter"></span></button>
+            <button type="button" id="SocialesInstagram"><span class="icon-instagram"></span></button>
+        </div>
     </footer>
 
 </body>

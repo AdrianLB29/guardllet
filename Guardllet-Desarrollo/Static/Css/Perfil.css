@@ -262,6 +262,7 @@ header {
     margin-top: 2%;
     background-color: #edf1f6;
     position: relative;
+    border-radius: 10px;
 }
 
 .datos-titulo {
@@ -271,6 +272,7 @@ header {
     position: absolute;
     margin-top: 10px;
     font-size: x-large;
+    min-width: 200px;
 }
 
 .datos-nombre {
@@ -364,4 +366,51 @@ footer {
     height: 50px;
     background-color: #001935;
     margin-top: 660px;
+    display: table;
+}
+
+.derechos {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    color: white;
+    height: 100%;
+    text-align: center;
+}
+
+.sociales {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#SocialesFacebook {
+    color: white;
+    background-color: #001935;
+    border: solid 0px;
+    height: 40px;
+    margin-top: 10px;
+    width: 25%;
+    font-size: large;
+    margin-left: 10%;
+}
+
+#SocialesTwitter {
+    color: white;
+    background-color: #001935;
+    border: solid 0px;
+    height: 40px;
+    margin-top: 5px;
+    width: 25%;
+    font-size: large;
+}
+
+#SocialesInstagram {
+    color: white;
+    background-color: #001935;
+    border: solid 0px;
+    height: 40px;
+    margin-top: 5px;
+    width: 25%;
+    font-size: large;
 }

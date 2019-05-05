@@ -1,74 +1,59 @@
 ﻿
 body {
-
     background-color: white;
     height: 100%;
-
 }
 
 header {
-
     width: 100%;
     height: 80px;
     background-color: #001935;
 }
 
 main {
-
     position: relative;
     width: 100%;
     height: 800px;
     min-height: 100%;
     max-height: 100%;
-
 }
 
 .menu {
-
     width: 60%;
     height: 97%;
     margin-left: 40%;
-
 }
 
 #BotonHome {
-
     width: 10%;
     height: 100%;
     background-color: #001935;
     color: white;
     border: solid 0px;
     font-size: 20px;
-
 }
 
-#BotonHome:hover {
-
-    text-shadow: 4px 3px 3px black;
-    font-size: 23px;
-}
+    #BotonHome:hover {
+        text-shadow: 4px 3px 3px black;
+        font-size: 23px;
+    }
 
 #BotonServicios {
-
-     width: 10%;
+    width: 10%;
     height: 100%;
     background-color: #001935;
     color: white;
     border: solid 0px;
     margin-left: 15%;
     font-size: 20px;
-
 }
 
-#BotonServicios:hover {
-
-    text-shadow: 4px 3px 3px black;
-    font-size: 23px;
-
-}
+    #BotonServicios:hover {
+        text-shadow: 4px 3px 3px black;
+        font-size: 23px;
+    }
 
 #BotonPerfil {
-
     width: 10%;
     height: 100%;
     background-color: #001935;
@@ -76,18 +61,14 @@ main {
     border: solid 0px;
     margin-left: 15%;
     font-size: 20px;
-
 }
 
-#BotonPerfil:hover {
-
-    text-shadow: 4px 3px 3px black;
-    font-size: 23px;
-
-}
+    #BotonPerfil:hover {
+        text-shadow: 4px 3px 3px black;
+        font-size: 23px;
+    }
 
 #BotonSesion {
-
     width: 10%;
     height: 100%;
     background-color: #001935;
@@ -95,62 +76,48 @@ main {
     border: solid 0px;
     margin-left: 15%;
     font-size: 20px;
-
 }
 
-#BotonSesion:hover {
-
-    text-shadow: 4px 3px 3px black;
-    font-size: 23px;
-
-}
+    #BotonSesion:hover {
+        text-shadow: 4px 3px 3px black;
+        font-size: 23px;
+    }
 
 .swiper-container {
-
-      width: 100%;
-      padding-top: 40px;
-      padding-bottom: 40px;
-
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .swiper-slide {
-
-      background-position: left;
-      width: 300px;
-      height: 400px;
-      background-color: #edf1f6;
-
+    background-position: left;
+    width: 300px;
+    height: 400px;
+    background-color: #edf1f6;
 }
 
 .servicio {
-
     width: 100%;
     height: 100%;
-
 }
 
 .imagen {
-
     width: 95%;
     height: 70%;
     margin: 2.5%;
     background-image: url(../Multimedia/images.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-
 }
 
 .descripcion {
-
     width: 100%;
     height: 23%;
     margin-top: 2%;
     text-align: center;
-
 }
 
 .Boton-Detalles {
-
     background-color: #edf1f6;
     color: black;
     border: solid 1px #001935;
@@ -160,22 +127,18 @@ main {
     box-shadow: rgba(0, 0, 0, 0.75) 2px 6px 10px -4px;
     -moz-box-shadow: 2px 6px 10px -4px rgba(0,0,0,0.75);
     box-shadow: 2px 6px 10px -4px rgba(0,0,0,0.75);
-
 }
 
 .mas-informacion {
-
     width: 95%;
     height: 300px;
     background-color: #edf1f6;
     margin-left: 2.5%;
     margin-top: 5%;
     border-radius: 10px;
-
 }
 
 .informacion {
-
     width: 100%;
     height: 100%;
     position: relative;
@@ -183,7 +146,6 @@ main {
 }
 
 .informacion-dos {
-
     width: 100%;
     height: 100%;
     position: relative;
@@ -191,25 +153,20 @@ main {
 }
 
 .informacion-tres {
-
     width: 100%;
     height: 100%;
     position: relative;
     display: none;
-
 }
 
 .informacion-cuatro {
-
     width: 100%;
     height: 100%;
     position: relative;
     display: none;
-
 }
 
 .titulo-producto {
-
     width: 100%;
     height: 50px;
     position: absolute;
@@ -219,7 +176,6 @@ main {
 }
 
 .elementos {
-
     width: 90%;
     height: 55%;
     position: absolute;
@@ -229,7 +185,6 @@ main {
 }
 
 .categoria {
-
     width: 100%;
     height: 25%;
     display: table;
@@ -237,7 +192,6 @@ main {
 }
 
 .precio {
-
     width: 100%;
     height: 25%;
     display: table;
@@ -245,7 +199,6 @@ main {
 }
 
 .comision {
-
     width: 100%;
     height: 25%;
     display: table;
@@ -253,7 +206,6 @@ main {
 }
 
 .total {
-
     width: 100%;
     height: 25%;
     display: table;
@@ -281,7 +233,6 @@ main {
 }
 
 .pagar {
-
     width: 100%;
     height: 50px;
     margin-top: 255px;
@@ -289,52 +240,88 @@ main {
 }
 
 #BotonPagar {
-
     background-color: #001935;
     height: 35px;
     width: 90px;
     color: white;
     border: solid 0px;
-
 }
 
 #BotonPagardos {
-
     background-color: #001935;
     height: 35px;
     width: 90px;
     color: white;
     border: solid 0px;
-
 }
 
 #BotonPagartres {
-
     background-color: #001935;
     height: 35px;
     width: 90px;
     color: white;
     border: solid 0px;
-
 }
 
 #BotonPagarcuatro {
-
     background-color: #001935;
     height: 35px;
     width: 90px;
     color: white;
     border: solid 0px;
-
 }
 
 
-
 footer {
-
     width: 100%;
     height: 50px;
     background-color: #001935;
     margin-top: 5%;
+    display: table;
+}
 
+.derechos {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    color: white;
+    height: 100%;
+    text-align: center;
+}
+
+.sociales {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#SocialesFacebook {
+    color: white;
+    background-color: #001935;
+    border: solid 0px;
+    height: 40px;
+    margin-top: 10px;
+    width: 25%;
+    font-size: large;
+    margin-left: 10%;
+}
+
+#SocialesTwitter {
+    color: white;
+    background-color: #001935;
+    border: solid 0px;
+    height: 40px;
+    margin-top: 5px;
+    width: 25%;
+    font-size: large;
+}
+
+#SocialesInstagram {
+    color: white;
+    background-color: #001935;
+    border: solid 0px;
+    height: 40px;
+    margin-top: 5px;
+    width: 25%;
+    font-size: large;
 }
