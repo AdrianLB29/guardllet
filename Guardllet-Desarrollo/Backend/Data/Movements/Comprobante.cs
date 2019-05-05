@@ -14,7 +14,7 @@ namespace Guardllet_Desarrollo.Backend.Data.Movements
     {
         public static int Crear(int id_monedero, string nombre, int numero_autorizacion, int precio, string materia, int tipo)
         {
-            DateTime fecha = DateTime.Now;
+            DateTime fecha = System.DateTime.Now;
 
             string StringConexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             try

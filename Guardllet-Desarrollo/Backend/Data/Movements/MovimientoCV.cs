@@ -38,7 +38,7 @@ namespace Guardllet_Desarrollo.Backend.Data.Movements
                     param_estado.Value = estado;
                     command.Parameters.Add(param_estado);
 
-                    DateTime fecha = System.DateTime.Today; 
+                    DateTime fecha = System.DateTime.Now; 
 
                     SqlParameter param_fecha = new SqlParameter("@FECHA", SqlDbType.DateTime);
                     param_fecha.Direction = ParameterDirection.Input;
