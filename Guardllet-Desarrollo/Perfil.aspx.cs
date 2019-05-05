@@ -81,7 +81,7 @@ namespace Guardllet_Desarrollo
 
                         HtmlButton descargar = new HtmlButton();
                         descargar.ID = "descargar";
-                        descargar.Attributes.Add("onclick", "DescargarPDF('prueba', 'ticket')");
+                        descargar.Attributes.Add("onclick", string.Format("DescargarPDF('descarga', 'TICKET0{0}')", i));
                         descargar.Attributes.Add("type", "button");
                         descargar.Attributes.Add("class", "icon-download");
 
