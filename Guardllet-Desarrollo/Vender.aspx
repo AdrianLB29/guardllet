@@ -40,10 +40,6 @@
                   </div>
                    
              </div>
-
-
-
-
         <asp:Label ID="lFinal" runat="server" Text="Label" Visible="False"></asp:Label>
                    </div>
              </div>
