@@ -47,6 +47,9 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
             btnBuscar.Visible = true;
             lPrecio.Visible = true;
             txtPrecio.Visible = true;
+            GridView1.Visible = false;
+            btnBuscar3.Visible = false;
+
 
             lIDU.Visible = false;
             txtIDU.Visible = false;
@@ -75,6 +78,9 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
             btnBuscar.Visible = false;
             lPrecio.Visible = false;
             txtPrecio.Visible = false;
+            GridView1.Visible = false;
+            btnBuscar3.Visible = false;
+
 
             lIDU.Visible = true;
             txtIDU.Visible = true;
@@ -87,34 +93,59 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
             txtEstado.Visible = true;
 
         }
+        protected void btnInformacion_Click(object sender, EventArgs e)
+        {
+            lId.Visible = false;
+            txtID.Visible = false;
+            lNombre.Visible = false;
+            txtNombre.Visible = false;
+            lCodigo.Visible = false;
+            txtCodigo.Visible = false;
+            btnProducto.Enabled = true;
+            btnAgregar.Visible = false;
+            btnActualizar.Visible = false;
+            btnBorrar.Visible = false;
+            btnUsuarios.Enabled = true;
+            btnBuscar.Visible = false;
+            lPrecio.Visible = false;
+            txtPrecio.Visible = false;
+
+            lFechaI.Visible = true;
+            lFechaFinal.Visible = true;
+            txtFechaI.Visible = true;
+            txtFechaF.Visible = true;
+            GridView1.Visible = true;
+            btnBuscar3.Visible = true;
+            btnInformacion.Enabled = false;
+        }
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
-            if(txtID.Text == "")
-            { 
-            string StringConexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
-            using (SqlConnection Conexion = new SqlConnection(StringConexion))
-                try
-                {
-                    int s = 0;
-                    s = Convert.ToInt16(txtPrecio.Text);
-                    Conexion.Open(); 
-                    SqlCommand cmd = new SqlCommand("INSERT INTO PRODUCTO (NOMBRE,CODIGO,PRECIO) VALUES ('"+ txtNombre.Text +"'," + "'" +txtCodigo.Text + "',"
-                            + s + ")", Conexion);
-                    cmd.ExecuteNonQuery();
-                    Conexion.Close();
+            if (txtID.Text == "")
+            {
+                string StringConexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
+                using (SqlConnection Conexion = new SqlConnection(StringConexion))
+                    try
+                    {
+                        int s = 0;
+                        s = Convert.ToInt16(txtPrecio.Text);
+                        Conexion.Open();
+                        SqlCommand cmd = new SqlCommand("INSERT INTO PRODUCTO (NOMBRE,CODIGO,PRECIO) VALUES ('" + txtNombre.Text + "'," + "'" + txtCodigo.Text + "',"
+                                + s + ")", Conexion);
+                        cmd.ExecuteNonQuery();
+                        Conexion.Close();
 
-                    txtID.Text = "";
-                    txtNombre.Text = "";
-                    txtCodigo.Text = "";
-                    txtPrecio.Text = "";
-                }
-                catch (Exception es)
-                {
+                        txtID.Text = "";
+                        txtNombre.Text = "";
+                        txtCodigo.Text = "";
+                        txtPrecio.Text = "";
+                    }
+                    catch (Exception es)
+                    {
 
-                }
+                    }
             }
-            else if(txtID.Text != "")
+            else if (txtID.Text != "")
             {
                 txtID.Text = "El ID No se pone";
             }
@@ -133,7 +164,7 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
                             Conexion.Open();
                             SqlCommand cmd = new SqlCommand("UPDATE PRODUCTO Set NOMBRE = '" + txtNombre.Text + "' where ID_PRODUCTO = " + txtID.Text + "", Conexion);
                             cmd.ExecuteNonQuery();
-                           
+
 
 
 
@@ -143,7 +174,7 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
 
                         }
                 }
-                if( txtPrecio.Text != "")
+                if (txtPrecio.Text != "")
                 {
                     string StringConexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
                     using (SqlConnection Conexion = new SqlConnection(StringConexion))
@@ -162,15 +193,15 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
 
                         }
 
-                    }
-                 if (txtCodigo.Text != "")
-                    {
+                }
+                if (txtCodigo.Text != "")
+                {
                     string StringConexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
                     using (SqlConnection Conexion = new SqlConnection(StringConexion))
                         try
                         {
- 
-                            Conexion.Open(); 
+
+                            Conexion.Open();
                             SqlCommand cmd = new SqlCommand("UPDATE PRODUCTO Set CODIGO = '" + txtCodigo.Text + "' where ID_PRODUCTO = " + txtID.Text + "", Conexion);
                             cmd.ExecuteNonQuery();
 
@@ -225,9 +256,9 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
 
         protected void btnActualizarU_Click(object sender, EventArgs e)
         {
-            if(txtIDU.Text != "")
+            if (txtIDU.Text != "")
             {
-                if(txtTipo.Text != "")
+                if (txtTipo.Text != "")
                 {
                     string StringConexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
                     using (SqlConnection Conexion = new SqlConnection(StringConexion))
@@ -246,7 +277,7 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
 
                         }
                 }
-                if(txtEstado.Text != "")
+                if (txtEstado.Text != "")
                 {
                     string StringConexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
                     using (SqlConnection Conexion = new SqlConnection(StringConexion))
@@ -267,7 +298,7 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
                 }
             }
 
-            else if(txtIDU.Text == "")
+            else if (txtIDU.Text == "")
             {
                 txtIDU.Text = "Revise la informacion.";
             }
@@ -285,12 +316,12 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
                 try
                 {
                     Conexion.Open();
-                    SqlCommand cmd = new SqlCommand("delete from USUARIO where ID_USUARIO = " +  txtIDU.Text , Conexion);
+                    SqlCommand cmd = new SqlCommand("delete from USUARIO where ID_USUARIO = " + txtIDU.Text, Conexion);
                     cmd.ExecuteNonQuery();
                     txtIDU.Text = "Borrado con exito";
                     txtCodigo.Text = "";
                     txtTipo.Text = "";
-                    
+
                 }
                 catch (Exception es)
                 {
@@ -298,31 +329,7 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
                 }
         }
 
-        protected void btnInformacion_Click(object sender, EventArgs e)
-        {
-            lId.Visible = false;
-            txtID.Visible = false;
-            lNombre.Visible = false;
-            txtNombre.Visible = false;
-            lCodigo.Visible = false;
-            txtCodigo.Visible = false;
-            btnProducto.Enabled = true;
-            btnAgregar.Visible = false;
-            btnActualizar.Visible = false;
-            btnBorrar.Visible = false;
-            btnUsuarios.Enabled = false;
-            btnBuscar.Visible = false;
-            lPrecio.Visible = false;
-            txtPrecio.Visible = false;
 
-            lFechaI.Visible = true;
-            lFechaFinal.Visible = true;
-            txtFechaI.Visible = true;
-            txtFechaF.Visible = true;
-
-
-
-        }
 
         protected void btnCerrarSesion_Click(object sender, EventArgs e)
         {
@@ -342,53 +349,28 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
                 {
                     Conexion.Open();
                     string cmd = string.Format("select sum(MONTO) as MONTOFINAL FROM MOVIMIENTO_R where FECHA > '" + txtFechaI.Text +
-                        "' and FECHA < '"+ txtFechaF.Text + "' GROUP BY FECHA; s", Cadena_Conexion);
+                        "' and FECHA < '" + txtFechaF.Text + "' GROUP BY FECHA", Cadena_Conexion);
                     DataSet Datos = new DataSet();
                     SqlDataAdapter DP = new SqlDataAdapter(cmd, Conexion);
                     DP.Fill(Datos);
+                    GridView1.DataSource = Datos;
+                    GridView1.DataBind();
                     Conexion.Close();
 
-                    DataTable tabla = new DataTable(); 
+                    //DataTable tabla = new DataTable();
 
-                    tabla.Columns.Add(new DataColumn("Monto", typeof(string))); 
-                    tabla.Columns.Add(new DataColumn("Fecha", typeof(string)));
-
-                    //tabla.Rows.Add(new Object[] { "0", alumnos_np });
-                    //tabla.Rows.Add(new Object[] { "1", alumnos_1 });
-
-
-                    //return tabla;
+                    //tabla.Columns.Add(new DataColumn("Monto", typeof(string)));
+                    //tabla.Columns.Add(new DataColumn("Fecha", typeof(string)));
 
                 }
             }
             catch (Exception ex)
             {
-                //String e = ex.Message;
                 DataTable tabla = new DataTable();
-                //return tabla;
             }
         }
 
-        protected string ObtenerDatos()
-        {
 
-            //DataTable Datos = Graficas.Alumnos();
-
-            string strDatos;
-
-            strDatos = "[['Monto','Fecha'],";
-
-            //foreach (DataRow dr in Datos.Rows)
-            {
-                strDatos = strDatos + "[";
-                //strDatos = strDatos + "'" + dr[0] + "'" + "," + dr[1];
-                strDatos = strDatos + "],";
-
-            }
-            strDatos = strDatos + "]";
-
-            return strDatos;
-        }
     }
 
 }

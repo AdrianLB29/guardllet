@@ -45,6 +45,7 @@
             <asp:Label ID="lFechaI" runat="server" Text="Fecha de inicio" Visible="false"></asp:Label><asp:TextBox ID="txtFechaI" runat="server" Visible="false"></asp:TextBox>
             <asp:Label ID="lFechaFinal" runat="server" Text="Fecha Final" Visible="false"></asp:Label><asp:TextBox ID="txtFechaF" runat="server" Visible="false"></asp:TextBox>
             <asp:Button ID="btnBuscar3" runat="server" Text="Buscar" Visible="false" OnClick="btnBuscar3_Click"/>
+           <asp:GridView ID="GridView1" runat="server" Visible="False" ></asp:GridView>
         </div>
 
     </form>
