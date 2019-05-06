@@ -81,7 +81,7 @@ namespace Guardllet_Desarrollo
 
                         HtmlButton descargar = new HtmlButton();
                         descargar.ID = "descargar";
-                        descargar.Attributes.Add("onclick", string.Format("DescargarPDF('descarga', 'TICKET0{0}')", i));
+                        descargar.Attributes.Add("onclick", string.Format("DescargarPDF('TKT{0}', 'TICKET0{1}')", i,i));
                         descargar.Attributes.Add("type", "button");
                         descargar.Attributes.Add("class", "icon-download");
 
@@ -91,7 +91,17 @@ namespace Guardllet_Desarrollo
                         item.Controls.Add(item3);
                         item.Controls.Add(item4);
 
+                        HtmlGenericControl item5 = new HtmlGenericControl("div");
+                        item5.Attributes.Add("class", "plantilla");
+                        item5.ID = string.Format("TKT{0}",i);
+
+                        Label Guardllet = new Label();
+                        Guardllet.Text = "Guardllet";
+
+                        item5.Controls.Add(Guardllet);
+
                         ContenedorTickets.Controls.Add(item);
+                        ContenedorTickets.Controls.Add(item5);
                     }
                 }
                 else

@@ -255,6 +255,10 @@ header {
     font-size: 30px;
 }
 
+.plantilla {
+    display: none;
+}
+
 .contenedor-datos {
     width: 95%;
     height: 370px;

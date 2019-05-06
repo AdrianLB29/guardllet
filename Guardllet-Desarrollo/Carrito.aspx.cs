@@ -73,7 +73,10 @@ namespace Guardllet_Desarrollo
             }
             else
             {
+                LbError.Text = "No tienes saldo suficiente para continuar con la compra";
+                LbError.Visible = true;
 
+                Response.AddHeader("REFRESH", "4;URL=MiDinero.aspx");
             }
         }
 
@@ -98,7 +101,10 @@ namespace Guardllet_Desarrollo
             }
             else
             {
+                LbError.Text = "No tienes saldo suficiente para continuar con la compra";
+                LbError.Visible = true;
 
+                Response.AddHeader("REFRESH", "4;URL=MiDinero.aspx");
             }
         }
 
@@ -123,7 +129,10 @@ namespace Guardllet_Desarrollo
             }
             else
             {
+                LbError.Text = "No tienes saldo suficiente para continuar con la compra";
+                LbError.Visible = true;
 
+                Response.AddHeader("REFRESH", "4;URL=MiDinero.aspx");
             }
         }
 
@@ -148,7 +157,10 @@ namespace Guardllet_Desarrollo
             }
             else
             {
+                LbError.Text = "No tienes saldo suficiente para continuar con la compra";
+                LbError.Visible = true;
 
+                Response.AddHeader("REFRESH", "4;URL=MiDinero.aspx");
             }
         }
 
