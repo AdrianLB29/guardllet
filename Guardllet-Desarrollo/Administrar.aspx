@@ -24,7 +24,6 @@
             <br />
             <asp:Label ID="lPrecio" runat="server" Text="Precio:" Visible="False"></asp:Label><asp:TextBox ID="txtPrecio" runat="server" Visible="False"></asp:TextBox>
             <br />
-            <asp:Image ID="Image1" runat="server" Visible="False" /><asp:FileUpload ID="FileUpload1" runat="server" Visible="false" />
             <br />
             <asp:Button ID="btnAgregar" runat="server" Text="Agregar" Visible="False" OnClick="btnAgregar_Click"/>
             <asp:Button ID="btnActualizar" runat="server" Text="Actualizar" Visible="False" OnClick="btnActualizar_Click"/>
@@ -41,6 +40,11 @@
             <asp:Button ID="btnBuscarU" runat="server" Text="Buscar" Visible="false" OnClick="btnBuscarU_Click" />
             <asp:Button ID="btnActualizarU" runat="server" Text="Actualizar" Visible="false" OnClick="btnActualizarU_Click" />
             <asp:Button ID="btnBorrarU" runat="server" Text="Borrar" Visible="false" OnClick="btnBorrarU_Click" />
+        </div>
+        <div>
+            <asp:Label ID="lFechaI" runat="server" Text="Fecha de inicio" Visible="false"></asp:Label><asp:TextBox ID="txtFechaI" runat="server" Visible="false"></asp:TextBox>
+            <asp:Label ID="lFechaFinal" runat="server" Text="Fecha Final" Visible="false"></asp:Label><asp:TextBox ID="txtFechaF" runat="server" Visible="false"></asp:TextBox>
+            <asp:Button ID="btnBuscar3" runat="server" Text="Buscar" Visible="false" OnClick="btnBuscar3_Click"/>
         </div>
 
     </form>

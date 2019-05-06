@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Guardllet_Desarrollo.Backend.Data.Accounts;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -37,7 +39,6 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
             txtNombre.Visible = true;
             lCodigo.Visible = true;
             txtCodigo.Visible = true;
-            Image1.Visible = true;
             btnProducto.Enabled = false;
             btnAgregar.Visible = true;
             btnActualizar.Visible = true;
@@ -46,7 +47,6 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
             btnBuscar.Visible = true;
             lPrecio.Visible = true;
             txtPrecio.Visible = true;
-            FileUpload1.Visible = true;
 
             lIDU.Visible = false;
             txtIDU.Visible = false;
@@ -67,7 +67,6 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
             txtNombre.Visible = false;
             lCodigo.Visible = false;
             txtCodigo.Visible = false;
-            Image1.Visible = false;
             btnProducto.Enabled = true;
             btnAgregar.Visible = false;
             btnActualizar.Visible = false;
@@ -76,7 +75,6 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
             btnBuscar.Visible = false;
             lPrecio.Visible = false;
             txtPrecio.Visible = false;
-            FileUpload1.Visible = false;
 
             lIDU.Visible = true;
             txtIDU.Visible = true;
@@ -302,6 +300,27 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
 
         protected void btnInformacion_Click(object sender, EventArgs e)
         {
+            lId.Visible = false;
+            txtID.Visible = false;
+            lNombre.Visible = false;
+            txtNombre.Visible = false;
+            lCodigo.Visible = false;
+            txtCodigo.Visible = false;
+            btnProducto.Enabled = true;
+            btnAgregar.Visible = false;
+            btnActualizar.Visible = false;
+            btnBorrar.Visible = false;
+            btnUsuarios.Enabled = false;
+            btnBuscar.Visible = false;
+            lPrecio.Visible = false;
+            txtPrecio.Visible = false;
+
+            lFechaI.Visible = true;
+            lFechaFinal.Visible = true;
+            txtFechaI.Visible = true;
+            txtFechaF.Visible = true;
+
+
 
         }
 
@@ -313,5 +332,63 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
             Response.AppendHeader("Cache-Control", "no-store");
             Response.Redirect("default.aspx");
         }
+
+        protected void btnBuscar3_Click(object sender, EventArgs e)
+        {
+            string Cadena_Conexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
+            try
+            {
+                using (SqlConnection Conexion = new SqlConnection(Cadena_Conexion))
+                {
+                    Conexion.Open();
+                    string cmd = string.Format("select sum(MONTO) as MONTOFINAL FROM MOVIMIENTO_R where FECHA > '" + txtFechaI.Text +
+                        "' and FECHA < '"+ txtFechaF.Text + "' GROUP BY FECHA; s", Cadena_Conexion);
+                    DataSet Datos = new DataSet();
+                    SqlDataAdapter DP = new SqlDataAdapter(cmd, Conexion);
+                    DP.Fill(Datos);
+                    Conexion.Close();
+
+                    DataTable tabla = new DataTable(); 
+
+                    tabla.Columns.Add(new DataColumn("Monto", typeof(string))); 
+                    tabla.Columns.Add(new DataColumn("Fecha", typeof(string)));
+
+                    tabla.Rows.Add(new Object[] { "0", alumnos_np });
+                    tabla.Rows.Add(new Object[] { "1", alumnos_1 });
+
+
+                    return tabla;
+
+                }
+            }
+            catch (Exception ex)
+            {
+                String e = ex.Message;
+                DataTable tabla = new DataTable();
+                return tabla;
+            }
+        }
+
+        protected string ObtenerDatos()
+        {
+
+            DataTable Datos = Graficas.Alumnos();
+
+            string strDatos;
+
+            strDatos = "[['Monto','Fecha'],";
+
+            foreach (DataRow dr in Datos.Rows)
+            {
+                strDatos = strDatos + "[";
+                strDatos = strDatos + "'" + dr[0] + "'" + "," + dr[1];
+                strDatos = strDatos + "],";
+
+            }
+            strDatos = strDatos + "]";
+
+            return strDatos;
+        }
     }
+
 }
