@@ -35,7 +35,7 @@ namespace Guardllet_Desarrollo.Frontend.Sellers
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
-            int s,sa,st = 0;
+            int s, sa, st = 0;
 
             sa = Convert.ToInt16(lSaldo.Text);
             s = Convert.ToInt16(tbsaldo.Text);
@@ -48,6 +48,12 @@ namespace Guardllet_Desarrollo.Frontend.Sellers
                     SqlCommand cmd = new SqlCommand("UPDATE MONEDERO Set SALDO = " + st + " where CODIGO = '" + tbNoMenedero.Text + "'", Conexion);
                     cmd.ExecuteNonQuery();
 
+
+                    Convert.ToInt16(lFinal.Text);
+                    SqlCommand cmd1 = new SqlCommand("insert into MOVIMIENTO_R  (ID_ADMINISTRADOR,ID_MONEDERO,MONTO) VALUES (" + Usuario.Text + "," + lFinal.Text + "," + s +")" , Conexion);
+                    cmd1.ExecuteNonQuery();
+
+                    Conexion.Close();
                     tbsaldo.Text = "";
                     lSaldo.Text = "";
                     tbNoMenedero.Text = "";
@@ -61,15 +67,16 @@ namespace Guardllet_Desarrollo.Frontend.Sellers
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
+            lFinal.Text = "";
             string StringConexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             using (SqlConnection Conexion = new SqlConnection(StringConexion))
             try  {
                 Conexion.Open();
                 SqlCommand cmd = new SqlCommand("SELECT  ID_MONEDERO, SALDO FROM MONEDERO where CODIGO = '" + tbNoMenedero.Text + "'", Conexion);
                 SqlDataReader leer = cmd.ExecuteReader();
-                if (leer.Read() == true)
-                {
-
+                    if (leer.Read() == true)
+                    {
+                        lFinal.Text = leer["ID_MONEDERO"].ToString();
                     lSaldo.Text = leer["SALDO"].ToString();
                 }
                 else
