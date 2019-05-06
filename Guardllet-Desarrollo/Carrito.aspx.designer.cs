@@ -67,13 +67,22 @@ namespace Guardllet_Desarrollo {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Control TxtMateria.
+        /// Control ListaSemestres.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtMateria;
+        protected global::System.Web.UI.WebControls.DropDownList ListaSemestres;
+        
+        /// <summary>
+        /// Control ListaMaterias.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ListaMaterias;
         
         /// <summary>
         /// Control TxtMonto.

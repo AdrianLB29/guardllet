@@ -56,6 +56,93 @@ namespace Guardllet_Desarrollo.Backend.Data.Accounts
             }
         }
 
+        public static Dictionary<int, Dictionary<string, string>> ObtenerMaterias(int semestre)
+        {
+            string StringConexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
+            try
+            {
+                using (SqlConnection Conexion = new SqlConnection(StringConexion))
+                {
+                    Conexion.Open();
+                    string cmd = string.Format("SELECT * FROM MATERIAS WHERE ID_SEMESTRE = {0}", semestre);
+                    DataSet Datos = new DataSet();
+                    SqlDataAdapter DP = new SqlDataAdapter(cmd, Conexion);
+                    DP.Fill(Datos);
+                    Conexion.Close();
+                    try
+                    {
+                        int numero_materias = Datos.Tables[0].Rows.Count;
+                        Dictionary<int, Dictionary<string, string>> Materias = new Dictionary<int, Dictionary<string, string>>();
+                        for (int contador = 0; contador < numero_materias; contador++)
+                        {
+                            string id = Datos.Tables[0].Rows[contador]["ID_MATERIA"].ToString();
+                            string nombre = Datos.Tables[0].Rows[contador]["NOMBRE"].ToString();
+                            Dictionary<string, string> Materia = new Dictionary<string, string>();
+                            Materia.Add("Id", id);
+                            Materia.Add("Nombre", nombre);
+                            Materias.Add(contador, Materia);
+                        }
+                        return Materias;
+                    }
+                    catch (Exception exc)
+                    {
+                        Console.WriteLine(exc);
+                        Dictionary<int, Dictionary<string, string>> Materias = new Dictionary<int, Dictionary<string, string>>();
+                        return Materias;
+                    }
+                }
+            }
+            catch (Exception exc)
+            {
+                Console.WriteLine(exc);
+                Dictionary<int, Dictionary<string, string>> Materias = new Dictionary<int, Dictionary<string, string>>();
+                return Materias;
+            }
+        }
+
+        public static Dictionary<int, Dictionary<string, string>> ObtenerSemestres()
+        {
+            string StringConexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
+            try
+            {
+                using (SqlConnection Conexion = new SqlConnection(StringConexion))
+                {
+                    Conexion.Open();
+                    string cmd = string.Format("SELECT * FROM SEMESTRES");
+                    DataSet Datos = new DataSet();
+                    SqlDataAdapter DP = new SqlDataAdapter(cmd, Conexion);
+                    DP.Fill(Datos);
+                    Conexion.Close();
+                    try
+                    {
+                        int numero_semestres = Datos.Tables[0].Rows.Count;
+                        Dictionary<int, Dictionary<string, string>> Semestres = new Dictionary<int, Dictionary<string, string>>();
+                        for (int contador = 0; contador < numero_semestres; contador++)
+                        {
+                            string id = Datos.Tables[0].Rows[contador]["ID_SEMESTRE"].ToString();
+                            string nombre = Datos.Tables[0].Rows[contador]["NOMBRE"].ToString();
+                            Dictionary<string, string> Semestre = new Dictionary<string, string>();
+                            Semestre.Add("Id", id);
+                            Semestre.Add("Nombre", nombre);
+                            Semestres.Add(contador, Semestre);
+                        }
+                        return Semestres;
+                    }
+                    catch (Exception exc)
+                    {
+                        Console.WriteLine(exc);
+                        Dictionary<int, Dictionary<string, string>> Semestres = new Dictionary<int, Dictionary<string, string>>();
+                        return Semestres;
+                    }
+                }
+            }
+            catch (Exception exc)
+            {
+                Console.WriteLine(exc);
+                Dictionary<int, Dictionary<string, string>> Semestres = new Dictionary<int, Dictionary<string, string>>();
+                return Semestres;
+            }
+        }
         public static int ObtenerID(string correo) 
         {
             string StringConexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;

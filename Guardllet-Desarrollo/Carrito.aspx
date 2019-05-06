@@ -55,9 +55,12 @@
         <form id="form1" runat="server" class="form-horizontal">
             <div class="form-group">
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <asp:TextBox ID="TxtMateria" runat="server" Visible="False" CssClass="form-control" required placeholder="Materia"></asp:TextBox>
-                <asp:TextBox ID="TxtMonto" runat="server" Visible="False"  CssClass="form-control" required type="number" max="500" placeholder="Total de la deuda"></asp:TextBox>
-                <asp:TextBox ID="TxtCopias" runat="server" Visible="False" CssClass="form-control" required type="number" max="500" placeholder="Total a pagar"></asp:TextBox>
+                <div class="listas">
+                    <asp:DropDownList ID="ListaSemestres" runat="server" Visible="false" OnSelectedIndexChanged="ListaSemestres_SelectedIndexChanged" AutoPostBack="True"></asp:DropDownList>
+                    <asp:DropDownList ID="ListaMaterias" runat="server" Visible="false" AutoPostBack="True"></asp:DropDownList>
+                    <asp:TextBox ID="TxtMonto" runat="server" Visible="False"  CssClass="form-control" required type="number" max="500" placeholder="Total de la deuda"></asp:TextBox>
+                    <asp:TextBox ID="TxtCopias" runat="server" Visible="False" CssClass="form-control" required type="number" max="500" placeholder="Total a pagar"></asp:TextBox>
+                </div>
             </div>
             </div>
             <div class="form-group">

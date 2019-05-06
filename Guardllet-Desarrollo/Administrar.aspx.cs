@@ -353,35 +353,35 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
                     tabla.Columns.Add(new DataColumn("Monto", typeof(string))); 
                     tabla.Columns.Add(new DataColumn("Fecha", typeof(string)));
 
-                    tabla.Rows.Add(new Object[] { "0", alumnos_np });
-                    tabla.Rows.Add(new Object[] { "1", alumnos_1 });
+                    //tabla.Rows.Add(new Object[] { "0", alumnos_np });
+                    //tabla.Rows.Add(new Object[] { "1", alumnos_1 });
 
 
-                    return tabla;
+                    //return tabla;
 
                 }
             }
             catch (Exception ex)
             {
-                String e = ex.Message;
+                //String e = ex.Message;
                 DataTable tabla = new DataTable();
-                return tabla;
+                //return tabla;
             }
         }
 
         protected string ObtenerDatos()
         {
 
-            DataTable Datos = Graficas.Alumnos();
+            //DataTable Datos = Graficas.Alumnos();
 
             string strDatos;
 
             strDatos = "[['Monto','Fecha'],";
 
-            foreach (DataRow dr in Datos.Rows)
+            //foreach (DataRow dr in Datos.Rows)
             {
                 strDatos = strDatos + "[";
-                strDatos = strDatos + "'" + dr[0] + "'" + "," + dr[1];
+                //strDatos = strDatos + "'" + dr[0] + "'" + "," + dr[1];
                 strDatos = strDatos + "],";
 
             }

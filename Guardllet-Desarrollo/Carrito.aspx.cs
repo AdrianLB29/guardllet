@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using Guardllet_Desarrollo.Backend.Data.Accounts;
 using Guardllet_Desarrollo.Backend.Data.Customers;
 using Guardllet_Desarrollo.Backend.Data.Wallet;
 using Guardllet_Desarrollo.Backend.Data.Movements;
@@ -22,8 +23,22 @@ namespace Guardllet_Desarrollo
                     if (Session["articulo"] == "Examen") 
                     {
                         LbExamen.Visible = true;
-                        TxtMateria.Visible = true;
+                        ListaSemestres.Visible = true;
+                        ListaMaterias.Visible = true;
                         BtnPagarEts.Visible = true;
+
+                        Dictionary<int, Dictionary<string, string>> Semestres = Datos.ObtenerSemestres();
+                        int numero_semestres = Semestres.Count();
+                        for (int i = 0; i < numero_semestres; i++)
+                        {
+                            Dictionary<string, string> Semestre = Semestres[i];
+                            int id = Convert.ToInt16(Semestre["Id"]) - 1;
+                            string nombre = Semestre["Nombre"];
+                            ListaSemestres.Items.Insert(id, nombre);
+                        }
+
+                        ListaMaterias.Items.Insert(0, "Selecciona la materia");
+                        ListaSemestres.Items.Insert(0, "Selecciona el semestre");
                     }
                     else if (Session["articulo"] == "Credencial")
                     {
@@ -54,9 +69,9 @@ namespace Guardllet_Desarrollo
 
         protected void BtnPagarEts_Click(object sender, EventArgs e)
         {
-            int precio = 10; 
+            string materia = ListaMaterias.SelectedValue.ToString();
 
-            string materia = TxtMateria.Text;
+            int precio = 10; 
 
             int id_usuario = Convert.ToInt16(Session["usuario"]);
             int id_monedero = ObtenerMonedero.id_monedero(id_usuario);
@@ -68,7 +83,7 @@ namespace Guardllet_Desarrollo
             {
                 bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, nuevo_saldo);
                 int registro = MovimientoCV.Registrar(1, id_monedero, 1, 12342);
-                int ticket = Comprobante.Crear(id_monedero,"Examen a titulo de suficiencia",321341234,precio,materia,1);
+                int ticket = Comprobante.Crear(id_monedero,"Examen a titulo de suficiencia",321341234,precio," ",1);
                 Response.Redirect("Perfil.aspx", true);
             }
             else
@@ -167,6 +182,24 @@ namespace Guardllet_Desarrollo
         protected void BtnCancelar_Click(object sender, EventArgs e)
         {
             Response.Redirect("Servicios.aspx", true);
+        }
+
+        protected void ListaSemestres_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ListaMaterias.Items.Clear();
+            ListaMaterias.Items.Insert(0, "Selecciona la materia");
+
+            int semestre = Convert.ToInt16(ListaSemestres.SelectedIndex.ToString());
+
+            Dictionary<int, Dictionary<string, string>> Materias = Datos.ObtenerMaterias(semestre);
+            int numero_materias = Materias.Count();
+            for (int i = 0; i < numero_materias; i++)
+            {
+                Dictionary<string, string> Escuela = Materias[i];
+                int id = Convert.ToInt16(Escuela["Id"]) - 1;
+                string nombre = Escuela["Nombre"];
+                ListaMaterias.Items.Insert(id, nombre);
+            }
         }
     }
 }

@@ -26,13 +26,13 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
 
                         // Carga el DrowpList con las escuelas disponibles 
                         ListaEscuelas.Items.Insert(0, "Selecciona tu escuela");
-                        Dictionary<int, Dictionary<string, string>> Paises = Datos.ObtenerEscuelas();
-                        int numero_paises = Paises.Count();
-                        for (int i = 0; i < numero_paises; i++)
+                        Dictionary<int, Dictionary<string, string>> Escuelas = Datos.ObtenerEscuelas();
+                        int numero_escuelas = Escuelas.Count();
+                        for (int i = 0; i < numero_escuelas; i++)
                         {
-                            Dictionary<string, string> Pais = Paises[i];
-                            int id = Convert.ToInt16(Pais["Id"]);
-                            string nombre = Pais["Nombre"];
+                            Dictionary<string, string> Escuela = Escuelas[i];
+                            int id = Convert.ToInt16(Escuela["Id"]);
+                            string nombre = Escuela["Nombre"];
                             ListaEscuelas.Items.Insert(id, nombre);
                         }
 
