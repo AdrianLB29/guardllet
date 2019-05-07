@@ -96,9 +96,81 @@ namespace Guardllet_Desarrollo
                         item5.ID = string.Format("TKT{0}",i);
 
                         Label Guardllet = new Label();
-                        Guardllet.Text = "Guardllet";
+                        Guardllet.Text = "------------------------------------------------------------   Guardllet   --------------------------------------------------------";
+
+                        Label Escuela = new Label();
+                        Escuela.Text = "-----------------------------------------------  Cecyt 13 'Ricardo Flores Magon' ----------------------------------------";
+
+                        Label FechaTicket = new Label();
+                        FechaTicket.Text = "------------------------------------------------- " + ticket["Fecha"] + " -----------------------------------------------";
+
+                        Label SeparacionUno = new Label();
+                        SeparacionUno.Text = "---------------------------------------------------------------------------------------------------------------------------------";
+
+                        Label TicketNombre = new Label();
+                        TicketNombre.Text = " " + datos["Nombre"] + " " + datos["Apellido_p"] + " " + datos["Apellido_m"] + "--------------------------------------------------";
+
+                        Label TicketBoleta = new Label();
+                        TicketBoleta.Text = " " + datos_escolares["Boleta"] + "------------------------------------------------------------------------------------------------";
+
+                        Label TicketGrupo = new Label();
+                        TicketGrupo.Text = " " + datos_escolares["Grupo"] + "--------------------------------------------------------------------------------------------------";
+
+                        Label SeparacionDos = new Label();
+                        SeparacionDos.Text = "---------------------------------------------------------------------------------------------------------------------------------";
+
+                        Label TicketComprobante = new Label();
+                        TicketComprobante.Text = " " + "Comprobante de pago" + "--------------------------------------------------------------------------------------------------";
+
+                        Label Servicio = new Label();
+                        Servicio.Text = " " + "Servicio: " + ticket["Nombre"] + "------------------------------------------------------------------------------" ;
+
+                        Label Materia = new Label();
+                        Materia.Text = " " + "Materia: " + ticket["Materia"] + "--------------------------------------------------------------------------------------------------";
+
+                        Label SeparacionTres = new Label();
+                        SeparacionTres.Text = "---------------------------------------------------------------------------------------------------------------------------------";
+
+                        Label Precio = new Label();
+                        Precio.Text = " " + "Precio: " + "---------------------------------------------------------------------------------------------------------------" + ticket["Precio"] + "$" ;
+
+                        Label Comision = new Label();
+                        Comision.Text = " " + "Comision: " + "------------------------------------------------------------------------------------------------------------" + "0"  + "$" ;
+
+                        Label Total = new Label();
+                        Total.Text = " " + "Total: " + " -----------------------------------------------------------------------------------------------------------------" + ticket["Precio"] + "$";
+
+                        Label NumeroA = new Label();
+                        NumeroA.Text = " " + "Numero de Autorizacion: " + "------------------------------------------------------------------------" + ticket["Numero"];
+
+                        Label SeparacionCuatro = new Label();
+                        SeparacionCuatro.Text = "---------------------------------------------------------------------------------------------------------------------------------";
+
+                        Label SA = new Label();
+                        SA.Text = "--------------------------------------------------" + "Guardllet S.A de C.V" + "-----------------------------------------------------";
+
+                        Label Direccion = new Label();
+                        Direccion.Text = "---------------------------------------------" + "Paseos de Taxqueña s/n CP:97858" + "--------------------------------------------";
 
                         item5.Controls.Add(Guardllet);
+                        item5.Controls.Add(Escuela);
+                        item5.Controls.Add(FechaTicket);
+                        item5.Controls.Add(SeparacionUno);
+                        item5.Controls.Add(TicketNombre);
+                        item5.Controls.Add(TicketBoleta);
+                        item5.Controls.Add(TicketGrupo);
+                        item5.Controls.Add(SeparacionDos);
+                        item5.Controls.Add(TicketComprobante);
+                        item5.Controls.Add(Servicio);
+                        item5.Controls.Add(Materia);
+                        item5.Controls.Add(SeparacionTres);
+                        item5.Controls.Add(Precio);
+                        item5.Controls.Add(Comision);
+                        item5.Controls.Add(Total);
+                        item5.Controls.Add(NumeroA);
+                        item5.Controls.Add(SeparacionCuatro);
+                        item5.Controls.Add(SA);
+                        item5.Controls.Add(Direccion);
 
                         ContenedorTickets.Controls.Add(item);
                         ContenedorTickets.Controls.Add(item5);
