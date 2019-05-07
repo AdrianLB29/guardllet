@@ -67,15 +67,6 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         protected global::System.Web.UI.WebControls.Button btnCerrarSesion;
         
         /// <summary>
-        /// Control lId.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lId;
-        
-        /// <summary>
         /// Control txtID.
         /// </summary>
         /// <remarks>
@@ -85,13 +76,13 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         protected global::System.Web.UI.WebControls.TextBox txtID;
         
         /// <summary>
-        /// Control lNombre.
+        /// Control lId.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lNombre;
+        protected global::System.Web.UI.WebControls.Label lId;
         
         /// <summary>
         /// Control txtNombre.
@@ -103,13 +94,13 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         protected global::System.Web.UI.WebControls.TextBox txtNombre;
         
         /// <summary>
-        /// Control lCodigo.
+        /// Control lNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lCodigo;
+        protected global::System.Web.UI.WebControls.Label lNombre;
         
         /// <summary>
         /// Control txtCodigo.
@@ -121,13 +112,13 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         protected global::System.Web.UI.WebControls.TextBox txtCodigo;
         
         /// <summary>
-        /// Control lPrecio.
+        /// Control lCodigo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lPrecio;
+        protected global::System.Web.UI.WebControls.Label lCodigo;
         
         /// <summary>
         /// Control txtPrecio.
@@ -137,6 +128,15 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPrecio;
+        
+        /// <summary>
+        /// Control lPrecio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lPrecio;
         
         /// <summary>
         /// Control btnAgregar.

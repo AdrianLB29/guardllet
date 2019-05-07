@@ -23,6 +23,39 @@ header {
     width: 100%;
     position: relative;
     min-width: 1000px;
+    display: table;
+}
+
+.formulario {
+    float: left;
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+.resultados {
+    float: left;
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+
+#producto {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#usuario {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+div#informacion {
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 #btnProducto {
