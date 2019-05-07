@@ -337,6 +337,8 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
             Session.Abandon();
             Response.Cookies.Add(new HttpCookie("ASP.NET_SessionId", ""));
             Response.AppendHeader("Cache-Control", "no-store");
+            Response.AppendHeader("Pragma", "no-cache");
+            Response.CacheControl = "no-cache"; Response.Expires = -1;
             Response.Redirect("default.aspx");
         }
 

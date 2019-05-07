@@ -102,6 +102,9 @@ namespace Guardllet_Desarrollo.Frontend.Accounts
                                                 FormsAuthentication.SetAuthCookie(id_usuario, false);
                                                 Response.Redirect("MiDinero.aspx", false);
                                                 HttpContext.Current.ApplicationInstance.CompleteRequest();
+                                                Response.AppendHeader("Cache-Control", "no-store");
+                                                Response.AppendHeader("Pragma", "no-cache");
+                                                Response.CacheControl = "no-cache"; Response.Expires = -1;
                                             }
                                             else
                                             {

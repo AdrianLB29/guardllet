@@ -25,11 +25,54 @@ header {
     min-width: 1000px;
 }
 
+#btnProducto {
+    width: 15%;
+    height: 50%;
+    position: relative;
+    margin-top: 20px;
+    background-color: #001935;
+    color: white;
+    border: solid 0px;
+}
+
+#btnUsuarios {
+    width: 15%;
+    height: 50%;
+    position: relative;
+    margin-top: 20px;
+    background-color: #001935;
+    color: white;
+    border: solid 0px;
+}
+
+#btnInformacion {
+    width: 15%;
+    height: 50%;
+    position: relative;
+    margin-top: 20px;
+    background-color: #001935;
+    color: white;
+    border: solid 0px;
+}
+
+#btnCerrarSesion {
+    width: 15%;
+    height: 50%;
+    position: relative;
+    margin-top: 20px;
+    background-color: #01152b;
+    color: white;
+    border: solid 0px;
+    margin-left: 30%;
+    border-radius: 10px;
+}
+
 footer {
     width: 100%;
     height: 5%;
     background-color: #001935;
     min-width: 1000px;
+    position: relative;
 }
 
 .derechos {

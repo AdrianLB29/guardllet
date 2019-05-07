@@ -154,6 +154,7 @@ footer {
     height: 5%;
     background-color: #001935;
     min-width: 1000px;
+    position: relative;
 }
 
 .derechos {
