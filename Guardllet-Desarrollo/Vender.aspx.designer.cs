@@ -31,6 +31,15 @@ namespace Guardllet_Desarrollo.Frontend.Sellers {
         protected global::System.Web.UI.WebControls.Label Usuario;
         
         /// <summary>
+        /// Control btnCerar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCerar;
+        
+        /// <summary>
         /// Control lSaldo.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,15 @@ namespace Guardllet_Desarrollo.Frontend.Sellers {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lSaldo;
+        
+        /// <summary>
+        /// Control lFinal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lFinal;
         
         /// <summary>
         /// Control tbNoMenedero.
@@ -74,23 +92,5 @@ namespace Guardllet_Desarrollo.Frontend.Sellers {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnAgregar;
-        
-        /// <summary>
-        /// Control btnCerar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCerar;
-        
-        /// <summary>
-        /// Control lFinal.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lFinal;
     }
 }

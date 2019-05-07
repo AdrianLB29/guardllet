@@ -59,3 +59,7 @@ C:\Users\Nahum\Desktop\Nueva carpeta (3)\Guardllet-Desarrollo\Guardllet-Desarrol
 C:\Users\Nahum\Desktop\Nueva carpeta (3)\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.csproj.CopyComplete
 C:\Users\Nahum\Desktop\Nueva carpeta (3)\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.dll
 C:\Users\Nahum\Desktop\Nueva carpeta (3)\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.pdb
+C:\Users\F 00\Documents\GitHub\Guardllet-Desarrollo\Guardllet-Desarrollo\bin\Guardllet-Desarrollo.dll.config
+C:\Users\F 00\Documents\GitHub\Guardllet-Desarrollo\Guardllet-Desarrollo\bin\Guardllet-Desarrollo.dll
+C:\Users\F 00\Documents\GitHub\Guardllet-Desarrollo\Guardllet-Desarrollo\bin\Guardllet-Desarrollo.pdb
+C:\Users\F 00\Documents\GitHub\Guardllet-Desarrollo\Guardllet-Desarrollo\obj\Debug\Guardllet-Desarrollo.pdb

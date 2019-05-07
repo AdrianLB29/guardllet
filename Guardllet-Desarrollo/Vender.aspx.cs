@@ -76,7 +76,7 @@ namespace Guardllet_Desarrollo.Frontend.Sellers
                 SqlDataReader leer = cmd.ExecuteReader();
                     if (leer.Read() == true)
                     {
-                        lFinal.Text = leer["ID_MONEDERO"].ToString();
+                    lFinal.Text = leer["ID_MONEDERO"].ToString();
                     lSaldo.Text = leer["SALDO"].ToString();
                 }
                 else

@@ -8,41 +8,53 @@
     <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-  <link rel="stylesheet" type="text/css" href="Vender.css" />
+  <link rel="stylesheet" type="text/css" href="Static/Css/Vender.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>  
     <form id="form1" runat="server">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-        <asp:Label ID="Usuario" runat="server" Text=""></asp:Label>
-                    <br />
-                    <br />
-            <asp:Label ID="lSaldo" runat="server" Text=""></asp:Label>
-              <div id="contenido">
-                         <asp:TextBox ID="tbNoMenedero" runat="server"  ></asp:TextBox>
-                  <br />
-                         <asp:TextBox ID="tbsaldo" runat="server"></asp:TextBox>
-                  <br />
-                         <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" class="btn btn-info"/>
-                         <asp:Button ID="btnAgregar" runat="server" Text="Recargar" OnClick="btnAgregar_Click" class="btn btn-info" />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                  <div id="CerrarSesion">
-                      <asp:Button ID="btnCerar" runat="server" Text="Cerrar Sesión" OnClick="btnCerar_Click" class="btn btn-info" />
-                  </div>
-                   
-             </div>
-        <asp:Label ID="lFinal" runat="server" Text="Label" Visible="False"></asp:Label>
-                   </div>
-             </div>
+        <main>
+            <header>
+                <div class="boton-cerrar">
+                    <asp:Label ID="Usuario" runat="server" Text=""></asp:Label>
+                     <asp:Button ID="btnCerar" runat="server" Text="Cerrar Sesión" OnClick="btnCerar_Click" class="BtnCerrar" />
+                </div>
+            </header>
+            <div class="contenido">
+                <div class="numeros">
+                    <div class="saldo">
+                        <p id="TxtSaldo">Saldo Actual</p>
+                        <asp:Label ID="lSaldo" runat="server" Text=""></asp:Label>$
+                        <asp:Label ID="lFinal" runat="server" Text="Label" Visible="False"></asp:Label>
+                    </div>
+                </div>
+                <div class="texto">
+                    <div class="Columna1">
+                        <asp:TextBox ID="tbNoMenedero" runat="server" placeholder="Numero de Monedero" required></asp:TextBox>
+                        <p id="TxtAyuda">Numero de Monedero</p>
+                    </div>
+                    <div class="Columna2">
+                        <asp:TextBox ID="tbsaldo" runat="server" placeholder="Dinero" ></asp:TextBox>
+                        <p id="TxtAyuda">Dinero</p>
+                    </div>
+                </div>
+                <div class="botones">
+                    <div class="Columna1">
+                         <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" class="BtnBuscar"/>
+                    </div>
+                    <div class="Columna2">
+                        <asp:Button ID="btnAgregar" runat="server" Text="Recargar" OnClick="btnAgregar_Click" class="BtnAgregar"/>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                 <div class="derechos">
+                    <p>© Derechos reservados a Guardllet S.A de CV.</p>
+                </div>
+            </footer>
+        </main>  
     </form>
 </body>
 </html>
