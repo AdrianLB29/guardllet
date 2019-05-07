@@ -63,6 +63,13 @@ namespace Guardllet_Desarrollo.Frontend.Sellers
 
                 }
 
+            string script = @"<script type='text/javascript'>
+                            alert('La recarga se realizo correctamente');
+                            </script>";
+
+            if (!Page.IsClientScriptBlockRegistered("alerta"))
+                Page.RegisterStartupScript("alerta", script);   
+
         }
 
         protected void btnBuscar_Click(object sender, EventArgs e)

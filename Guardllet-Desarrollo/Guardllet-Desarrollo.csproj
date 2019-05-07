@@ -77,6 +77,7 @@
     <Content Include="Static\Bootstrap\js\jquery.js" />
     <Content Include="Static\Bootstrap\js\npm.js" />
     <Content Include="default.aspx" />
+    <Content Include="Static\Css\Administrar.css" />
     <Content Include="Static\Css\Carrito.css" />
     <Content Include="Static\Css\default.css" />
     <Content Include="Static\Css\Datos.css" />
