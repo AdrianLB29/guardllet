@@ -37,7 +37,7 @@
 
         <div class="swiper-slide">
             <div class="servicio">
-                <div class="imagen">
+                <div class="imagen-ets">
 
                 </div>
                 <div class="descripcion">
@@ -51,7 +51,7 @@
         </div>
         <div class="swiper-slide">
             <div class="servicio">
-                <div class="imagen">
+                <div class="imagen-credencial">
 
                 </div>
                 <div class="descripcion">
@@ -65,7 +65,7 @@
         </div>
         <div class="swiper-slide">
             <div class="servicio">
-                <div class="imagen">
+                <div class="imagen-deuda">
 
                 </div>
                 <div class="descripcion">
@@ -79,7 +79,7 @@
         </div>
         <div class="swiper-slide">
             <div class="servicio">
-                <div class="imagen">
+                <div class="imagen-pape">
 
                 </div>
                 <div class="descripcion">

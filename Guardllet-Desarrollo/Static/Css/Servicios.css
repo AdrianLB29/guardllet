@@ -101,11 +101,38 @@ main {
     height: 100%;
 }
 
-.imagen {
+.imagen-pape {
     width: 95%;
     height: 70%;
     margin: 2.5%;
-    background-image: url(../Multimedia/images.png);
+    background-image: url(../Multimedia/Papeleria.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagen-ets {
+    width: 95%;
+    height: 70%;
+    margin: 2.5%;
+    background-image: url(../Multimedia/ets.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagen-credencial {
+    width: 95%;
+    height: 70%;
+    margin: 2.5%;
+    background-image: url(../Multimedia/credencial.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imagen-deuda {
+    width: 95%;
+    height: 70%;
+    margin: 2.5%;
+    background-image: url(../Multimedia/biblioteca.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
