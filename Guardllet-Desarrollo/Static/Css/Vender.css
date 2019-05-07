@@ -125,8 +125,15 @@ header {
     text-align: center;
     margin-top: 5px;
     font-size: large;
+    margin-left: 85px;
 }
 
+#TxtAyudados {
+    text-align: center;
+    margin-top: 5px;
+    font-size: large;
+    margin-left: -100px;
+}
 #btnBuscar {
     width: 70%;
     height: 70px;
