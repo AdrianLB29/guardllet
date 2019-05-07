@@ -98,6 +98,7 @@
     <Content Include="Static\Multimedia\biblioteca.png" />
     <Content Include="Static\Multimedia\credencial.png" />
     <Content Include="Static\Multimedia\ets.png" />
+    <Content Include="Static\Multimedia\icono.png" />
     <Content Include="Static\Multimedia\images.png" />
     <Content Include="Static\Multimedia\Papeleria.png" />
     <Content Include="Static\Multimedia\perfil.gif" />

@@ -64,15 +64,19 @@
             </div>
             </div>
             <div class="form-group">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <asp:Button ID="BtnPagarEts" runat="server" OnClick="BtnPagarEts_Click" class="Boton-Ets" Text="Confimar" Visible="False"/>
-                <asp:Button ID="BtnPagarCrd" runat="server" OnClick="BtnPagarCrd_Click" class="Boton-Crd" Text="Confimar" Visible="False"/>
-                <asp:Button ID="BtnPagarDeu" runat="server" OnClick="BtnPagarDeu_Click" class="Boton-Deu" Text="Confimar" Visible="False"/>
-                <asp:Button ID="BtnPagarCop" runat="server" OnClick="BtnPagarCop_Click" class="Boton-Cop" Text="Confimar" Visible="False"/>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 Error">
-                <asp:Label ID="LbError" runat="server" Text=" " Visible="false"></asp:Label>
-            </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <asp:Button ID="BtnPagarEts" runat="server" OnClick="BtnPagarEts_Click" class="Boton-Ets" Text="Confimar" Visible="False"/>
+                    <asp:Button ID="BtnPagarCrd" runat="server" OnClick="BtnPagarCrd_Click" class="Boton-Crd" Text="Confimar" Visible="False"/>
+                    <asp:Button ID="BtnPagarDeu" runat="server" OnClick="BtnPagarDeu_Click" class="Boton-Deu" Text="Confimar" Visible="False"/>
+                    <asp:Button ID="BtnPagarCop" runat="server" OnClick="BtnPagarCop_Click" class="Boton-Cop" Text="Confimar" Visible="False"/>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 Error">
+                    <asp:Label ID="LbError" runat="server" Text=" " Visible="false"></asp:Label>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 Error">
+                    <p id="aviso">Revisa tu informacion antes de confirmar tu compra,
+                      una vez que se complete no se podran modificar los datos</p>
+                </div>
             </div>
         </form>
     </div>  
