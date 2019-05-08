@@ -97,7 +97,7 @@ namespace Guardllet_Desarrollo
 
         protected void BtnPagarCrd_Click(object sender, EventArgs e)
         {
-            int precio = 62;
+            int precio = 65;
 
             int id_usuario = Convert.ToInt16(Session["usuario"]);
 
@@ -110,7 +110,7 @@ namespace Guardllet_Desarrollo
             if (nuevo_saldo >= 0)
             {
                 bool actualizar_saldo = Monedero.ActualizarSaldo(id_monedero, nuevo_saldo);
-                int registro = MovimientoCV.Registrar(2, id_monedero, 1, 67);
+                int registro = MovimientoCV.Registrar(2, id_monedero, 1, 67893482);
                 int ticket = Comprobante.Crear(id_monedero, "Reposicion de credencial", 321341234, precio, " ", 1);
                 Response.Redirect("Perfil.aspx", true);
             }

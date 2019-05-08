@@ -57,7 +57,7 @@
                 <div class="descripcion">
                     <p>!Paga la reposicion de tu credencial!
                     <br />
-                        <small>Precio: 58$</small>
+                        <small>Precio: 65$</small>
                     </p>
                     <button class="Boton-Detalles" onclick="credencial()" type="button"><span class="icon-file-text"></span>&nbsp; Comprar</button>
                 </div>
@@ -71,7 +71,7 @@
                 <div class="descripcion">
                     <p>!Paga tu deuda en biblioteca!
                     <br />
-                        <small>Precio: 68$</small>
+                        <small>Precio: 6$ (Por dia)</small>
                     </p>
                     <button class="Boton-Detalles" onclick="deuda()" type="button"><span class="icon-file-text"></span>&nbsp; Comprar</button>
                 </div>
@@ -113,7 +113,7 @@
                        <p>Precio</p>
                    </div>
                    <div class="numeros">
-                       <p>10</p>
+                       <p>10 $</p>
                    </div>
                </div>
                <div class="comision">
@@ -121,7 +121,7 @@
                        <p>Comision</p>
                    </div>
                    <div class="numeros">
-                       <p>0</p>
+                       <p>0 $</p>
                    </div>
                </div>
                <div class="total">
@@ -129,7 +129,7 @@
                        <p>Total</p>
                    </div>
                    <div class="numeros">
-                       <p>10</p>
+                       <p>10 $</p>
                    </div>
                </div>
            </div>
@@ -155,7 +155,7 @@
                        <p>Precio</p>
                    </div>
                    <div class="numeros">
-                       <p>58</p>
+                       <p>65 $</p>
                    </div>
                </div>
                <div class="comision">
@@ -171,7 +171,7 @@
                        <p>Total</p>
                    </div>
                    <div class="numeros">
-                       <p>58</p>
+                       <p>65 $</p>
                    </div>
                </div>
            </div>
@@ -197,7 +197,7 @@
                        <p>Precio</p>
                    </div>
                    <div class="numeros">
-                       <p>68</p>
+                       <p>6 $</p>
                    </div>
                </div>
                <div class="comision">
@@ -213,7 +213,7 @@
                        <p>Total</p>
                    </div>
                    <div class="numeros">
-                       <p>68</p>
+                       <p>6 $</p>
                    </div>
                </div>
            </div>

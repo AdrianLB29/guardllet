@@ -128,10 +128,11 @@
 
 </html>
 
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" src="Static/Js/jspdf.debug.js"></script>
 <script type="text/javascript" src="Static/Bootstrap/js/jquery.js"></script>
 <script type="text/javascript" src="Static/Bootstrap/js/bootstrap.min.js"></script>
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+
 
 <script>
      function DescargarPDF(ContenidoID, nombre) {
