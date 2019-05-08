@@ -6,8 +6,10 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-<link rel="stylesheet" type="text/css" href="Static/Css/Administrar.css"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="Static/Css/Administrar.css"/>
+    <link rel="stylesheet" type="text/css" href="Static/Css/iconos.css" />
 
     <title>Administrador</title>
 

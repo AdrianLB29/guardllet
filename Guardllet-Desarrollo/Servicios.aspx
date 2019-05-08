@@ -272,9 +272,9 @@
             <p>© Derechos reservados a Guardllet S.A de CV.</p>
         </div>
         <div class="sociales">
-            <button type="button" id="SocialesFacebook"><span class="icon-facebook"></span></button>
-            <button type="button" id="SocialesTwitter"><span class="icon-twitter"></span></button>
-            <button type="button" id="SocialesInstagram"><span class="icon-instagram"></span></button>
+            <button type="button" id="SocialesFacebook" onclick="location.href='https://www.facebook.com/Guardllet-2456917694318846/'"><span class="icon-facebook"></span></button>
+            <button type="button" id="SocialesTwitter" onclick="location.href='https://twitter.com/guardllet'"><span class="icon-twitter"></span></button>
+            <button type="button" id="SocialesInstagram" onclick="location.href='https://www.instagram.com/guardllet_v13/'"><span class="icon-instagram"></span></button>
         </div>
     </footer>
 
