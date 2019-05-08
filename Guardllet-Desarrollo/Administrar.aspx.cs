@@ -9,6 +9,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
+
 namespace Guardllet_Desarrollo.Frontend.Administrators
 {
     public partial class Administrar : System.Web.UI.Page
@@ -47,8 +49,17 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
             btnBuscar.Visible = true;
             lPrecio.Visible = true;
             txtPrecio.Visible = true;
-            GridView1.Visible = false;
+            btnREcargas.Visible = false;
             btnBuscar3.Visible = false;
+            btnProductos.Visible = false;
+            btnInformacion.Enabled = true;
+            Grafica.Visible = false;
+            Grafica1.Visible = false;
+            Calendar1.Visible = false;
+            Calendar2.Visible = false;
+
+
+
 
 
             lIDU.Visible = false;
@@ -78,8 +89,17 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
             btnBuscar.Visible = false;
             lPrecio.Visible = false;
             txtPrecio.Visible = false;
-            GridView1.Visible = false;
             btnBuscar3.Visible = false;
+            btnREcargas.Visible = false;
+            btnProductos.Visible = false;
+            btnInformacion.Enabled = true;
+            Grafica.Visible = false;
+            Grafica1.Visible = false;
+            Calendar1.Visible = false;
+            Calendar2.Visible = false;
+
+
+
 
 
             lIDU.Visible = true;
@@ -109,14 +129,51 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
             btnBuscar.Visible = false;
             lPrecio.Visible = false;
             txtPrecio.Visible = false;
+            Grafica.Visible = false;
+            Grafica1.Visible = false;
+            Calendar1.Visible = false;
+            Calendar2.Visible = false;
 
+
+
+            btnProductos.Visible = true;
+            btnREcargas.Visible = true;
+            btnInformacion.Enabled = false;
+        }
+
+        protected void btnREcargas_Click(object sender, EventArgs e)
+        {
+            btnREcargas.Enabled = false;
+            btnProducto.Enabled = true;
             lFechaI.Visible = true;
             lFechaFinal.Visible = true;
-            txtFechaI.Visible = true;
-            txtFechaF.Visible = true;
-            GridView1.Visible = true;
+
             btnBuscar3.Visible = true;
             btnInformacion.Enabled = false;
+            btnProductos.Enabled = true;
+            Grafica.Visible = true;
+            Grafica1.Visible = false;
+            Calendar1.Visible = true;
+            Calendar2.Visible = true;
+
+        }
+
+        protected void btnProductos_Click(object sender, EventArgs e)
+        {
+            btnProductos.Enabled = false;
+            lFechaI.Visible = false;
+            lFechaFinal.Visible = false;
+            Calendar1.Visible = false;
+            Calendar2.Visible = false;
+
+            btnBuscar3.Visible = false;
+            btnInformacion.Enabled = false;
+            btnREcargas.Enabled = true;
+            Grafica.Visible = false;
+            Grafica1.Visible = true;
+            OD1();
+            txtinicio.Text = "";
+            txtfinal.Text = "";
         }
 
         protected void btnAgregar_Click(object sender, EventArgs e)
@@ -344,35 +401,90 @@ namespace Guardllet_Desarrollo.Frontend.Administrators
 
         protected void btnBuscar3_Click(object sender, EventArgs e)
         {
-            string Cadena_Conexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
-            try
-            {
-                using (SqlConnection Conexion = new SqlConnection(Cadena_Conexion))
-                {
-                    Conexion.Open();
-                    string cmd = string.Format("select sum(MONTO) as MONTOFINAL FROM MOVIMIENTO_R where FECHA > '" + txtFechaI.Text +
-                        "' and FECHA < '" + txtFechaF.Text + "' GROUP BY FECHA", Cadena_Conexion);
-                    DataSet Datos = new DataSet();
-                    SqlDataAdapter DP = new SqlDataAdapter(cmd, Conexion);
-                    DP.Fill(Datos);
-                    GridView1.DataSource = Datos;
-                    GridView1.DataBind();
-                    Conexion.Close();
-
-                    //DataTable tabla = new DataTable();
-
-                    //tabla.Columns.Add(new DataColumn("Monto", typeof(string)));
-                    //tabla.Columns.Add(new DataColumn("Fecha", typeof(string)));
-
-                }
-            }
-            catch (Exception ex)
-            {
-                DataTable tabla = new DataTable();
-            }
+            OD();
+            txtfinal.Text = "";
+            txtinicio.Text = "";
         }
 
+        protected void OD()
+        {
+            int[] barras = new int[3];
+            string[] nombs = new string[3];
 
+
+
+            string StringConexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
+            using (SqlConnection Conexion = new SqlConnection(StringConexion))
+                try
+                {
+                    int cont = 0;
+                    Conexion.Open();
+                    SqlCommand cmd = new SqlCommand("select sum(MONTO) as MontoFinal , FECHA as Fecha FROM MOVIMIENTO_R where FECHA > '" + txtinicio.Text +
+                        "' and FECHA < '" + txtfinal.Text + "' GROUP BY FECHA", Conexion);
+                    SqlDataReader leer = cmd.ExecuteReader();
+                    while (leer.Read())
+                    {
+                        barras[cont] = leer.GetInt32(0);
+                        nombs[cont] = leer.GetDateTime(1).ToShortDateString();
+                        cont++;
+                    }
+
+                    leer.Close();
+                    Conexion.Close();
+                    Grafica.Series["Serie"].Points.DataBindXY(nombs, barras);
+                }
+                catch (Exception es)
+                {
+
+                }
+        }
+        protected void OD1()
+        {
+            int[] barras = new int[10];
+            int[] nombs = new int[10];
+            string StringConexion = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
+            using (SqlConnection Conexion = new SqlConnection(StringConexion))
+                try
+                {
+                    int cont = 0;
+                    Conexion.Open();
+                    SqlCommand cmd = new SqlCommand("select ID_PRODUCTO, COUNT (ID_PRODUCTO) AS TOTALPRODUCTOS FROM MOVIMIENTO_CV GROUP BY ID_PRODUCTO HAVING COUNT (ID_PRODUCTO) > 0", Conexion);
+                    SqlDataReader leer = cmd.ExecuteReader();
+                    while (leer.Read())
+                    {
+                        barras[cont] = leer.GetInt32(1);
+                        nombs[cont] = leer.GetInt32(0);
+                        cont++;
+                    }
+
+                    leer.Close();
+                    Conexion.Close();
+                    Grafica1.Series["Serie1"].Points.DataBindXY(nombs, barras);
+                }
+                catch (Exception es)
+                {
+
+                }
+        }
+
+        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
+        {
+
+            DateTime a1 = Calendar1.SelectedDate;
+
+            txtinicio.Text = a1.ToString("yyyy-MM-dd");
+
+        }
+
+        protected void Calendar2_SelectionChanged(object sender, EventArgs e)
+        {
+            DateTime a2 = Calendar2.SelectedDate;
+
+            txtfinal.Text = a2.ToString("yyyy-MM-dd");
+
+        }
     }
+
+
 
 }

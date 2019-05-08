@@ -41,6 +41,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -187,6 +188,7 @@
     <Compile Include="Servicios.aspx.designer.cs">
       <DependentUpon>Servicios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="System\Web\UI\WebControls\Chart.cs" />
     <Compile Include="Ticket.aspx.cs">
       <DependentUpon>Ticket.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

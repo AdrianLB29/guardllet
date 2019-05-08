@@ -256,6 +256,24 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         protected global::System.Web.UI.WebControls.Button btnBorrarU;
         
         /// <summary>
+        /// Control btnREcargas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnREcargas;
+        
+        /// <summary>
+        /// Control btnProductos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnProductos;
+        
+        /// <summary>
         /// Control lFechaI.
         /// </summary>
         /// <remarks>
@@ -263,15 +281,6 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lFechaI;
-        
-        /// <summary>
-        /// Control txtFechaI.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFechaI;
         
         /// <summary>
         /// Control lFechaFinal.
@@ -283,13 +292,40 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         protected global::System.Web.UI.WebControls.Label lFechaFinal;
         
         /// <summary>
-        /// Control txtFechaF.
+        /// Control Calendar1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFechaF;
+        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        
+        /// <summary>
+        /// Control Calendar2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Calendar2;
+        
+        /// <summary>
+        /// Control txtinicio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtinicio;
+        
+        /// <summary>
+        /// Control txtfinal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtfinal;
         
         /// <summary>
         /// Control btnBuscar3.
@@ -301,12 +337,21 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         protected global::System.Web.UI.WebControls.Button btnBuscar3;
         
         /// <summary>
-        /// Control GridView1.
+        /// Control Grafica.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.DataVisualization.Charting.Chart Grafica;
+        
+        /// <summary>
+        /// Control Grafica1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.DataVisualization.Charting.Chart Grafica1;
     }
 }

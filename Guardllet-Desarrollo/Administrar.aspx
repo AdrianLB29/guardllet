@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Administrar.aspx.cs" Inherits="Guardllet_Desarrollo.Frontend.Administrators.Administrar" %>
 
+<%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -77,11 +79,26 @@
                         <asp:Button ID="btnBorrarU" runat="server" Text="Borrar" Visible="false" OnClick="btnBorrarU_Click" />
                     </div>
                     <div id="informacion">
-                        <asp:Label ID="lFechaI" runat="server" Text="Fecha de inicio" Visible="false"></asp:Label><asp:TextBox ID="txtFechaI" runat="server" Visible="false"></asp:TextBox>
-                        <asp:Label ID="lFechaFinal" runat="server" Text="Fecha Final" Visible="false"></asp:Label><asp:TextBox ID="txtFechaF" runat="server" Visible="false"></asp:TextBox>
-                        <asp:Button ID="btnBuscar3" runat="server" Text="Buscar" Visible="false" OnClick="btnBuscar3_Click"/>
-                        <asp:GridView ID="GridView1" runat="server" Visible="False" ></asp:GridView>
-                    </div>
+                    <asp:Button ID="btnREcargas" runat="server" Text="Recarga" Visible ="false" OnClick="btnREcargas_Click" /> <asp:Button ID="btnProductos" runat="server" Text="Productos" Visible ="false" OnClick="btnProductos_Click" />
+
+                    <br />
+                    <asp:Label ID="lFechaI" runat="server" Text="Fecha de inicio" Visible="false"></asp:Label><asp:Label ID="lFechaFinal" runat="server" Text="Fecha Final" Visible="false"></asp:Label>
+                    <br />
+                    <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"  visible="false"></asp:Calendar><asp:Calendar ID="Calendar2" runat="server" OnSelectionChanged="Calendar2_SelectionChanged" Visible="false"></asp:Calendar>
+                    <asp:TextBox ID="txtinicio" runat="server" Visible="false"></asp:TextBox><asp:TextBox ID="txtfinal" runat="server" Visible="false"></asp:TextBox>
+                    <asp:Button ID="btnBuscar3" runat="server" Text="Buscar" Visible="false" OnClick="btnBuscar3_Click"/>
+                    <br />
+                    <asp:Chart ID="Grafica" runat="server" Visible="true">
+                        <Series><asp:Series Name="Serie"></asp:Series></Series>
+                        <ChartAreas><asp:ChartArea Name="ChartArea"></asp:ChartArea></ChartAreas>
+                        </asp:Chart>
+                    <asp:Chart ID="Grafica1" runat="server" Visible="false">
+                        <Series><asp:Series Name="Serie1"></asp:Series></Series>
+                        <ChartAreas><asp:ChartArea Name="ChartArea"></asp:ChartArea></ChartAreas>
+                        </asp:Chart>
+
+
+                </div>
                 </div>
                 <div class="resultados">
 
