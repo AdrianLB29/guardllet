@@ -67,15 +67,6 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         protected global::System.Web.UI.WebControls.Button btnCerrarSesion;
         
         /// <summary>
-        /// Control txtID.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtID;
-        
-        /// <summary>
         /// Control lId.
         /// </summary>
         /// <remarks>
@@ -85,13 +76,13 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         protected global::System.Web.UI.WebControls.Label lId;
         
         /// <summary>
-        /// Control txtNombre.
+        /// Control txtID.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNombre;
+        protected global::System.Web.UI.WebControls.TextBox txtID;
         
         /// <summary>
         /// Control lNombre.
@@ -103,13 +94,13 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         protected global::System.Web.UI.WebControls.Label lNombre;
         
         /// <summary>
-        /// Control txtCodigo.
+        /// Control txtNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCodigo;
+        protected global::System.Web.UI.WebControls.TextBox txtNombre;
         
         /// <summary>
         /// Control lCodigo.
@@ -121,13 +112,13 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         protected global::System.Web.UI.WebControls.Label lCodigo;
         
         /// <summary>
-        /// Control txtPrecio.
+        /// Control txtCodigo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPrecio;
+        protected global::System.Web.UI.WebControls.TextBox txtCodigo;
         
         /// <summary>
         /// Control lPrecio.
@@ -137,6 +128,24 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lPrecio;
+        
+        /// <summary>
+        /// Control txtPrecio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPrecio;
+        
+        /// <summary>
+        /// Control btnBuscar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBuscar;
         
         /// <summary>
         /// Control btnAgregar.
@@ -164,15 +173,6 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnBorrar;
-        
-        /// <summary>
-        /// Control btnBuscar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBuscar;
         
         /// <summary>
         /// Control lIDU.
@@ -256,6 +256,24 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         protected global::System.Web.UI.WebControls.Button btnBorrarU;
         
         /// <summary>
+        /// Control txtinicio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtinicio;
+        
+        /// <summary>
+        /// Control txtfinal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtfinal;
+        
+        /// <summary>
         /// Control btnREcargas.
         /// </summary>
         /// <remarks>
@@ -283,15 +301,6 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         protected global::System.Web.UI.WebControls.Label lFechaI;
         
         /// <summary>
-        /// Control lFechaFinal.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lFechaFinal;
-        
-        /// <summary>
         /// Control Calendar1.
         /// </summary>
         /// <remarks>
@@ -301,6 +310,15 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         protected global::System.Web.UI.WebControls.Calendar Calendar1;
         
         /// <summary>
+        /// Control lFechaFinal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lFechaFinal;
+        
+        /// <summary>
         /// Control Calendar2.
         /// </summary>
         /// <remarks>
@@ -308,24 +326,6 @@ namespace Guardllet_Desarrollo.Frontend.Administrators {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar Calendar2;
-        
-        /// <summary>
-        /// Control txtinicio.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtinicio;
-        
-        /// <summary>
-        /// Control txtfinal.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtfinal;
         
         /// <summary>
         /// Control btnBuscar3.

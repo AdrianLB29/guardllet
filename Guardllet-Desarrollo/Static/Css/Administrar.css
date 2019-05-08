@@ -30,26 +30,267 @@ header {
     float: left;
     width: 30%;
     height: 100%;
-    position: relative;
+    padding: 20px;
+    position: absolute;
+}
+
+.definicion {
+    font-size: large;
+    color: #001935;
+}
+
+#txtID {
+    width: 90%;
+    border-radius: 10px;
+    border: solid 1px #001935;
+    text-align: center;
+}
+
+#txtNombre {
+    width: 90%;
+    border-radius: 10px;
+    border: solid 1px #001935;
+    text-align: center;
+}
+
+#txtCodigo {
+    width: 90%;
+    border-radius: 10px;
+    border: solid 1px #001935;
+    text-align: center;
+}
+
+#txtPrecio {
+    width: 90%;
+    border-radius: 10px;
+    border: solid 1px #001935;
+    text-align: center;
+}
+
+.boton-a {
+    margin-top: 10px;
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+}
+
+#btnAgregar {
+    width: 80%;
+    height: 40px;
+    background-color: #001935;
+    color: white;
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.boton-ac {
+    margin-top: 10px;
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+}
+
+#btnActualizar {
+    width: 80%;
+    height: 40px;
+    background-color: #001935;
+    color: white;
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+#btnBorrar {
+    width: 80%;
+    height: 40px;
+    background-color: #001935;
+    color: white;
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.boton-b {
+    margin-top: 10px;
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+}
+
+.boton-bu {
+    margin-top: 30px;
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+}
+
+#btnBuscar {
+    width: 80%;
+    height: 40px;
+    background-color: #001935;
+    color: white;
+    border: solid 0px;
+    border-radius: 10px;
 }
 
 .resultados {
     float: left;
     width: 70%;
     height: 100%;
-    position: relative;
+    position: absolute;
+    margin-left: 30%;
+}
+
+.contenedor-resultados {
+    width: 95%;
+    height: 95%;
+    margin: 2.5%;
+    background-color: #edf1f6;
+    border-radius: 10px;
 }
 
 #producto {
     height: 100%;
     width: 100%;
+    padding: 20px;
     position: absolute;
+}
+
+#txtIDU {
+    width: 90%;
+    border-radius: 10px;
+    border: solid 1px #001935;
+    text-align: center;
+}
+
+#txtTipo {
+    width: 90%;
+    border-radius: 10px;
+    border: solid 1px #001935;
+    text-align: center;
+}
+
+#txtEstado {
+    width: 90%;
+    border-radius: 10px;
+    border: solid 1px #001935;
+    text-align: center;
+}
+
+.boton-bus {
+    margin-top: 30px;
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+}
+
+.boton-act {
+    margin-top: 10px;
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+}
+
+.boton-borr {
+    margin-top: 10px;
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+}
+
+#btnBuscarU {
+    width: 80%;
+    height: 40px;
+    background-color: #001935;
+    color: white;
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+#btnActualizarU {
+    width: 80%;
+    height: 40px;
+    background-color: #001935;
+    color: white;
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+#btnBorrarU {
+    width: 80%;
+    height: 40px;
+    background-color: #001935;
+    color: white;
+    border: solid 0px;
+    border-radius: 10px;
 }
 
 #usuario {
     height: 100%;
     width: 100%;
     position: absolute;
+    padding: 20px;
+}
+
+.menu-grf {
+    width: 100%;
+    display: table;
+}
+
+.boton-recargas {
+    float: left;
+    width: 50%;
+}
+
+.boton-productos {
+    float: left;
+    width: 50%;
+}
+
+#btnREcargas {
+    width: 90%;
+    height: 40px;
+    margin-left: 5%;
+    background-color: #001935;
+    color: white;
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+#btnProductos {
+    width: 90%;
+    height: 40px;
+    margin-left: 5%;
+    background-color: #001935;
+    color: white;
+    border: solid 0px;
+    border-radius: 10px;
+}
+
+.contenedor-calendarios {
+    width: 100%;
+    height: 50%;
+    display: table;
+}
+
+.calendario-uno {
+    float: left;
+    width: 40%;
+    height: 100%;
+    font-size: large;
+    text-align: center;
+}
+
+.calendario-dos {
+    float: left;
+    width: 40%;
+    height: 100%;
+    font-size: large;
+    text-align: center;
+}
+
+.boton-buscar {
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 20%;
 }
 
 div#informacion {
