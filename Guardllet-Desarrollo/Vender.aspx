@@ -37,7 +37,7 @@
                         <p id="TxtAyuda">Numero de Monedero</p>
                     </div>
                     <div class="Columna2">
-                        <asp:TextBox ID="tbsaldo" runat="server" placeholder="Dinero" type="number" min="1" max="1000"></asp:TextBox>
+                        <asp:TextBox ID="tbsaldo" runat="server" placeholder="Dinero" type="number" min="1" max="500"></asp:TextBox>
                         <p id="TxtAyudados">Dinero</p>
                     </div>
                 </div>
